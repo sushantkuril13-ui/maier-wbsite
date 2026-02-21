@@ -11,20 +11,31 @@
   grid-template-columns: 280px 1fr;
 }
 
-/* when slider present, add third column on right */
-.product-page-container.with-slider.with-sidebar {
-  grid-template-columns: 280px 1fr 300px;
-}
-
 .product-page-slider {
   /* ensure slider sticks right */
 }
 
 .product-page-content {
+  position: relative;
   flex: 1;
-  min-width: 0;
+  /* width removed to allow wrapping */
 }
 
+.product-page-slider {
+  float: right;
+  width: 300px;
+  border: #333 solid 1px;
+  margin: 1rem 1rem 2rem 2rem;
+}
+
+/* ensure slider clears on mobile */
+@media (max-width: 960px) {
+  .product-page-slider {
+    float: none;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
 .product-page-content article {
   background: #fff;
   padding: 2rem;
