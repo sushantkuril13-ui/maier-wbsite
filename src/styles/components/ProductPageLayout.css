@@ -11,6 +11,15 @@
   grid-template-columns: 280px 1fr;
 }
 
+/* when slider present, add third column on right */
+.product-page-container.with-slider.with-sidebar {
+  grid-template-columns: 280px 1fr 300px;
+}
+
+.product-page-slider {
+  /* ensure slider sticks right */
+}
+
 .product-page-content {
   flex: 1;
   min-width: 0;

@@ -2,13 +2,16 @@ import React from 'react';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 import ProductSidebar from './ProductSidebar.jsx';
+import ProductImageSlider from './ProductImageSlider.jsx';
 import '../styles/components/ProductPageLayout.css';
 
 export default function ProductPageLayout({ 
   children, 
   activeCategory,
+  slides = [],
   showSidebar = true 
 }) {
+  const hasSlider = slides && slides.length > 0;
   return (
     <div className="app site-shell">
       <div className="site-card">
@@ -16,7 +19,7 @@ export default function ProductPageLayout({
         <div className="site-inner">
           <main>
             <div className="content-below-hero">
-              <div className={`product-page-container ${showSidebar ? 'with-sidebar' : ''}`}>
+              <div className={`product-page-container ${showSidebar ? 'with-sidebar' : ''} ${hasSlider ? 'with-slider' : ''}`}>
                 {showSidebar && (
                   <ProductSidebar 
                     activeCategory={activeCategory}
@@ -25,6 +28,11 @@ export default function ProductPageLayout({
                 <div className="product-page-content">
                   {children}
                 </div>
+                {hasSlider && (
+                  <div className="product-page-slider">
+                    <ProductImageSlider slides={slides} />
+                  </div>
+                )}
               </div>
             </div>
           </main>

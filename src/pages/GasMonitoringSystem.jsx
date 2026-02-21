@@ -2,9 +2,16 @@ import React from 'react';
 import ProductPageLayout from '../components/ProductPageLayout.jsx';
 
 export default function GasMonitoringSystem() {
+  const slides = [
+    { img: '/images/Product Images/PRV.png', caption: 'Gas Monitoring System' },
+    { img: '/images/Product Images/OLI.png', caption: 'Gas Monitoring System' },
+    // additional images can be added here
+  ];
+
   return (
     <ProductPageLayout 
       activeCategory="Gas Monitoring System (Automat)"
+      slides={slides}
     >
       <article>
         <h1>GAS MONITORING SYSTEM (AUTOMAT)</h1>
@@ -98,20 +105,20 @@ export default function GasMonitoringSystem() {
             </ul>
           </div>
 
-          <div className="model-images" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', margin: '2rem 0' }}>
+          {/* <div className="model-images" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', margin: '2rem 0' }}>
             <div style={{ textAlign: 'center' }}>
-              <img src="/images/Product Images/Gas Monitoring.png" alt="SDGR-02D" style={{ maxWidth: '100%', height: 'auto' }} />
+              <img src="/images/Product Images/PRV.png" alt="SDGR-02D" style={{ maxWidth: '100%', height: 'auto' }} />
               <p><strong>SDGR-02D</strong></p>
             </div>
             <div style={{ textAlign: 'center' }}>
-              <img src="/images/Product Images/Gas Monitoring.png" alt="DGR-02" style={{ maxWidth: '100%', height: 'auto' }} />
+              <img src="/images/Product Images/OLI.png" alt="DGR-02" style={{ maxWidth: '100%', height: 'auto' }} />
               <p><strong>DGR-02</strong></p>
             </div>
             <div style={{ textAlign: 'center' }}>
               <img src="/images/Product Images/Gas Monitoring.png" alt="SDGR-02" style={{ maxWidth: '100%', height: 'auto' }} />
               <p><strong>SDGR-02</strong></p>
             </div>
-          </div>
+          </div> */}
 
           <p style={{ fontSize: '12px', color: '#999', fontStyle: 'italic' }}>
             Manufacturer reserves the right of modification/upgrade. Due to our policy of continuous product improvement, dimensions and design are subject to change.

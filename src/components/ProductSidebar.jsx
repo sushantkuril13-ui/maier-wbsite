@@ -14,12 +14,12 @@ const productCategories = [
   },
   {
     title: 'Oil Level Indicator',
-    icon: '/images/Product Images/OLI.png',
+    icon: 'images/Icons-oelstandsanzeiger.png',
     link: '/oil-level-indicators',
   },
   {
     title: 'Pressure Relief Valve',
-    icon: '/images/Product Images/PRV.png',
+    icon: 'images/Icons-druckentlastungsventile.png',
     link: '/pressure-relief-valve',
   },
   {
@@ -34,7 +34,7 @@ const productCategories = [
   },
   {
     title: 'Tank Valve',
-    icon: '/images/Product Images/Tank Valve.png',
+    icon: 'images/Icon-armaturen-kesselbau.png',
     link: '/tank-valve',
   },
   {
