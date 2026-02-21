@@ -9,7 +9,7 @@
   /* allow slider to span the available card width */
   width: calc(100% - 56px);
   max-width: none;
-  /* margin: 0 28px; */
+  margin: 0 28px;
   display: grid;
   grid-template-columns: 2.2fr 1fr; /* larger image area */
   gap: 1.6rem;
