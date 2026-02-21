@@ -23,12 +23,12 @@ export default function ProductImageSlider({ slides = [], interval = 2800 }) {
 
   return (
     <div className="product-image-slider">
-      <div className="slider-wrapper">
+      <div className="slider-wrapper-product">
         {slides.map((slide, i) => (
           <div
             key={i}
             className={`slide ${i === current ? 'active' : ''}`}
-            style={{ backgroundImage: `url(${slide.img})` }}
+            style={{ backgroundImage: `url(${encodeURI(slide.img)})` }}
           >
             {slide.caption && <div className="slide-caption">{slide.caption}</div>}
           </div>
