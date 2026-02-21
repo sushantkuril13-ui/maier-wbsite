@@ -10,7 +10,7 @@
   position: relative;
   overflow: hidden;
   height: 0;
-  padding-bottom: 75%; /* 4:3 ratio */
+  padding-bottom: 15%;
 }
 
 .slide {
