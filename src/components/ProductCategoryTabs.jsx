@@ -1,51 +1,42 @@
 import React from 'react';
 import '../styles/components/ProductCategoryTabs.css';
+import products from '../data/products.json';
 
-// TODO: Replace with dynamic data if needed
-const categories = [
-  {
-    title: 'Radiator Valves',
-    img: '/images/drosselklappe-din-42560-A-vorschweiflansch.png',
-    desc: 'Radiator Valves for Transformers. The ideal solution for every task!',
-    link: '/radiator-valves',
-  },
-  {
-    title: 'Transformer Protection Devices',
-    img: '/images/transformer-protection-devices.png',
-    desc: 'For hermetically sealed transformers and transformers with expansion tank!',
-    link: '/protection-devices',
-  },
-  {
-    title: 'Oil Level Indicators',
-    img: '/images/magnetischer-senkrechter-oelstandsanzeiger.png',
-    desc: 'Oil level indicators for transformers - Many different versions in variable sizes!',
-    link: '/oil-level-indicators',
-  },
-  {
-    title: 'Dehydrating Breathers',
-    img: '/images/Luftentfeuchter-DIN-42562.png',
-    desc: 'Dehydrating breathers for transformers and reactors with expansion tank.',
-    link: '/dehydrating-breathers',
-  },
-  {
-    title: 'Pressure Relief Devices',
-    img: '/images/Druckentlastungsventil-PRD-1.png',
-    desc: 'Pressure relief devices for transformers - Protection against overpressure!',
-    link: '/pressure-relief-devices',
-  },
-  {
-    title: 'Tank Components',
-    img: '/images/lablassvorrichtung-DIN-42551.png',
-    desc: 'Fittings and tank components for transformers in a large variety.',
-    link: '/tank-components',
-  },
-  {
-    title: 'Tap Changers',
-    img: '/images/Umsteller-Produktkategorien.png',
-    desc: 'Tap Changers for Transformers in various sizes!',
-    link: '/tap-changers',
-  },
+// Use the exact ordered category list provided by the user and map
+// representative images/links (fall back to first product found).
+const orderedCategories = [
+  'Gas Monitoring System (Automat)',
+  'Low/High Pressure Alarm System',
+  'Oil Level Indicator',
+  'Pressure Relief Valve',
+  'PRV with Liquid Level Indicator',
+  'Solenoid Interlock Device',
+  'Tank Valve',
+  'Tubular Oil Level Gauge',
+  'Threaded Pressure Relief Valve',
 ];
+
+const categoryImageMap = {
+  'Gas Monitoring System (Automat)': '/images/Product Images/Gas Monitoring.png',
+  'Low/High Pressure Alarm System': '/images/Product Images/Pressure Alarm.png',
+  'Oil Level Indicator': '/images/Product Images/OLI.png',
+  'Pressure Relief Valve': '/images/Product Images/PRV.png',
+  'PRV with Liquid Level Indicator': '/images/Product Images/PRV-LLI.png',
+  'Solenoid Interlock Device': '/images/Product Images/Solenoid Interlock.png',
+  'Tank Valve': '/images/Product Images/Tank Valve.png',
+  'Tubular Oil Level Gauge': '/images/Product Images/Tubular Gauge.png',
+  'Threaded Pressure Relief Valve': '/images/Product Images/Threaded PRV.png',
+};
+
+const categories = orderedCategories.map(name => {
+  const first = products.find(p => p.filter === name) || {};
+  return {
+    title: name,
+    img: categoryImageMap[name] || first.img || '/images/Product Images/OLI.png',
+    desc: `${name} — explore our selection of products and components.`,
+    link: first.link || '#',
+  };
+});
 
 export default function ProductCategoryTabs() {
   const [active, setActive] = React.useState(0);
