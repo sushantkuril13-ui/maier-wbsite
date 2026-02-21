@@ -1,0 +1,124 @@
+.references-section {
+  padding: 2rem 0 3rem 0;
+  background-color: #b20e10; /* red band */
+  margin: 2rem 0;
+}
+
+.references-section .container {
+  /* keep the container width in sync with the rest of the site */
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.slider-wrapper {
+  /* white inner card inside the red band to match original design */
+  background: #fff;
+  width: 100%;
+  border-radius: 6px;
+  padding: 18px 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display: block;
+  overflow: visible;
+  position: relative;
+  /* allow scaled items to rise above neighbors (no clipping) */
+  overflow: visible;
+  position: relative;
+}
+
+/* horizontal scroller */
+.references-slider {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden; /* prevent vertical scroll inside slider */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+  scroll-behavior: auto;
+  /* hide native scrollbar visually but keep functionality */
+  scrollbar-width: none; /* Firefox */
+}
+.references-slider::-webkit-scrollbar { height: 0; display: none; }
+
+/* each logo box */
+.reference-item {
+  flex: 0 0 220px; /* fixed item width - adjust as needed */
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  scroll-snap-align: center;
+}
+
+/* hover/overlay and transitions */
+.reference-item {
+  position: relative;
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+.reference-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(178,14,16,0.08);
+  opacity: 0;
+  transition: opacity 180ms ease;
+  pointer-events: none;
+  border-radius: 6px;
+}
+.reference-item:hover {
+  transform: scale(1.035);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  border-color: #b20e10;
+}
+.reference-item:hover::after {
+  opacity: 1;
+}
+
+/* nav buttons adjacent to the slider, vertically centered */
+.references-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 2px solid #b20e10;
+  background: rgba(255,255,255,0.95);
+  color: #b20e10;
+  cursor: pointer;
+  font-size: 28px;
+  transition: background-color 160ms ease, color 160ms ease, transform 120ms ease, border-color 160ms ease;
+}
+.references-nav-btn.prev-btn { left: 8px; }
+.references-nav-btn.next-btn { right: 8px; }
+
+/* stronger hover/active/focus rules to avoid being overridden */
+.slider-wrapper .references-nav-btn:hover,
+.slider-wrapper .references-nav-btn:focus-visible {
+  background-color: #b20e10;
+  color: #fff;
+  border-color: #b20e10;
+  transform: translateY(-50%) scale(1.05);
+}
+.slider-wrapper .references-nav-btn:active {
+  background-color: #8f0b0c;
+  color: #fff;
+  transform: translateY(-50%) scale(0.98);
+}
+
+/* remove any accidental vertical scrollbar space under the slider */
+.slider-wrapper { overflow-y: visible; }
+.container { overflow: visible; }
+
+/* responsive tweaks */
+@media (max-width: 640px) {
+  .reference-item { flex: 0 0 150px; height: 90px; }
+  .references-nav-btn { width: 36px; height: 36px; }
+}

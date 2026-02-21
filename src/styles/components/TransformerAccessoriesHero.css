@@ -1,0 +1,38 @@
+.transformer-accessories-hero {
+  padding: 3rem 0;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.transformer-accessories-hero h1 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.transformer-accessories-hero p {
+  line-height: 1.8;
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.transformer-accessories-hero a {
+  color: #b20e10;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.transformer-accessories-hero a:hover {
+  color: #8a0a0b;
+}
+
+.at-glance-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
