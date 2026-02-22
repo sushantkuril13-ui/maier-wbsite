@@ -1,15 +1,15 @@
 import React from 'react';
 import '../styles/components/ProductSidebar.css';
 
-const productCategories = [
+export const productCategories = [
   {
     title: 'Gas Monitoring System (Automat)',
-    icon: '/images/Product Images/Gas Monitoring.png',
+    icon: 'images/icon-gas-monitoring-system.png',
     link: '/gas-monitoring-system',
   },
   {
     title: 'Low/High Pressure Alarm System',
-    icon: '/images/Product Images/Pressure Alarm.png',
+    icon: 'images/icon-low-high-pressure.png',
     link: '/low-high-pressure-alarm-system',
   },
   {
@@ -24,12 +24,12 @@ const productCategories = [
   },
   {
     title: 'PRV with Liquid Level Indicator',
-    icon: '/images/Product Images/PRV-LLI.png',
+    icon: 'images/icon-prv-eith-level-indicator.png',
     link: '/prv-with-liquid-level-indicator',
   },
   {
     title: 'Solenoid Interlock Device',
-    icon: '/images/Product Images/Solenoid Interlock.png',
+    icon: 'images/icon-solenooid-interlock-device.png',
     link: '/solenoid-interlock-device',
   },
   {
@@ -39,12 +39,12 @@ const productCategories = [
   },
   {
     title: 'Tubular Oil Level Gauge',
-    icon: '/images/Product Images/Tubular Gauge.png',
+    icon: 'images/icon-tubular-oil-level-gauge.png',
     link: '/tubular-oil-level-gauge',
   },
   {
     title: 'Threaded Pressure Relief Valve',
-    icon: '/images/Product Images/Threaded PRV.png',
+    icon: 'images/icon-threaded-prv.png',
     link: '/threaded-pressure-relief-valve',
   },
 ];

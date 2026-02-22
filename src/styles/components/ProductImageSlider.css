@@ -35,9 +35,9 @@
 .slider-caption-below {
   text-align: center;
   margin-top: 0.5rem;
-  font-size: 14px;
   color: #333;
-  font-size: 14px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .dotnav {
@@ -53,13 +53,16 @@
 }
 
 .dotnav button {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   border: none;
-  background: #ccc;
+  /* background: #ccc; */
+  background: #f7f3f3;
   cursor: pointer;
   padding: 0;
+  position: relative;
+  justify-content: center;
 }
 
 .dotnav .active button {
