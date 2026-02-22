@@ -29,11 +29,13 @@ export default function ProductImageSlider({ slides = [], interval = 2800 }) {
             key={i}
             className={`slide ${i === current ? 'active' : ''}`}
             style={{ backgroundImage: `url(${encodeURI(slide.img)})` }}
-          >
-            {slide.caption && <div className="slide-caption">{slide.caption}</div>}
-          </div>
+          />
         ))}
       </div>
+      {slides[current] && slides[current].caption && (
+        <div className="slider-caption-below">{slides[current].caption}</div>
+      )}
+      
       {slides.length > 1 && (
         <ul className="dotnav">
           {slides.map((_, i) => (

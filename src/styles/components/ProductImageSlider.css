@@ -30,14 +30,13 @@
   opacity: 1;
 }
 
-.slide-caption {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: white;
-  background: rgba(0,0,0,0.5);
-  padding: 6px 10px;
-  border-radius: 3px;
+/* caption overlay removed */
+
+.slider-caption-below {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 14px;
+  color: #333;
   font-size: 14px;
 }
 
