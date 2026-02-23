@@ -119,10 +119,10 @@ export default function GasMonitoringSystem() {
               <p><strong>SDGR-02</strong></p>
             </div>
           </div> */}
-
+{/* 
           <p style={{ fontSize: '12px', color: '#999', fontStyle: 'italic' }}>
             Manufacturer reserves the right of modification/upgrade. Due to our policy of continuous product improvement, dimensions and design are subject to change.
-          </p>
+          </p> */}
         </section>
 
         <section>
@@ -172,6 +172,18 @@ export default function GasMonitoringSystem() {
           <p style={{ fontSize: '12px', color: '#999', fontStyle: 'italic', marginTop: '2rem' }}>
             Manufacturer reserves the right of modification/upgrade. Due to our policy of continuous product improvement, dimensions and design are subject to change.
           </p>
+        </section>
+
+        <section>
+          <h2>Catalogue</h2>
+          <p>You can download the complete gas monitoring system catalogue below:</p>
+          <a 
+            href="/downloads/gas-monitoring-catalogue.pdf" 
+            download 
+            className="btn btn-download"
+          >
+            Download PDF
+          </a>
         </section>
       </article>
     </ProductPageLayout>
