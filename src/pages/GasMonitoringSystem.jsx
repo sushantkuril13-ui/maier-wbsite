@@ -3,7 +3,9 @@ import ProductPageLayout from '../components/ProductPageLayout.jsx';
 
 export default function GasMonitoringSystem() {
   const slides = [
-    { img: '/images/Product Images/PRV.png', caption: 'Ga System' },
+    { img: '/images/Product Images/GMS_SDGR02D.png', caption: 'SDGR-02D' },
+    { img: '/images/Product Images/OLI.png', caption: 'Gas Monitoring System' },
+    { img: '/images/Product Images/OLI.png', caption: 'Gas Monitoring System' },
     { img: '/images/Product Images/OLI.png', caption: 'Gas Monitoring System' },
     // additional images can be added here
   ];
