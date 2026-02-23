@@ -6,13 +6,15 @@ export default function Footer() {
     {
       title: 'Products',
       links: [
-        { label: 'Radiator Valves', href: '#radiator-valves' },
-        { label: 'Protection Devices', href: '#protection-devices' },
-        { label: 'Oil Level Indicators', href: '#oil-level' },
-        { label: 'Dehydrating Breathers', href: '#breathers' },
-        { label: 'Pressure Relief Devices', href: '#pressure-relief' },
-        { label: 'Tank Components', href: '#tank' },
-        { label: 'Tap Changers', href: '#changers' }
+        { label: 'Gas Monitoring System (Automat)', href: '/gas-monitoring-system' },
+        { label: 'Low/High Pressure Alarm System', href: '/low-high-pressure-alarm-system' },
+        { label: 'Oil Level Indicator', href: '/oil-level-indicators' },
+        { label: 'Pressure Relief Valve', href: '/pressure-relief-valve' },
+        { label: 'PRV with Liquid Level Indicator', href: '/prv-with-liquid-level-indicator' },
+        { label: 'Solenoid Interlock Device', href: '/solenoid-interlock-device' },
+        { label: 'Tank Valve', href: '/tank-valve' },
+        { label: 'Tubular Oil Level Gauge', href: '/tubular-oil-level-gauge' },
+        { label: 'Threaded Pressure Relief Valve', href: '/threaded-pressure-relief-valve' }
       ]
     },
     {
@@ -73,7 +75,7 @@ export default function Footer() {
           </div>
 
           <p className="footer-copyright">
-            Built with React and CSS3 - Copyright © 2024 Maier GmbH<br />
+            Built with React and CSS3 - Copyright © 2024 Rajshi Enterprise<br />
             Webservice & Webhosting: <a href="http://www.sercosys.de" target="_blank" rel="noopener noreferrer">SERCOSYS</a> | 
             Conception & Layout: <a href="http://karius-partner.de/" target="_blank" rel="noopener noreferrer">Karius & Partner</a>
           </p>

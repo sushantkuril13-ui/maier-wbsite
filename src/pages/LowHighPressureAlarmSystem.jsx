@@ -3,8 +3,7 @@ import ProductPageLayout from '../components/ProductPageLayout.jsx';
 
 export default function LowHighPressureAlarmSystem() {
   const slides = [
-    // Add product images here if available
-    // { img: '/images/Product Images/LPAS.png', caption: 'Low/High Pressure Alarm System' },
+    { img: '/images/Product Images/LHPAS.png', caption: 'Low/High Pressure Alarm System' },
   ];
 
   return (

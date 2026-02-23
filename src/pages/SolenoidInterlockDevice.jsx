@@ -3,8 +3,8 @@ import ProductPageLayout from '../components/ProductPageLayout.jsx';
 
 export default function SolenoidInterlockDevice() {
   const slides = [
-    // Add product images here if available
-    // { img: '/images/Product Images/Solenoid-Interlock.png', caption: 'Solenoid Interlock Device' },
+    { img: '/images/Product Images/SOLENOID INTERLOCK DEVICE.png', caption: 'Solenoid Interlock Device' },
+    { img: '/images/Product Images/Solenoid Interlock.png', caption: 'Castle Lock & Key System' },
   ];
 
   return (

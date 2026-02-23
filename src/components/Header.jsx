@@ -21,13 +21,14 @@ export default function Header() {
       <div className="header-top">
         <div className="container flex-between">
           <div className="logo">
-            <img src="./images/Logo_Maier_final_RGB.png" alt="Maier Accessories" />
+            <Link to="/">
+              <img src="./images/Logo_Maier_final_RGB.png" alt="Rajshi Enterprise" />
+            </Link>
           </div>
           <div className="header-right">
             <form className="search-form">
               <input 
                 type="text" 
-                placeholder="search..." 
                 className="search-input"
               />
             </form>

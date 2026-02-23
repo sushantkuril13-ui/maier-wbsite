@@ -3,8 +3,11 @@ import ProductPageLayout from '../components/ProductPageLayout.jsx';
 
 export default function OilLevelIndicator() {
   const slides = [
-    // Add product images here if available
-    // { img: '/images/Product Images/OilLevelIndicator.png', caption: 'Oil Level Indicator' },
+    { img: '/images/Product Images/OLI_P.png', caption: 'P-1L Series' },
+    { img: '/images/Product Images/OLI_6040L.png', caption: '6040 Series' },
+    { img: '/images/Product Images/OLI_AL.png', caption: 'AL Series' },
+    { img: '/images/Product Images/OLI_PRISMATIC.png', caption: 'Prismatic Series' },
+    { img: '/images/Product Images/OLI.png', caption: 'Oil Level Indicator' },
   ];
 
   return (

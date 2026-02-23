@@ -69,7 +69,7 @@ export default function HeroSlider() {
           {slides.map((slide, index) => (
             <div
               key={slide.id}
-              className={`slide ${index === activeSlide ? 'active' : ''}`}
+              className={`no-bottom slide ${index === activeSlide ? 'active' : ''}`}
               style={{ backgroundImage: `url('${slide.image}')` }}
             />
           ))}

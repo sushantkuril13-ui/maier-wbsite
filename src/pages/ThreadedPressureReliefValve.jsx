@@ -3,8 +3,12 @@ import ProductPageLayout from '../components/ProductPageLayout.jsx';
 
 export default function ThreadedPressureReliefValve() {
   const slides = [
-    // Add product images here if available
-    // { img: '/images/Product Images/Threaded-PRV.png', caption: 'Threaded Pressure Relief Valve' },
+    { img: '/images/Product Images/PRV_BB2.png', caption: 'Small Size - Plain' },
+    { img: '/images/Product Images/PRV_BB2P.png', caption: 'Small Size - With Cap' },
+    { img: '/images/Product Images/PRV_BB3SR.png', caption: 'Small Size - With Pull Ring' },
+    { img: '/images/Product Images/PRV_SB4SS.png', caption: 'Medium Size - Stainless Steel' },
+    { img: '/images/Product Images/PRV_BB8P.png', caption: 'Medium Size - With Cap' },
+    { img: '/images/Product Images/NAP-25S.png', caption: 'Flange Type - NAP-25S' },
   ];
 
   return (

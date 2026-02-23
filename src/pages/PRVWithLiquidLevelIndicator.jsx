@@ -3,8 +3,8 @@ import ProductPageLayout from '../components/ProductPageLayout.jsx';
 
 export default function PRVWithLiquidLevelIndicator() {
   const slides = [
-    // Add product images here if available
-    // { img: '/images/Product Images/PRV-Liquid-Level.png', caption: 'PRV with Liquid Level Indicator' },
+    { img: '/images/Product Images/PRV_LIQUID INDICATOR.png', caption: 'PRV with Liquid Level Indicator' },
+    { img: '/images/Product Images/PRV_LIQUID INDICATOR 2.png', caption: 'Alternate Design' },
   ];
 
   return (
