@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/components/Header.css';
+import { productCategories } from './ProductSidebar.jsx';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,11 +56,32 @@ export default function Header() {
               ☰
             </button>
             <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-              {menuItems.map((item, index) => (
-                <li key={index} className="nav-item">
-                  <Link to={item.href}>{item.label}</Link>
-                </li>
-              ))}
+              {menuItems.map((item, index) => {
+                if (item.label === 'Transformer Accessories') {
+                  return (
+                    <li key={index} className="nav-item dropdown">
+                      <Link to={item.href}>{item.label}</Link>
+                      <div className="dropdown-content">
+                        <ul>
+                          {productCategories.map(cat => (
+                            <li key={cat.title} className="dropdown-item">
+                              <Link to={cat.link} className="dropdown-link">
+                                {cat.icon && <img src={cat.icon} alt={cat.title} className="dropdown-icon" />}
+                                {cat.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </li>
+                  );
+                }
+                return (
+                  <li key={index} className="nav-item">
+                    <Link to={item.href}>{item.label}</Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>

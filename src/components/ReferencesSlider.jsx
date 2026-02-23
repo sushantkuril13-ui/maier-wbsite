@@ -24,9 +24,11 @@ export default function ReferencesSlider() {
 
   const sliderRef = useRef(null);
   const instantScrollRef = useRef(false);
+  const suppressScrollRef = useRef(false);
+  const navClickRef = useRef(false);
 
   // helper: smooth animated horizontal scroll with easing
-  const animateScroll = (container, targetLeft, duration = 600) => {
+  const animateScroll = (container, targetLeft, duration = 500) => {
     if (!container) return;
     const start = container.scrollLeft;
     const change = targetLeft - start;
@@ -50,14 +52,40 @@ export default function ReferencesSlider() {
   }, [autoPlay]);
 
   const nextSlide = () => {
-    instantScrollRef.current = true;
+    const container = sliderRef.current;
+    if (container && container.children && container.children.length) {
+      const total = container.children.length;
+      const newIndex = activeIndex + 1;
+      let idx = newIndex;
+      if (idx < 0) idx = ((idx % total) + total) % total;
+      if (idx >= total) idx = idx % total;
+      const target = container.children[idx];
+      if (target) {
+        const targetLeft = Math.round(target.offsetLeft + target.offsetWidth / 2 - container.offsetWidth / 2);
+        animateScroll(container, targetLeft, 500);
+      }
+    }
+    navClickRef.current = true; // mark nav click to skip effect animation
     setActiveIndex((prev) => prev + 1);
     setAutoPlay(false);
     setTimeout(() => setAutoPlay(true), 2000);
   };
 
   const prevSlide = () => {
-    instantScrollRef.current = true;
+    const container = sliderRef.current;
+    if (container && container.children && container.children.length) {
+      const total = container.children.length;
+      const newIndex = activeIndex - 1;
+      let idx = newIndex;
+      if (idx < 0) idx = ((idx % total) + total) % total;
+      if (idx >= total) idx = idx % total;
+      const target = container.children[idx];
+      if (target) {
+        const targetLeft = Math.round(target.offsetLeft + target.offsetWidth / 2 - container.offsetWidth / 2);
+        animateScroll(container, targetLeft, 500);
+      }
+    }
+    navClickRef.current = true; // mark nav click to skip effect animation
     setActiveIndex((prev) => prev - 1);
     setAutoPlay(false);
     setTimeout(() => setAutoPlay(true), 2000);
@@ -81,6 +109,11 @@ export default function ReferencesSlider() {
   useEffect(() => {
     const container = sliderRef.current;
     if (!container) return;
+    if (suppressScrollRef.current) {
+      // previous normalization already adjusted scrollLeft; skip one effect run
+      suppressScrollRef.current = false;
+      return;
+    }
     const children = container.children;
     if (!children || children.length === 0) return;
     const total = children.length;
@@ -94,18 +127,50 @@ export default function ReferencesSlider() {
     if (instantScrollRef.current) {
       instantScrollRef.current = false;
       container.scrollTo({ left: targetLeft, behavior: 'auto' });
-      // normalize into middle copy
+      // normalize into middle copy without causing another scroll animation
       const middleStart = len;
       const middleEnd = 2 * len - 1;
       if (activeIndex < middleStart || activeIndex > middleEnd) {
         const mapped = ((activeIndex % len) + len) % len + len;
-        instantScrollRef.current = true;
-        setActiveIndex(mapped);
+        const mappedChild = container.children[mapped];
+        if (mappedChild) {
+          const mappedLeft = Math.round(mappedChild.offsetLeft + mappedChild.offsetWidth / 2 - container.offsetWidth / 2);
+          suppressScrollRef.current = true;
+          container.scrollLeft = mappedLeft;
+          setActiveIndex(mapped);
+        } else {
+          setActiveIndex(mapped);
+        }
       }
       return;
     }
 
-    animateScroll(container, targetLeft, 600);
+    // if nav was clicked, skip animation (already animated in click handler) and only normalize
+    if (navClickRef.current) {
+      navClickRef.current = false;
+      // schedule normalization after nav animation completes
+      const adjustAfter = () => {
+        const middleStart = len;
+        const middleEnd = 2 * len - 1;
+        if (activeIndex < middleStart || activeIndex > middleEnd) {
+          const mapped = ((activeIndex % len) + len) % len + len;
+          const mappedChild = container.children[mapped];
+          if (mappedChild) {
+            const mappedLeft = Math.round(mappedChild.offsetLeft + mappedChild.offsetWidth / 2 - container.offsetWidth / 2);
+            suppressScrollRef.current = true;
+            container.scrollLeft = mappedLeft;
+            setActiveIndex(mapped);
+          } else {
+            setActiveIndex(mapped);
+          }
+        }
+      };
+      const t = setTimeout(adjustAfter, 550);
+      return () => clearTimeout(t);
+    }
+
+    // autoplay: animate smoothly
+    animateScroll(container, targetLeft, 500);
 
     // after animation, normalize index if it moved into cloned area
     const adjustAfter = () => {
@@ -113,11 +178,18 @@ export default function ReferencesSlider() {
       const middleEnd = 2 * len - 1;
       if (activeIndex < middleStart || activeIndex > middleEnd) {
         const mapped = ((activeIndex % len) + len) % len + len;
-        instantScrollRef.current = true;
-        setActiveIndex(mapped);
+        const mappedChild = container.children[mapped];
+        if (mappedChild) {
+          const mappedLeft = Math.round(mappedChild.offsetLeft + mappedChild.offsetWidth / 2 - container.offsetWidth / 2);
+          suppressScrollRef.current = true;
+          container.scrollLeft = mappedLeft;
+          setActiveIndex(mapped);
+        } else {
+          setActiveIndex(mapped);
+        }
       }
     };
-    const t = setTimeout(adjustAfter, 650);
+    const t = setTimeout(adjustAfter, 550);
     return () => clearTimeout(t);
   }, [activeIndex, len]);
 
