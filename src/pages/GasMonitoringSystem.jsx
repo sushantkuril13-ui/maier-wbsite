@@ -3,8 +3,10 @@ import ProductPageLayout from '../components/ProductPageLayout.jsx';
 
 export default function GasMonitoringSystem() {
   const slides = [
-    { img: '/images/Product Images/PRV.png', caption: 'Ga System' },
-    { img: '/images/Product Images/OLI.png', caption: 'Gas Monitoring System' },
+    { img: '/images/Product Images/GMS_SDGR02D.png', caption: 'SDGR-02D' },
+    { img: '/images/Product Images/GMS_SDGR02.png', caption: 'SDGR-02' },
+    { img: '/images/Product Images/GMS_DGR02.png', caption: 'DGR-02' },
+    { img: '/images/Product Images/GMS_DGR05.png', caption: 'DGR-05' },
     // additional images can be added here
   ];
 
@@ -178,7 +180,7 @@ export default function GasMonitoringSystem() {
           <h2>Catalogue</h2>
           <p>You can download the complete gas monitoring system catalogue below:</p>
           <a 
-            href="/downloads/gas-monitoring-catalogue.pdf" 
+            href="/downloads/GAS MONITORING SYSTEM (AUTOMAT) Catalogue.pdf" 
             download 
             className="btn btn-download"
           >

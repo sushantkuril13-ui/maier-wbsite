@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/components/Footer.css';
 
 export default function Footer() {
@@ -6,41 +7,41 @@ export default function Footer() {
     {
       title: 'Products',
       links: [
-        { label: 'Radiator Valves', href: '#radiator-valves' },
-        { label: 'Protection Devices', href: '#protection-devices' },
-        { label: 'Oil Level Indicators', href: '#oil-level' },
-        { label: 'Dehydrating Breathers', href: '#breathers' },
-        { label: 'Pressure Relief Devices', href: '#pressure-relief' },
-        { label: 'Tank Components', href: '#tank' },
-        { label: 'Tap Changers', href: '#changers' }
+        { label: 'Gas Monitoring System (Automat)', href: '/gas-monitoring-system' },
+        { label: 'Low/High Pressure Alarm System', href: '/low-high-pressure-alarm-system' },
+        { label: 'Oil Level Indicator', href: '/oil-level-indicators' },
+        { label: 'Pressure Relief Valve', href: '/pressure-relief-valve' },
+        { label: 'PRV with Liquid Level Indicator', href: '/prv-with-liquid-level-indicator' },
+        { label: 'Solenoid Interlock Device', href: '/solenoid-interlock-device' },
+        { label: 'Tank Valve', href: '/tank-valve' },
+        { label: 'Tubular Oil Level Gauge', href: '/tubular-oil-level-gauge' },
+        { label: 'Threaded Pressure Relief Valve', href: '/threaded-pressure-relief-valve' }
       ]
     },
     {
       title: 'Company',
       links: [
-        { label: 'About Us', href: '#about' },
-        { label: 'Our Values', href: '#values' },
-        { label: 'Maier Group', href: '#maier-group' },
-        { label: 'Contact', href: '#contact' }
+        { label: 'About Us', href: '/company' },
+        { label: 'Our Values', href: '/company#values' },
+        { label: 'Contact', href: '/support' }
       ]
     },
     {
       title: 'Quicklinks',
       links: [
-        { label: 'Homepage', href: '#home' },
-        { label: 'Downloads', href: '#downloads' },
-        { label: 'References', href: '#references' },
-        { label: 'Support & Contact', href: '#support' },
-        { label: 'Contact Persons', href: '#persons' }
+        { label: 'Homepage', href: '/#hero-slider' },
+        { label: 'References', href: '/#references' },
+        { label: 'Support & Contact', href: '/support' },
+        { label: 'Contact Persons', href: '/support#persons' }
       ]
     }
   ];
 
   const socialLinks = [
     { icon: 'f', label: 'Facebook', href: 'https://www.facebook.com/Albert-Maier-GmbH' },
-    { icon: 'in', label: 'LinkedIn', href: 'https://www.linkedin.com/company/albert-maier-gmbh' },
-    { icon: '☎', label: 'Phone', href: 'tel:+49703336941' },
-    { icon: '✉', label: 'Email', href: 'mailto:info@maier-accessories.com' }
+    { icon: 'in', label: 'LinkedIn', href: 'https://in.linkedin.com/company/rajshi-engineers' },
+    { icon: '☎', label: 'Phone', href: 'tel:+91 – 9415113335' },
+    { icon: '✉', label: 'Email', href: 'mailto:rajshijhs@yahoo.com' }
   ];
 
   return (
@@ -53,7 +54,11 @@ export default function Footer() {
               <ul>
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a href={link.href}>{link.label}</a>
+                    {link.href.startsWith('/') ? (
+                      <Link to={link.href}>{link.label}</Link>
+                    ) : (
+                      <a href={link.href}>{link.label}</a>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -65,17 +70,14 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <div className="footer-pages">
-            <a href="#contact">Contact</a>
-            <a href="#imprint">Imprint</a>
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#home">Homepage</a>
-            <a href="#copyright">Copyright ©</a>
+            <a href="/support">Contact</a>
+            <a href="/imprint">Imprint</a>
+            <a href="/">Homepage</a>
+            <a href="/">Copyright ©</a>
           </div>
 
           <p className="footer-copyright">
-            Built with React and CSS3 - Copyright © 2024 Maier GmbH<br />
-            Webservice & Webhosting: <a href="http://www.sercosys.de" target="_blank" rel="noopener noreferrer">SERCOSYS</a> | 
-            Conception & Layout: <a href="http://karius-partner.de/" target="_blank" rel="noopener noreferrer">Karius & Partner</a>
+            Built with React and CSS3 - Copyright © 2024 Rajshi Enterprise<br />
           </p>
 
           <div className="footer-social">

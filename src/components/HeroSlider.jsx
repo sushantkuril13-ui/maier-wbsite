@@ -5,34 +5,70 @@ export default function HeroSlider() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
 
+  // product entries derived from pages directory; update images and descriptions as needed
   const slides = [
     {
       id: 1,
-      image: './images/Startseite-Slider/Hermetic-Transformer-Protection-Relay-MCHD-.png',
-      title: 'Transformer Protection Relay MCHD',
-      description: 'Transformer protection device MCHD - the all-in-one device for distribution transformers! Measures Oil level, gas accumulation, pressure and oil temperature. C5-M coating (SOLIDLINE®) ✔ Reliable ✔ Durable ✔',
-      link: '#protection-devices'
+      title: 'Gas Monitoring System (Automat)',
+      description: 'Used in transformers or other sealed tanks, our gas monitoring systems maintain a constant nitrogen or inert gas pressure to prevent atmospheric air and moisture ingress, with dual-stage regulation and safety valves for reliable operation.',
+      image: '/images/Product Images/GMS_SDGR02D.png',
+      link: '/gas-monitoring-system'
     },
     {
       id: 2,
-      image: './images/Startseite-Slider/transformer-protection-devices.png',
-      title: 'Buchholz Relay MBP & Gas Sampling Device MGSD',
-      description: 'The Buchholz Relay MBP and Gas Sampling Device MGSD for best protection of your transformer! C5-M Coating (SOLIDLINE®) ✔ Compact ✔ Durable ✔ Reliable ✔',
-      link: '#buchholz-relay'
+      title: 'Low/High Pressure Alarm System',
+      description: 'An alarm system that detects both low and high pressure conditions in transformer tanks, providing early warning to protect equipment and prevent failures.',
+      image: '/images/Product Images/LHPAS.png',
+      link: '/low-high-pressure-alarm-system'
     },
     {
       id: 3,
-      image: './images/Startseite-Slider/Luftentfeuchter-DIN-42562.png',
-      title: 'Dehydrating Breather C5-M Approved',
-      description: 'Aluminum dehydrating breather for transformers - withstands the toughest conditions! aluminum housing ✔ C5-M coating (SOLIDLINE) ✔ Stainless steel parts ✔',
-      link: '#dehydrating-breathers'
+      title: 'Oil Level Indicator',
+      description: 'Transparent tubular indicators designed for precise oil level readings, suitable for a wide range of transformer sizes and models.',
+      image: '/images/Product Images/OLI.png',
+      link: '/oil-level-indicators'
     },
     {
       id: 4,
-      image: './images/Startseite-Slider/drosselklappe-din-42560-A-vorschweiflansch.png',
-      title: 'Radiator Valves for Transformers',
-      description: 'Radiator Valves in different designs. The Radiator valves enable a replacement of components without the necessity of removing any insulating liquid.',
-      link: '#radiator-valves'
+      title: 'Pressure Relief Valve',
+      description: 'Pressure relief valves manufactured in various sizes and models to vent excess pressure safely and protect transformer equipment from overpressure incidents.',
+      image: '/images/Product Images/PRV_DP3EF.png',
+      link: '/pressure-relief-valve'
+    },
+    {
+      id: 5,
+      title: 'PRV with Liquid Level Indicator',
+      description: 'A dual-purpose unit combining a pressure relief valve with a liquid level indicator, offering convenient monitoring and safety in one compact assembly.',
+      image: '/images/Product Images/PRV_LIQUID INDICATOR.png',
+      link: '/prv-with-liquid-level-indicator'
+    },
+    {
+      id: 6,
+      title: 'Solenoid Interlock Device',
+      description: 'Solenoid interlock devices providing reliable electrical isolation to ensure safe servicing and prevent unauthorized operation of transformer equipment.',
+      image: '/images/Product Images/SOLENOID INTERLOCK DEVICE.png',
+      link: '/solenoid-interlock-device'
+    },
+    {
+      id: 7,
+      title: 'Tank Valve',
+      description: 'Tank valves built for durability, allowing component replacement without draining the insulating liquid and ensuring smooth maintenance operations.',
+      image: '/images/Product Images/TANK VALVE.png',
+      link: '/tank-valve'
+    },
+    {
+      id: 8,
+      title: 'Tubular Oil Level Gauge',
+      description: 'Tubular oil level gauges offering clear, accurate indication of fluid level, facilitating easy visual inspection and maintenance.',
+      image: '/images/Product Images/TOG_AT.png',
+      link: '/tubular-oil-level-gauge'
+    },
+    {
+      id: 9,
+      title: 'Threaded Pressure Relief Valve',
+      description: 'Threaded pressure relief valves providing a compact solution with easy installation and secure connections for various transformer applications.',
+      image: '/images/Product Images/PRV_PIP-32.png',
+      link: '/threaded-pressure-relief-valve'
     }
   ];
 
@@ -69,8 +105,8 @@ export default function HeroSlider() {
           {slides.map((slide, index) => (
             <div
               key={slide.id}
-              className={`slide ${index === activeSlide ? 'active' : ''}`}
-              style={{ backgroundImage: `url('${slide.image}')` }}
+              className={`no-bottom slide ${index === activeSlide ? 'active' : ''}`}
+              style={{ backgroundImage: `url('${encodeURI(slide.image)}')` }}
             />
           ))}
         <div className="slider-dots">

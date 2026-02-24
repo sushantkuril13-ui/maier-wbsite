@@ -62,6 +62,46 @@
   margin-bottom: 0;
 }
 
+/* acronym / key‑values list */
+.company-acronym {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem 1.5rem;
+}
+.company-acronym li {
+  font-size: 1rem;
+  color: #333;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem 0.6rem 2.4rem;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.company-acronym li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+.company-acronym .acronym-letter {
+  font-weight: 700;
+  color: #fff;
+  background: #b20e10;
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 @media (max-width: 1024px) {
   .company-content {
     gap: 2rem;

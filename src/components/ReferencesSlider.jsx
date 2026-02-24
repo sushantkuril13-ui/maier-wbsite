@@ -2,14 +2,38 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import '../styles/components/ReferencesSlider.css';
 
 export default function ReferencesSlider() {
-  const references = [
-    { id: 1, name: 'Alstom', logo: '/images/referenzen/Website-Logo-Alstom.png' },
-    { id: 2, name: 'CGPower', logo: '/images/referenzen/Website-Logo-CG.png' },
-    { id: 3, name: 'Schneider', logo: '/images/referenzen/Website-Logo-Schneider.png' },
-    { id: 4, name: 'SGB Smit', logo: '/images/referenzen/Website-Logo-SGB-Smit.png' },
-    { id: 5, name: 'BEZ', logo: '/images/referenzen/Website-Logo-BEZ.png' },
-    { id: 6, name: 'Toshiba', logo: '/images/referenzen/Website-Logo-Toshiba.png' }
+  const customerFiles = [
+    'bharat-bijlee.jpg',
+    'bhel.gif',
+    'emmess-control.png',
+    'g.gif',
+    'indian-railways.png',
+    'marsons.gif',
+    'pete.png',
+    'schnider-electric.png',
+    'sct.png',
+    'seil.png',
+    'serwel.png',
+    'telk.png',
+    'tesla.gif',
+    'toshiba.png',
+    'unindo.png',
+    'vidyth.jpg',
+    'vijai.jpg'
   ];
+
+  const references = customerFiles.map((file, idx) => {
+    const base = file.replace(/\.[^.]+$/, '');
+    const name = base
+      .split(/[-_]/)
+      .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ');
+    return {
+      id: idx + 1,
+      name,
+      logo: `/images/customer-images/${file}`
+    };
+  });
 
   const len = references.length;
   // create tripled list so we can loop seamlessly
@@ -196,7 +220,7 @@ export default function ReferencesSlider() {
   return (
     <section id="references" className="references-section">
       <div className="container">
-        <h2 className="section-title">References</h2>
+        <h2 className="section-title">Our Customers</h2>
         <div className="slider-wrapper">
           <button className="references-nav-btn prev-btn" onClick={prevSlide} aria-label="Previous reference">
             ‹
