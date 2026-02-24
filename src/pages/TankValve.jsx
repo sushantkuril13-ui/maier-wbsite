@@ -156,7 +156,7 @@ export default function TankValve() {
           <h2>Catalogue</h2>
           <p>You can download the complete tank valve catalogue below:</p>
           <a 
-            href="/downloads/tank-valve-catalogue.pdf" 
+            href="/downloads/TANK VALVE Catalogue.pdf" 
             download 
             className="btn btn-download"
           >

@@ -51,6 +51,13 @@
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.06);
   scroll-snap-align: center;
+  filter: grayscale(100%);
+  transition: filter 220ms ease;
+}
+
+.reference-item:hover,
+.reference-item:focus-within {
+  filter: none;
 }
 
 /* hover/overlay and transitions */

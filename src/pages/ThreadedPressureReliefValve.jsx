@@ -430,7 +430,7 @@ export default function ThreadedPressureReliefValve() {
           <h2>Catalogue</h2>
           <p>You can download the complete pressure relief valve catalogue below:</p>
           <a 
-            href="/downloads/threaded-pressure-relief-valve-catalogue.pdf" 
+            href="/downloads/Threaded PRV Catalogue.pdf" 
             download 
             className="btn btn-download"
           >

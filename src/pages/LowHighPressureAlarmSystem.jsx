@@ -103,7 +103,7 @@ export default function LowHighPressureAlarmSystem() {
           <h2>Catalogue</h2>
           <p>You can download the complete low/high pressure alarm system catalogue below:</p>
           <a 
-            href="/downloads/low-high-pressure-alarm-system-catalogue.pdf" 
+            href="/downloads/LOWHIGH PRESSURE ALARM SYSTEM Catalogue.pdf" 
             download 
             className="btn btn-download"
           >

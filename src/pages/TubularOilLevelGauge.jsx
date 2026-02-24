@@ -156,7 +156,7 @@ export default function TubularOilLevelGauge() {
           <h2>Catalogue</h2>
           <p>You can download the complete tubular oil level gauge catalogue below:</p>
           <a 
-            href="/downloads/tubular-oil-level-gauge-catalogue.pdf" 
+            href="/downloads/TUBULAR OIL LEVEL GAUGE Catalogue.pdf" 
             download 
             className="btn btn-download"
           >

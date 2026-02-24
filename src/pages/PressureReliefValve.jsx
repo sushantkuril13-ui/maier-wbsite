@@ -220,7 +220,7 @@ export default function PressureReliefValve() {
           <h2>Catalogue</h2>
           <p>You can download the complete pressure relief valve catalogue below:</p>
           <a 
-            href="/downloads/pressure-relief-valve-catalogue.pdf" 
+            href="/downloads/PRV Catalogue.pdf" 
             download 
             className="btn btn-download"
           >

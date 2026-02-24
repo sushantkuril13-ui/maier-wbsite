@@ -196,7 +196,7 @@ export default function Company() {
             </section>
 
             {/* Values Section */}
-            <section className="values-section">
+            <section id="values" className="values-section">
               <div className="container">
                 <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2.5rem', color: '#333' }}>Our Core Values</h2>
                 <div className="values-grid">

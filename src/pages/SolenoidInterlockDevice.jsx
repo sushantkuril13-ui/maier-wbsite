@@ -139,7 +139,7 @@ export default function SolenoidInterlockDevice() {
           <h2>Catalogue</h2>
           <p>You can download the complete solenoid interlock device catalogue below:</p>
           <a 
-            href="/downloads/solenoid-interlock-device-catalogue.pdf" 
+            href="/downloads/SOLENOID INTERLOCK DEVICE Catalogue.pdf" 
             download 
             className="btn btn-download"
           >

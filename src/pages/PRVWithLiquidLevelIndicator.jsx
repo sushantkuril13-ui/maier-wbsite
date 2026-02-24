@@ -161,7 +161,7 @@ export default function PRVWithLiquidLevelIndicator() {
           <h2>Catalogue</h2>
           <p>You can download the complete PRV with Liquid Level Indicator catalogue below:</p>
           <a 
-            href="/downloads/prv-with-liquid-level-indicator-catalogue.pdf" 
+            href="/downloads/PRV WITH LIQUID LEVEL INDICATOR  Catalogue.pdf" 
             download 
             className="btn btn-download"
           >

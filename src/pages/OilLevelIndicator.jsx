@@ -150,7 +150,7 @@ export default function OilLevelIndicator() {
           <h2>Catalogue</h2>
           <p>You can download the complete oil level indicator catalogue below:</p>
           <a 
-            href="/downloads/oil-level-indicator-catalogue.pdf" 
+            href="/downloads/Oil level indicator  Catalogue.pdf" 
             download 
             className="btn btn-download"
           >

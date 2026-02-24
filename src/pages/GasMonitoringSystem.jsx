@@ -180,7 +180,7 @@ export default function GasMonitoringSystem() {
           <h2>Catalogue</h2>
           <p>You can download the complete gas monitoring system catalogue below:</p>
           <a 
-            href="/downloads/gas-monitoring-catalogue.pdf" 
+            href="/downloads/GAS MONITORING SYSTEM (AUTOMAT) Catalogue.pdf" 
             download 
             className="btn btn-download"
           >
