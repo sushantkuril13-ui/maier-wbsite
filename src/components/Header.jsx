@@ -9,7 +9,6 @@ export default function Header() {
 
   // const languages = ['DE', 'EN', 'TR'];
   const menuItems = [
-    // { label: 'News', href: '/news' },
     { label: 'Transformer Accessories', href: '/transformer-accessories' },
     { label: 'Applications', href: '/applications' },
     { label: 'Company', href: '/company' },
@@ -48,7 +47,7 @@ export default function Header() {
       </div>
 
       <nav className="navbar">
-        <div className="container">
+        <div className="container-header">
           <div className="nav-wrapper">
             <button 
               className="menu-toggle"

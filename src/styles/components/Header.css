@@ -142,6 +142,7 @@
 .navbar {
   border-bottom: 1px solid rgba(240, 240, 240, 0.3);
   background-color: transparent;
+  font-size: 1rem;
 }
 
 .nav-wrapper {
@@ -171,12 +172,19 @@
   border-bottom: 3px solid transparent;
   transition: all 0.3s ease;
   text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 /* dropdown container */
 .nav-item.dropdown {
   position: relative;
   text-align: left; /* ensure internal left alignment */
+}
+
+.container-header{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px
 }
 
 .dropdown-content {

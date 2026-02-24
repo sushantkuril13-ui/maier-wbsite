@@ -80,9 +80,10 @@ a:hover {
    ======================================== */
 
 .container {
-    max-width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
+  
 }
 
 /* Site shell: center everything inside a white card with red accent */
@@ -250,7 +251,7 @@ a:hover {
    ======================================== */
 
 .navbar {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(240, 240, 240, 0.3);
   position: sticky;
   top: 0;
