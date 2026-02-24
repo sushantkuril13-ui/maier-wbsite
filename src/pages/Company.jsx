@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-import '../styles/pages/Company.css';
+import '../styles/components/Company.css';
 
 export default function Company() {
   const [activeTab, setActiveTab] = useState('company');

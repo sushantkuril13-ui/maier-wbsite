@@ -7,10 +7,16 @@ export default defineConfig({
   root: './',
   publicDir: 'public',
   server: {
-    port: 8000,
+    port: 5173,
     host: 'localhost',
-    strictPort: true,
-    open: false
+    strictPort: false,
+    open: false,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8000',
+        changeOrigin: true
+      }
+    }
   },
   resolve: {
     alias: {

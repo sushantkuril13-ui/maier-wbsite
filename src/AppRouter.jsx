@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App.jsx';
 import Company from './pages/Company.jsx';
+import Support from './pages/Support.jsx';
 import TransformerAccessories from './pages/TransformerAccessories.jsx';
 import GasMonitoringSystem from './pages/GasMonitoringSystem.jsx';
 import LowHighPressureAlarmSystem from './pages/LowHighPressureAlarmSystem.jsx';
@@ -19,6 +20,7 @@ export default function AppRouter() {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/company" element={<Company />} />
+        <Route path="/support" element={<Support />} />
         <Route path="/transformer-accessories" element={<TransformerAccessories />} />
         <Route path="/gas-monitoring-system" element={<GasMonitoringSystem />} />
         <Route path="/low-high-pressure-alarm-system" element={<LowHighPressureAlarmSystem />} />
