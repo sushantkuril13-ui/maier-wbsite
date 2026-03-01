@@ -17,15 +17,15 @@ const orderedCategories = [
 ];
 
 const categoryImageMap = {
-  'Gas Monitoring System (Automat)': '/images/Product Images/Gas Monitoring.png',
-  'Low/High Pressure Alarm System': '/images/Product Images/Pressure Alarm.png',
+  'Gas Monitoring System (Automat)': '/images/Product Images/GMS_DGR02.png',
+  'Low/High Pressure Alarm System': '/images/Product Images/LHPAS.png',
   'Oil Level Indicator': '/images/Product Images/OLI.png',
   'Pressure Relief Valve': '/images/Product Images/PRV.png',
-  'PRV with Liquid Level Indicator': '/images/Product Images/PRV-LLI.png',
+  'PRV with Liquid Level Indicator': '/images/Product Images/PRV_LIQUID INDICATOR 2.png',
   'Solenoid Interlock Device': '/images/Product Images/Solenoid Interlock.png',
   'Tank Valve': '/images/Product Images/Tank Valve.png',
-  'Tubular Oil Level Gauge': '/images/Product Images/Tubular Gauge.png',
-  'Threaded Pressure Relief Valve': '/images/Product Images/Threaded PRV.png',
+  'Tubular Oil Level Gauge': '/images/Product Images/TOLG_BT.png',
+  'Threaded Pressure Relief Valve': '/images/Product Images/PRV_BB2P.png',
 };
 
 const categories = orderedCategories.map(name => {
@@ -41,22 +41,23 @@ const categories = orderedCategories.map(name => {
 export default function ProductCategoryTabs() {
   const [active, setActive] = React.useState(0);
   return (
-    <div className="product-category-tabs container">
-      <div className="tab-content">
-        <div className="img-wrapper">
-          <img src={categories[active].img} alt={categories[active].title} />
-        </div>
-        <h3>{categories[active].title}</h3>
-        <p>{categories[active].desc}</p>
-        <a className="btn" href={categories[active].link}>Category</a>
-      </div>
-      <ul className="tab-list">
-        {categories.map((cat, i) => (
-          <li key={cat.title} className={i === active ? 'active' : ''} onClick={() => setActive(i)}>
-            {cat.title}
-          </li>
-        ))}
-      </ul>
-    </div>
+    // <div className="product-category-tabs container">
+    //   <div className="tab-content">
+    //     <div className="img-wrapper">
+    //       <img src={categories[active].img} alt={categories[active].title} />
+    //     </div>
+    //     <h3>{categories[active].title}</h3>
+    //     <p>{categories[active].desc}</p>
+    //     <a className="btn" href={categories[active].link}>Category</a>
+    //   </div>
+    //   <ul className="tab-list">
+    //     {categories.map((cat, i) => (
+    //       <li key={cat.title} className={i === active ? 'active' : ''} onClick={() => setActive(i)}>
+    //         {cat.title}
+    //       </li>
+    //     ))}
+    //   </ul>
+    // </div>
+  <div></div>
   );
 }

@@ -1,33 +1,34 @@
 [
+  { "title": "Gas Monitoring System (Model SDGR-02)", "img": "/images/Product Images/GMS_SDGR02.png", "link": "/gas-monitoring-system", "filter": "Gas Monitoring System (Automat)" },
+  { "title": "Gas Monitoring System (Model SDGR-02D)", "img": "/images/Product Images/GMS_SDGR02D.png", "link": "/gas-monitoring-system", "filter": "Gas Monitoring System (Automat)" },
+  { "title": "Gas Monitoring System (Model DGR-02)", "img": "/images/Product Images/GMS_DGR02.png", "link": "/gas-monitoring-system", "filter": "Gas Monitoring System (Automat)" },
+  { "title": "Gas Monitoring System (Model DGR-05)", "img": "/images/Product Images/GMS_DGR05.png", "link": "/gas-monitoring-system", "filter": "Gas Monitoring System (Automat)" },
 
-  { "title": "Gas Monitoring System (Model SDGR-02)", "img": "/images/Product Images/Gas Monitoring.png", "link": "/gas-monitoring-system", "filter": "Gas Monitoring System (Automat)" },
-  { "title": "Gas Monitoring System (Model SDGR-02D)", "img": "/images/Product Images/Gas Monitoring.png", "link": "/gas-monitoring-sdgr-02d", "filter": "Gas Monitoring System (Automat)" },
-  { "title": "Gas Monitoring System (Model DGR-02)", "img": "/images/Product Images/Gas Monitoring.png", "link": "/gas-monitoring-dgr-02", "filter": "Gas Monitoring System (Automat)" },
-  { "title": "Gas Monitoring System (Model TGR-02)", "img": "/images/Product Images/Gas Monitoring.png", "link": "/gas-monitoring-tgr-02", "filter": "Gas Monitoring System (Automat)" },
+  { "title": "Low/High Pressure Alarm System (Model LPA-100)", "img": "/images/Product Images/LHPAS.png", "link": "/low-high-pressure-alarm-system", "filter": "Low/High Pressure Alarm System" },
+  { "title": "Low/High Pressure Alarm System (Model LPA-200)", "img": "/images/Product Images/LHPAS.png", "link": "/low-high-pressure-alarm-system", "filter": "Low/High Pressure Alarm System" },
 
-  { "title": "Low/High Pressure Alarm System (Model LPA-100)", "img": "/images/Product Images/Pressure Alarm.png", "link": "/low-high-pressure-alarm-lpa-100", "filter": "Low/High Pressure Alarm System" },
-  { "title": "Low/High Pressure Alarm System (Model LPA-200)", "img": "/images/Product Images/Pressure Alarm.png", "link": "/low-high-pressure-alarm-lpa-200", "filter": "Low/High Pressure Alarm System" },
+  { "title": "Thread Mounting Oil Level Indicator (Model 502 Series / Float Ball Type)", "img": "/images/Product Images/OLI.png", "link": "/oil-level-indicators", "filter": "Oil Level Indicator" },
+  { "title": "Vertical Mounting Oil Level Indicator (Clear Top / Pop-up Indicator)", "img": "/images/Product Images/OLI (2).png", "link": "/oil-level-indicators", "filter": "Oil Level Indicator" },
+  { "title": "Prismatic Oil Level Indicator (Model 6040 / Acrylic Body)", "img": "/images/Product Images/OLI_PRISMATIC.png", "link": "/oil-level-indicators", "filter": "Oil Level Indicator" },
+  { "title": "Vertical Mounting Oil Level Indicator (Yellow Cap / Model F-25OCL)", "img": "/images/Product Images/OLIVM_F25.png", "link": "/oil-level-indicators", "filter": "Oil Level Indicator" },
 
-  { "title": "Thread Mounting Oil Level Indicator (Model 502 Series / Float Ball Type)", "img": "/images/Product Images/OLI.png", "link": "/oil-level-indicator-thread-502-original", "filter": "Oil Level Indicator" },
-  { "title": "Vertical Mounting Oil Level Indicator (Clear Top / Pop-up Indicator)", "img": "/images/Product Images/OLI (2).png", "link": "/oil-level-indicator-vertical-clear", "filter": "Oil Level Indicator" },
-  { "title": "Prismatic Oil Level Indicator (Model 6040 / Acrylic Body)", "img": "/images/Product Images/OLI (3).png", "link": "/oil-level-indicator-prismatic-6040", "filter": "Oil Level Indicator" },
-  { "title": "Vertical Mounting Oil Level Indicator (Yellow Cap / Model F-25OCL)", "img": "/images/Product Images/OLI (4).png", "link": "/oil-level-indicator-vertical-f25ocl", "filter": "Oil Level Indicator" },
+  { "title": "Pressure Relief Valve - Flange Mounting with Electrical Contact (Model DP-3 / 4-Bolt)", "img": "/images/Product Images/PRV.png", "link": "/pressure-relief-valve", "filter": "Pressure Relief Valve" },
+  { "title": "Pressure Relief Valve - Side View (Model DP-3)", "img": "/images/Product Images/PRV (2).png", "link": "/pressure-relief-valve", "filter": "Pressure Relief Valve" },
+  { "title": "High Capacity Pressure Relief Valve (Model DP-6 / 6-Bolt Flange)", "img": "/images/Product Images/PRV (3).png", "link": "/pressure-relief-valve", "filter": "Pressure Relief Valve" },
+  { "title": "Pressure Relief Valve with Oil Collection Shroud/Elbow (Model DP-3EF)", "img": "/images/Product Images/PRV_DP3EF.png", "link": "/pressure-relief-valve", "filter": "Pressure Relief Valve" },
+  { "title": "Pressure Relief Valve with Protective Shroud (Model DP-6EF)", "img": "/images/Product Images/PRV_DP6EF.png", "link": "/pressure-relief-valve", "filter": "Pressure Relief Valve" },
+  { "title": "Flange Pressure Relief Valve Non-Electrical (Model P-50)", "img": "/images/Product Images/PRV (6).png", "link": "/pressure-relief-valve", "filter": "Pressure Relief Valve" },
 
-  { "title": "Pressure Relief Valve - Flange Mounting with Electrical Contact (Model DP-3 / 4-Bolt)", "img": "/images/Product Images/PRV.png", "link": "/pressure-relief-valve-dp3", "filter": "Pressure Relief Valve" },
-  { "title": "Pressure Relief Valve - Side View (Model DP-3)", "img": "/images/Product Images/PRV (2).png", "link": "/pressure-relief-valve-dp3-side", "filter": "Pressure Relief Valve" },
-  { "title": "High Capacity Pressure Relief Valve (Model DP-6 / 6-Bolt Flange)", "img": "/images/Product Images/PRV (3).png", "link": "/pressure-relief-valve-dp6", "filter": "Pressure Relief Valve" },
-  { "title": "Pressure Relief Valve with Oil Collection Shroud/Elbow (Model DP-ØEF#S)", "img": "/images/Product Images/PRV (4).png", "link": "/pressure-relief-valve-dpef-s", "filter": "Pressure Relief Valve" },
-  { "title": "Pressure Relief Valve with Protective Shroud and Pull Handle (Model DP-ØEF#SP)", "img": "/images/Product Images/PRV (5).png", "link": "/pressure-relief-valve-dpef-sp", "filter": "Pressure Relief Valve" },
-  { "title": "Flange Pressure Relief Valve (Non-Electrical / Model P-50)", "img": "/images/Product Images/PRV (6).png", "link": "/pressure-relief-valve-p50", "filter": "Pressure Relief Valve" },
-
-  { "title": "PRV with Liquid Level Indicator (Model PRV-LLI-100)", "img": "/images/Product Images/PRV-LLI.png", "link": "/prv-with-liquid-level-indicator", "filter": "PRV with Liquid Level Indicator" },
+  { "title": "PRV with Liquid Level Indicator (Model PRV-LLI-100)", "img": "/images/Product Images/PRV_LIQUID INDICATOR 2.png", "link": "/prv-with-liquid-level-indicator", "filter": "PRV with Liquid Level Indicator" },
   
-  { "title": "Threaded Pressure Relief Valve (Model TPV-100)", "img": "/images/Product Images/Threaded PRV.png", "link": "/threaded-pressure-relief-valve-tpv-100", "filter": "Threaded Pressure Relief Valve" },
+  { "title": "Threaded Pressure Relief Valve (Model TPV-100)", "img": "/images/Product Images/PRV_PIP-32.png", "link": "/threaded-pressure-relief-valve", "filter": "Threaded Pressure Relief Valve" },
+  { "title": "Threaded Pressure Relief Valve (Model TPV-200)", "img": "/images/Product Images/PRV_PIP-38.png", "link": "/threaded-pressure-relief-valve", "filter": "Threaded Pressure Relief Valve" },
   
-  { "title": "Solenoid Interlock Device - Castle Lock & Key (SID-10)", "img": "/images/Product Images/Solenoid Interlock.png", "link": "/solenoid-interlock-sid-10", "filter": "Solenoid Interlock Device" },
+  { "title": "Solenoid Interlock Device - Castle Lock & Key (SID-10)", "img": "/images/Product Images/SOLENOID INTERLOCK DEVICE.png", "link": "/solenoid-interlock-device", "filter": "Solenoid Interlock Device" },
 
-  { "title": "Tank Valves for Inflation/Deflation (Model GFV Series)", "img": "/images/Product Images/Tank Valve.png", "link": "/tank-valve-gfv-42551", "filter": "Tank Valve" },
-  { "title": "Tank Valve - Service/Drain (Model GFV-2)", "img": "/images/Product Images/Tank Valve.png", "link": "/tank-valve-gfv-2", "filter": "Tank Valve" },
+  { "title": "Tank Valves for Inflation/Deflation (Model GFV Series)", "img": "/images/Product Images/Tank Valve.png", "link": "/tank-valve", "filter": "Tank Valve" },
+  { "title": "Tank Valve - Service/Drain (Model GFV-2)", "img": "/images/Product Images/Tank Valve.png", "link": "/tank-valve", "filter": "Tank Valve" },
 
-  { "title": "Tubular Oil Level Gauge (Model TOG-100)", "img": "/images/Product Images/Tubular Gauge.png", "link": "/tubular-oil-level-gauge-tog-100", "filter": "Tubular Oil Level Gauge" }
+  { "title": "Tubular Oil Level Gauge (Model TOG-100)", "img": "/images/Product Images/TOG_AT.png", "link": "/tubular-oil-level-gauge", "filter": "Tubular Oil Level Gauge" },
+  { "title": "Tubular Oil Level Gauge (Model TOG-200)", "img": "/images/Product Images/TOLG_BT.png", "link": "/tubular-oil-level-gauge", "filter": "Tubular Oil Level Gauge" }
 ]

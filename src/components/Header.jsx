@@ -10,7 +10,7 @@ export default function Header() {
   // const languages = ['DE', 'EN', 'TR'];
   const menuItems = [
     { label: 'Transformer Accessories', href: '/transformer-accessories' },
-    { label: 'Applications', href: '/applications' },
+    // { label: 'Applications', href: '/applications' },
     { label: 'Company', href: '/company' },
     { label: 'Support & Contact', href: '/support' }
   ];
