@@ -117,7 +117,8 @@ a:hover {
 
 /* Light grey background for content below hero slider */
 .content-below-hero {
-  background: #f5f5f5;
+  /* background: #f5f5f5; */
+  background: rgb(245 245 245 / 3%);
   padding: 40px 28px;
   margin: 0;
   border-radius: 0 0 6px 6px; /* rounded bottom corners only */

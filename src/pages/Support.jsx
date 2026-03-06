@@ -74,7 +74,7 @@ export default function Support() {
           <main className="support-main">
             {/* Hero Section */}
             <section className="support-hero">
-              <div className="hero-content">
+              <div className="hero-content-support">
                 <h1>Contact Us</h1>
                 <p className="hero-tagline">Get in touch with Rajshi Engineers</p>
               </div>
@@ -112,7 +112,7 @@ export default function Support() {
                       </p>
                     </div>
 
-                    <div className="info-highlights">
+                    {/* <div className="info-highlights">
                       <div className="highlight">
                         <div className="highlight-icon">📍</div>
                         <p>Centrally Located</p>
@@ -125,7 +125,7 @@ export default function Support() {
                         <div className="highlight-icon">🤝</div>
                         <p>Expert Support</p>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Contact Form */}
