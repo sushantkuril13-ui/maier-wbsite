@@ -198,7 +198,7 @@ export default function Company() {
             {/* Values Section */}
             <section id="values" className="values-section">
               <div className="container">
-                <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2.5rem', color: '#333' }}>Our Core Values</h2>
+                <h2 className="values-title">Our Core Values</h2>
                 <div className="values-grid">
                   <div className="value-card">
                     <h3>Innovation</h3>
@@ -248,8 +248,8 @@ export default function Company() {
             {/* Quality Features */}
             <section className="quality-features">
               <div className="container">
-                <h2 style={{ marginBottom: '3rem', fontSize: '2.5rem', color: '#333' }}>Our Quality Commitment</h2>
-                <p style={{ textAlign: 'center', fontSize: '1.1rem', color: '#666', marginBottom: '3rem', maxWidth: '800px', margin: '0 auto 3rem' }}>
+                <h2 className="quality-title">Our Quality Commitment</h2>
+                <p className="themed-subtitle">
                   Our commitment to providing our customers with the latest products in the market is backed with some of the below qualities.
                 </p>
                 <div className="quality-grid">
@@ -266,7 +266,7 @@ export default function Company() {
             {/* ISO Certificate Section */}
             <section className="iso-section">
               <div className="container">
-                <h2 style={{ marginBottom: '3rem', fontSize: '2.5rem', color: '#333', textAlign: 'center' }}>ISO 9001:2015 Certification</h2>
+                <h2 className="iso-title">ISO 9001:2015 Certification</h2>
                 <div className="iso-content">
                   <div className="iso-image">
                     <a href="/downloads/ISO-CERTIFICATE-.pdf" target="_blank" rel="noopener noreferrer" download className="iso-link">

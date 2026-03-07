@@ -8,6 +8,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --brand-red: #b20e10;
+  --brand-red-deep: #860b0d;
+  --ink-900: #080b11;
+  --ink-800: #151a22;
+  --ink-100: #d8dde8;
+  --ink-50: #eff3fb;
+  --panel-glass: rgba(12, 15, 21, 0.56);
+  --panel-glass-soft: rgba(10, 13, 19, 0.5);
+  --panel-line: rgba(213, 220, 234, 0.2);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,10 +28,9 @@ body {
   font-family: 'Arial', 'Helvetica', sans-serif;
   font-size: 14px;
   line-height: 1.6;
-  color: #333;
-  /* page background: use header-background-image.jpg with a subtle dark overlay for readability */
-  background-color: #fff;
-  background-image: linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.28)), url('/images/header-background-image.jpg');
+  color: var(--ink-50);
+  background-color: #0a1f3a;
+  background-image: linear-gradient(rgba(10, 31, 58, 0.52), rgba(10, 31, 58, 0.52)), url('/images/Gemini_Generated_Image_lc228tlc228tlc22.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -66,13 +77,13 @@ p {
 }
 
 a {
-  color: #0066cc;
+  color: #98bfff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #004499;
+  color: #c6dcff;
 }
 
 /* ========================================
@@ -88,7 +99,6 @@ a:hover {
 
 /* Site shell: center everything inside a white card with red accent */
 .site-shell {
-  /* show page background image through the shell */
   background: transparent;
   min-height: 100vh;
   padding-top: 12px;
@@ -96,14 +106,16 @@ a:hover {
 }
 
 .site-shell .site-card {
-    width: 100%;
-    /* increase max width so content can span wider screens */
-    max-width: 1200px;
-    margin: 18px auto;
-    background: transparent; /* transparent to show background image */
-    border-radius: 6px;
-    box-shadow: 0 18px 45px rgba(0,0,0,0.12);
-    overflow: hidden;
+  width: 100%;
+  max-width: 1400px;
+  margin: 18px auto;
+  background: linear-gradient(180deg, rgba(10, 13, 18, 0.42) 0%, rgba(10, 13, 18, 0.36) 100%);
+  border: 1px solid var(--panel-line);
+  border-radius: 6px;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.38);
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .site-topbar {
@@ -117,11 +129,11 @@ a:hover {
 
 /* Light grey background for content below hero slider */
 .content-below-hero {
-  /* background: #f5f5f5; */
-  background: rgb(245 245 245 / 3%);
+  background: var(--panel-glass-soft);
   padding: 40px 28px;
   margin: 0;
-  border-radius: 0 0 6px 6px; /* rounded bottom corners only */
+  border-top: 1px solid var(--panel-line);
+  border-radius: 0 0 6px 6px;
 }
 
 .grid {
@@ -163,7 +175,7 @@ a:hover {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 2rem;
-  color: #333;
+  color: var(--ink-50);
 }
 
 /* ========================================
@@ -173,9 +185,9 @@ a:hover {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #646363;
+  background-color: rgba(16, 20, 28, 0.82);
   color: white;
-  border: none;
+  border: 1px solid rgba(204, 220, 246, 0.26);
   border-radius: 4px;
   font-size: 14px;
   cursor: pointer;
@@ -185,17 +197,18 @@ a:hover {
 }
 
 .btn:hover {
-  background-color: #4a4a4a;
+  background-color: rgba(28, 33, 44, 0.9);
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.26);
 }
 
 .btn-primary {
-  background-color: #b20e10;
+  background-color: var(--brand-red);
+  border-color: var(--brand-red);
 }
 
 .btn-primary:hover {
-  background-color: #8a0a0b;
+  background-color: var(--brand-red-deep);
 }
 
 .btn-secondary {
@@ -211,8 +224,8 @@ a:hover {
    ======================================== */
 
 .card {
-  background: white;
-  border: 1px solid #e0e0e0;
+  background: linear-gradient(180deg, rgba(248, 250, 255, 0.96) 0%, rgba(235, 241, 251, 0.94) 100%);
+  border: 1px solid rgba(182, 194, 215, 0.45);
   border-radius: 4px;
   padding: 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -238,12 +251,12 @@ a:hover {
 .card-title {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: #ffffff;
 }
 
 .card-text {
   font-size: 0.95rem;
-  color: #666;
+  color: #cbd5e0;
   line-height: 1.8;
 }
 
@@ -252,8 +265,8 @@ a:hover {
    ======================================== */
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(240, 240, 240, 0.3);
+  background-color: rgba(20, 25, 34, 0.44);
+  border-bottom: 1px solid rgba(213, 220, 234, 0.2);
   position: sticky;
   top: 0;
   z-index: 1000;

@@ -1,14 +1,16 @@
 .product-gallery-section {
   padding: 4rem 0;
-  background-color: #fcfcfc;
-  border-top: 1px solid #eee;
+  background: linear-gradient(180deg, rgba(8, 21, 40, 0.78) 0%, rgba(11, 28, 51, 0.74) 100%);
+  border-top: 1px solid rgba(187, 206, 236, 0.24);
+  border-bottom: 1px solid rgba(187, 206, 236, 0.2);
+  border-radius: 8px;
 }
 
 .product-gallery-title {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 3rem;
-  color: #333;
+  color: #edf3ff;
 }
 
 .product-gallery-filter {
@@ -23,18 +25,18 @@
 
 .product-gallery-filter li {
   padding: 8px 18px;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: rgba(77, 97, 128, 0.22);
+  border: 1px solid rgba(205, 220, 244, 0.28);
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.9rem;
   transition: all 0.3s ease;
-  color: #666;
+  color: #dbe7fb;
 }
 
 .product-gallery-filter li:hover {
-  background: #f5f5f5;
-  border-color: #ccc;
+  background: rgba(178, 14, 16, 0.16);
+  border-color: rgba(255, 188, 189, 0.6);
 }
 
 .product-gallery-filter li.active {
@@ -50,9 +52,9 @@
 }
 
 .product-gallery-item {
-  background: #fff;
+  background: linear-gradient(180deg, rgba(246, 250, 255, 0.98) 0%, rgba(231, 239, 249, 0.96) 100%);
   padding: 1.5rem;
-  border: 1px solid #eee;
+  border: 1px solid rgba(166, 185, 213, 0.45);
   border-radius: 6px;
   text-align: center;
   transition: all 0.3s ease;
@@ -82,7 +84,7 @@
 
 .product-gallery-item h5 {
   font-size: 0.95rem;
-  color: #333;
+  color: #122947;
   margin: 0;
   line-height: 1.4;
   font-weight: 600;

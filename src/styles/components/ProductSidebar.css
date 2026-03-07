@@ -1,6 +1,6 @@
 .product-sidebar {
   background: #fff;
-  border-radius: 4px;
+  border-radius: 14px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   height: fit-content;
 }
@@ -17,6 +17,7 @@
 
 .sidebar-nav-item {
   border-bottom: 1px solid #eee;
+  border-radius: 14px;
 }
 
 .sidebar-nav-item:last-child {
@@ -41,6 +42,7 @@
 .sidebar-nav-item.active > .sidebar-nav-link {
   background-color: #b20e10;
   color: #fff;
+  /* border-radius: 14px; */
 }
 
 .sidebar-icon {
