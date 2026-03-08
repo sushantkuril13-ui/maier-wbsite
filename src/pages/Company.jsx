@@ -74,8 +74,8 @@ export default function Company() {
             <>
             {/* Hero Section */}
             <section className="hero-company">
-              <div className="hero-content">
-                <h1>Rajshi Enterprise</h1>
+              <div className="hero-content-company">
+                <h1>Rajshi Engineers</h1>
                 <p className="hero-tagline">Engineering Excellence Since 1977</p>
               </div>
             </section>
@@ -129,7 +129,7 @@ export default function Company() {
                 </div>
                 <div className="products-description">
                   <p>
-                    Rajshi Enterprise offers a wide range of pressure relief valves, nitrogen filling breathers, and other transformer parts. Our products are used in a wide range of applications, including power generation, transmission, and distribution.
+                    Rajshi Enterprise offers a wide range of pressure relief valves, nitrogen filling valves, and other transformer parts. Our products are used in a wide range of applications, including power generation, transmission, and distribution.
                   </p>
                 </div>
                 <div className="products-grid">

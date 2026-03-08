@@ -86,7 +86,7 @@
   opacity: 0.1;
 }
 
-.hero-content {
+.hero-content-company {
   position: relative;
   z-index: 2;
   animation: fadeInDown 0.8s ease;
