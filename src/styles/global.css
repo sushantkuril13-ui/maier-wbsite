@@ -19,7 +19,7 @@ body {
   color: #333;
   /* page background: use header-background-image.jpg with a subtle dark overlay for readability */
   background-color: #fff;
-  background-image: linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.28)), url('images/BG.jpg.jpeg');
+  background-image: linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.28)), url('images/BG_1.jpeg');
   /* background-image: url('images/BG.jpg.jpeg'); */
   background-size: cover;
   background-position: center center;

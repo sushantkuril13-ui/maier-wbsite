@@ -3,7 +3,7 @@ import '../styles/components/ProductSidebar.css';
 
 export const productCategories = [
   {
-    title: 'Gas Monitoring System (Automat)',
+    title: 'Gas Monitoring System',
     icon: 'images/icon-gas-monitoring-system.png',
     link: '/gas-monitoring-system',
   },
