@@ -137,7 +137,9 @@ export default function Header() {
                 if (item.label === 'Transformer Accessories') {
                   return (
                     <li key={index} className="nav-item dropdown">
-                      <Link to={item.href}>{item.label}</Link>
+                      <Link to={item.href} style={{ color: 'white' }}>
+                        {item.label}
+                      </Link>
                       <div className="dropdown-content">
                         <ul>
                           {productCategories.map(cat => (
@@ -154,8 +156,8 @@ export default function Header() {
                   );
                 }
                 return (
-                  <li key={index} className="nav-item">
-                    <Link to={item.href}>{item.label}</Link>
+                  <li key={index} className="nav-item" >
+                    <Link to={item.href} style={{ color: 'white' }} >{item.label}</Link>
                   </li>
                 );
               })}
