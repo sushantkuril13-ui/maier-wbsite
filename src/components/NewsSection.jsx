@@ -29,7 +29,7 @@ export default function NewsSection() {
   return (
     <section id="news" className="news-section">
       <div className="container">
-        <h2 className="section-title">News</h2>
+        <h2 className="section-title">Latest Updates</h2>
         <div className="news-grid">
           {newsItems.map((news) => (
             <div key={news.id} className="news-card">

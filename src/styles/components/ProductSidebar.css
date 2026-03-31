@@ -48,11 +48,47 @@
   height: 35px;
   margin-right: 12px;
   object-fit: contain;
+  background-color: white;
 }
 
 .sidebar-title {
   font-size: 14px;
   font-weight: 500;
+}
+
+.sidebar-subnav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+.sidebar-subnav-item {
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar-subnav-item:last-child {
+  border-bottom: none;
+}
+
+.sidebar-subnav-link {
+  display: block;
+  color: #444;
+  text-decoration: none;
+  padding: 10px 16px 10px 28px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.sidebar-subnav-link:hover {
+  background: #f2f2f2;
+  color: #b20e10;
+}
+
+.sidebar-subnav-link.active {
+  color: #b20e10;
+  font-weight: 600;
 }
 
 @media (max-width: 960px) {

@@ -101,13 +101,14 @@ export default function Support() {
                       <h3>Phone</h3>
                       <p>
                         <a href="tel:+919415113335">+91 – 9415113335</a><br />
-                        <a href="tel:05102770090">0510 – 2770090</a>
+                        <a href="tel:+919983167760">+91 – 9983167760</a>
                       </p>
                     </div>
 
                     <div className="info-block">
                       <h3>Email</h3>
                       <p>
+                        <a href="mailto:rajshiengineers.mkt@gmail.com">rajshiengineers.mkt@gmail.com</a><br />
                         <a href="mailto:rajshijhs@yahoo.com">rajshijhs@yahoo.com</a>
                       </p>
                     </div>

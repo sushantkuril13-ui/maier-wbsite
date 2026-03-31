@@ -41,23 +41,29 @@ const categories = orderedCategories.map(name => {
 export default function ProductCategoryTabs() {
   const [active, setActive] = React.useState(0);
   return (
-    // <div className="product-category-tabs container">
-    //   <div className="tab-content">
-    //     <div className="img-wrapper">
-    //       <img src={categories[active].img} alt={categories[active].title} />
-    //     </div>
-    //     <h3>{categories[active].title}</h3>
-    //     <p>{categories[active].desc}</p>
-    //     <a className="btn" href={categories[active].link}>Category</a>
-    //   </div>
-    //   <ul className="tab-list">
-    //     {categories.map((cat, i) => (
-    //       <li key={cat.title} className={i === active ? 'active' : ''} onClick={() => setActive(i)}>
-    //         {cat.title}
-    //       </li>
-    //     ))}
-    //   </ul>
-    // </div>
-  <div></div>
+    <section className="product-category-tabs-section">
+      <div className="container">
+        <h2 className="section-title">Product Solutions</h2>
+        <div className="product-category-tabs">
+          <ul className="tab-list">
+            {categories.map((cat, i) => (
+              <li key={cat.title} className={i === active ? 'active' : ''} onClick={() => setActive(i)}>
+                {cat.title}
+              </li>
+            ))}
+          </ul>
+          <div className="tab-content">
+            <div className="img-wrapper">
+              <img src={categories[active].img} alt={categories[active].title} />
+            </div>
+            <div className="text-wrapper">
+              <h3>{categories[active].title}</h3>
+              <p>{categories[active].desc}</p>
+              <a className="btn" href={categories[active].link}>Explore Category</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

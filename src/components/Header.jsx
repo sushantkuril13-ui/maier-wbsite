@@ -71,7 +71,7 @@ export default function Header() {
         <div className="container flex-between">
           <div className="logo">
             <Link to="/">
-              <img src="./images/Logo_Maier_final_RGB.png" alt="Rajshi Enterprise" />
+              <img src="/images/Logo_Maier_final_RGB.png" alt="Rajshi Enterprise" />
             </Link>
           </div>
           <div className="header-right">
