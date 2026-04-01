@@ -4,15 +4,13 @@ import products from '../data/products.json';
 
 // Keep filters in the specific order provided by the user.
 const orderedFilters = [
-  'Gas Monitoring System (Automat)',
-  'Low/High Pressure Alarm System',
-  'Oil Level Indicator',
   'Pressure Relief Valve',
+  'Oil Level Indicator',
+  'Nitrogen Gas Monitoring System (Automat)',
   'PRV with Liquid Level Indicator',
+  'Low/High Pressure Alarm System',
+  'Tank Components',
   'Solenoid Interlock Device',
-  'Tank Valve',
-  'Tubular Oil Level Gauge',
-  'Threaded Pressure Relief Valve',
 ];
 
 // Build final filters list: include only categories that exist in products.json, keep order, prepend 'All'
@@ -28,7 +26,7 @@ export default function ProductGallery() {
 
   return (
     <section id="products" className="product-gallery-section container">
-      <h2 className="product-gallery-title">Transformer accessories at a glance</h2>
+      <h2 className="product-gallery-title">Transformer Accessories at a Glance</h2>
       
       <ul className="product-gallery-filter">
         {filters.map((f) => (
@@ -45,7 +43,7 @@ export default function ProductGallery() {
       <div className="product-gallery-grid">
         {filteredProducts.map((p, i) => (
           <div className="product-gallery-item" key={i}>
-            <a href={p.link}>
+            <a href={p.link} target="_blank" rel="noopener noreferrer">
               <img
                 src={encodeURI(p.img)}
                 alt={p.title}

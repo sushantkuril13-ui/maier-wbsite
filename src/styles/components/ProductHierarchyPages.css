@@ -1,0 +1,144 @@
+.product-breadcrumbs {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.product-breadcrumbs a {
+  color: #b20e10;
+  text-decoration: none;
+}
+
+.product-breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.product-breadcrumb-sep {
+  margin: 0 0.5rem;
+  color: #999;
+}
+
+.subsection-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.subsection-card {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-left: 4px solid #b20e10;
+  border-radius: 4px;
+  padding: 1rem;
+  background: #fff;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.subsection-card h3 {
+  margin: 0 0 0.5rem;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.subsection-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.subsection-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.subsection-inline-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.subsection-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #333;
+  background: #fff;
+  font-size: 0.92rem;
+}
+
+.subsection-chip.active {
+  background: #b20e10;
+  border-color: #b20e10;
+  color: #fff;
+}
+
+@media (max-width: 960px) {
+  .subsection-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Specification Tables */
+.specification-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 0.95rem;
+}
+
+.specification-table thead {
+  background: #f5f5f5;
+  border-bottom: 2px solid #b20e10;
+}
+
+.specification-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-right: 1px solid #e0e0e0;
+}
+
+.specification-table th:last-child {
+  border-right: none;
+}
+
+.specification-table td {
+  padding: 0.75rem 1rem;
+  border-right: 1px solid #e0e0e0;
+  color: #555;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.specification-table td:last-child {
+  border-right: none;
+}
+
+.specification-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.specification-table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Responsive tables */
+@media (max-width: 768px) {
+  .specification-table {
+    font-size: 0.85rem;
+  }
+
+  .specification-table th,
+  .specification-table td {
+    padding: 0.5rem 0.75rem;
+  }
+}
+

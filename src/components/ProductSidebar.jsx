@@ -1,70 +1,62 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/components/ProductSidebar.css';
+import productHierarchy from '../data/productHierarchy.js';
 
-export const productCategories = [
-  {
-    title: 'Gas Monitoring System',
-    icon: 'images/icon-gas-monitoring-system.png',
-    link: '/gas-monitoring-system',
-  },
-  {
-    title: 'Low/High Pressure Alarm System',
-    icon: 'images/icon-low-high-pressure.png',
-    link: '/low-high-pressure-alarm-system',
-  },
-  {
-    title: 'Oil Level Indicator',
-    icon: 'images/Icons-oelstandsanzeiger.png',
-    link: '/oil-level-indicators',
-  },
-  {
-    title: 'Pressure Relief Valve',
-    icon: 'images/Icons-druckentlastungsventile.png',
-    link: '/pressure-relief-valve',
-  },
-  {
-    title: 'PRV with Liquid Level Indicator',
-    icon: 'images/icon-prv-eith-level-indicator.png',
-    link: '/prv-with-liquid-level-indicator',
-  },
-  {
-    title: 'Solenoid Interlock Device',
-    icon: 'images/icon-solenooid-interlock-device.png',
-    link: '/solenoid-interlock-device',
-  },
-  {
-    title: 'Tank Valve',
-    icon: 'images/Icon-armaturen-kesselbau.png',
-    link: '/tank-valve',
-  },
-  {
-    title: 'Tubular Oil Level Gauge',
-    icon: 'images/icon-tubular-oil-level-gauge.png',
-    link: '/tubular-oil-level-gauge',
-  },
-  {
-    title: 'Threaded Pressure Relief Valve',
-    icon: 'images/icon-threaded-prv.png',
-    link: '/threaded-pressure-relief-valve',
-  },
-];
+export const productCategories = productHierarchy.map((section) => ({
+  title: section.title,
+  icon: section.icon,
+  link: `/products/${section.slug}`,
+  subsections: section.subsections || []
+}));
 
-export default function ProductSidebar({ activeCategory }) {
+export default function ProductSidebar({
+  activeCategory,
+  hierarchy,
+  activeSectionSlug,
+  activeSubsectionSlug
+}) {
+  const sidebarHierarchy = hierarchy || productHierarchy;
+
   return (
     <aside className="product-sidebar">
       <div className="sidebar-panel">
         <ul className="sidebar-nav">
-          {productCategories.map((cat) => (
-            <li 
-              key={cat.title} 
-              className={`sidebar-nav-item ${activeCategory === cat.title ? 'active' : ''}`}
-            >
-              <a href={cat.link} className="sidebar-nav-link">
-                {cat.icon && <img src={cat.icon} alt={cat.title} className="sidebar-icon" />}
-                <span className="sidebar-title">{cat.title}</span>
-              </a>
-            </li>
-          ))}
+          {sidebarHierarchy.map((section) => {
+            const sectionLink = `/products/${section.slug}`;
+            const isActiveSection =
+              activeSectionSlug === section.slug || activeCategory === section.title;
+
+            return (
+              <li
+                key={section.title}
+                className={`sidebar-nav-item ${isActiveSection ? 'active' : ''}`}
+              >
+                <Link to={sectionLink} className="sidebar-nav-link">
+                  {section.icon && <img src={section.icon} alt={section.title} className="sidebar-icon" />}
+                  <span className="sidebar-title">{section.title}</span>
+                </Link>
+
+                {isActiveSection && section.subsections && section.subsections.length > 0 && (
+                  <ul className="sidebar-subnav">
+                    {section.subsections.map((subsection) => {
+                      const subsectionLink = `/products/${section.slug}/${subsection.slug}`;
+                      return (
+                        <li key={subsection.slug} className="sidebar-subnav-item">
+                          <Link
+                            to={subsectionLink}
+                            className={`sidebar-subnav-link ${activeSubsectionSlug === subsection.slug ? 'active' : ''}`}
+                          >
+                            {subsection.title}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </aside>

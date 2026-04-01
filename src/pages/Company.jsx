@@ -186,7 +186,7 @@ export default function Company() {
                     Rajshi Enterprise is committed to providing our customers with the best possible products and services. We are dedicated to innovation, quality, and customer satisfaction.
                   </p>
                   <p>
-                    If you are looking for a reliable and experienced supplier of Pressure Relief Valves, Oil Level Indicators, and other transformer parts, then we can definitely be someone you can count on.
+                    If you are looking for a reliable and experienced supplier of Pressure Relief Valves, Oil Level Indicators, Nitrogen Gas Monitoring Systems and other transformer parts, then we can definitely be someone you can count on.
                   </p>
                   <div className="commitment-cta">
                     <a href="/support" className="cta-button">Get In Touch</a>
@@ -229,7 +229,7 @@ export default function Company() {
             <section className="quality-hero">
               <div className="container">
                 <h1>Quality & Certification</h1>
-                <p>With over 45 years of experience RAJSHI ENGINEERS is a leading manufacturer of Instruments for Transformers like Pressure Relief Valves, Tank Valves and other transformer parts.</p>
+                <p>With over 45 years of experience RAJSHI ENGINEERS is a leading manufacturer of Instruments for Transformers like Pressure Relief Valves, Nitrogen Gas Monitoring System , Oil Level Indicator , Tank Components and other transformer parts.</p>
               </div>
             </section>
 
