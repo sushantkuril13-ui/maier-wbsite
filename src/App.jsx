@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './components/Header.jsx';
 import HeroSlider from './components/HeroSlider.jsx';
 import CompanyInfo from './components/CompanyInfo.jsx';
-import NewsSection from './components/NewsSection.jsx';
 import ProductCategoryTabs from './components/ProductCategoryTabs.jsx';
 // import ProductsSection from './components/ProductsSection.jsx';
 import ReferencesSlider from './components/ReferencesSlider.jsx';
@@ -23,7 +22,6 @@ function App() {
               <CompanyInfo />
               {/* <ProductsSection /> */}
               <ProductCategoryTabs />
-              <NewsSection />
               <ReferencesSlider />
             </div>
           </main>

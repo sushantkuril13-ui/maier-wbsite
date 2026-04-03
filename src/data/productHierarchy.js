@@ -84,10 +84,11 @@ const productHierarchy = [
       { title: 'GFV-4', slug: 'gfv-4' },
       { title: 'GFV-5', slug: 'gfv-5' },
       { title: 'GFV-6', slug: 'gfv-6' },
-      { title: 'GFV-1B Model', slug: 'gfv-1b-model' },
-      { title: 'GFV-2B Model', slug: 'gfv-2b-model' },
-      { title: 'Brass Cap Options', slug: 'brass-cap-options' },
-      { title: 'Finish Options', slug: 'finish-options' }
+      { title: 'Special Options & Variants', slug: 'special-options-and-variants' },
+      // { title: 'GFV-1B Model', slug: 'gfv-1b-model' },
+      // { title: 'GFV-2B Model', slug: 'gfv-2b-model' },
+      // { title: 'Brass Cap Options', slug: 'brass-cap-options' },
+      // { title: 'Finish Options', slug: 'finish-options' }
     ]
   },
   {

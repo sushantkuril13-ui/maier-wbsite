@@ -43,6 +43,7 @@ import TankComponentGFV5 from './pages/subsections/TankComponentGFV5.jsx';
 import TankComponentGFV6 from './pages/subsections/TankComponentGFV6.jsx';
 import TankComponentBrassCap from './pages/subsections/TankComponentBrassCap.jsx';
 import TankComponentFinish from './pages/subsections/TankComponentFinish.jsx';
+import TankComponentSpecialOptions from './pages/subsections/TankComponentSpecialOptions.jsx';
 
 // Map subsection routes to components
 const subsectionRouteMap = {
@@ -72,7 +73,8 @@ const subsectionRouteMap = {
     'gfv-5': TankComponentGFV5,
     'gfv-6': TankComponentGFV6,
     'brass-cap': TankComponentBrassCap,
-    'finish': TankComponentFinish
+    'finish': TankComponentFinish,
+    'special-options-and-variants': TankComponentSpecialOptions
   }
 };
 

@@ -184,7 +184,7 @@ export default function ProductSection() {
 
         {hasSubsections ? (
           <section>
-            <h2>Subsections</h2>
+            <h2>Available Models</h2>
             <div className="subsection-grid">
               {section.subsections.map((subsection) => (
                 <Link
