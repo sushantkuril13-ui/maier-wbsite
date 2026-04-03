@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProductPageLayout from '../../components/ProductPageLayout.jsx';
-import productHierarchy, { getSectionBySlug } from '../../data/productHierarchy.js';
+import productHierarchy, { getSectionBySlug, getSubsectionSlides } from '../../data/productHierarchy.js';
 import '../../styles/components/ProductHierarchyPages.css';
 
 const section = getSectionBySlug('tank-components');
 const subsectionTitle = 'Special Options & Variants';
 
 export default function TankComponentSpecialOptions() {
+  const slides = getSubsectionSlides('tank-components', 'special-options-and-variants');
   const breadcrumbs = [
     { label: 'Home', to: '/' },
     { label: 'Transformer Accessories', to: '/transformer-accessories' },
@@ -18,7 +19,7 @@ export default function TankComponentSpecialOptions() {
   return (
     <ProductPageLayout
       activeCategory="Tank Components"
-      slides={section.slides || []}
+      slides={slides}
       breadcrumbs={breadcrumbs}
       hierarchy={productHierarchy}
       activeSectionSlug="tank-components"

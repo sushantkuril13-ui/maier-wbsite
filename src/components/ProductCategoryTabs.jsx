@@ -12,8 +12,8 @@ const orderedCategories = [
   'PRV with Liquid Level Indicator',
   'Solenoid Interlock Device',
   'Tank Valve',
-  'Tubular Oil Level Gauge',
-  'Threaded Pressure Relief Valve',
+  // 'Tubular Oil Level Gauge',
+  // 'Threaded Pressure Relief Valve',
 ];
 
 const categoryImageMap = {
@@ -24,8 +24,8 @@ const categoryImageMap = {
   'PRV with Liquid Level Indicator': '/images/Product Images/PRV_LIQUID INDICATOR 2.png',
   'Solenoid Interlock Device': '/images/Product Images/Solenoid Interlock.png',
   'Tank Valve': '/images/Product Images/Tank Valve.png',
-  'Tubular Oil Level Gauge': '/images/Product Images/TOLG_BT.png',
-  'Threaded Pressure Relief Valve': '/images/Product Images/PRV_BB2P.png',
+  // 'Tubular Oil Level Gauge': '/images/Product Images/TOLG_BT.png',
+  // 'Threaded Pressure Relief Valve': '/images/Product Images/PRV_BB2P.png',
 };
 
 const categories = orderedCategories.map(name => {
@@ -44,10 +44,10 @@ const categories = orderedCategories.map(name => {
     link = '/products/solenoid-interlock-device';
   } else if (name === 'Tank Valve') {
     link = '/products/tank-components';
-  } else if (name === 'Tubular Oil Level Gauge') {
-    link = '/products/oil-level-indicator/tubular';
-  } else if (name === 'Threaded Pressure Relief Valve') {
-    link = '/products/pressure-relief-valves/threaded';
+  // } else if (name === 'Tubular Oil Level Gauge') {
+  //   link = '/products/oil-level-indicator/tubular';
+  // } else if (name === 'Threaded Pressure Relief Valve') {
+  //   link = '/products/pressure-relief-valves/threaded';
   }
 
   return {

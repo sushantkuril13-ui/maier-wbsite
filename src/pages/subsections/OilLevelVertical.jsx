@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProductPageLayout from '../../components/ProductPageLayout.jsx';
-import productHierarchy, { getSectionBySlug } from '../../data/productHierarchy.js';
+import productHierarchy, { getSectionBySlug, getSubsectionSlides } from '../../data/productHierarchy.js';
 import '../../styles/components/ProductHierarchyPages.css';
 
 const section = getSectionBySlug('oil-level-indicator');
@@ -26,6 +26,7 @@ const threadMountingData = [
 ];
 
 export default function OilLevelVertical() {
+  const slides = getSubsectionSlides('oil-level-indicator', 'vertical');
   const breadcrumbs = [
     { label: 'Home', to: '/' },
     { label: 'Transformer Accessories', to: '/transformer-accessories' },
@@ -36,7 +37,7 @@ export default function OilLevelVertical() {
   return (
     <ProductPageLayout
       activeCategory="Oil Level Indicator"
-      slides={section.slides || []}
+      slides={slides}
       breadcrumbs={breadcrumbs}
       hierarchy={productHierarchy}
       activeSectionSlug="oil-level-indicator"

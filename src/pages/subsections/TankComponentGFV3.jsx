@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProductPageLayout from '../../components/ProductPageLayout.jsx';
-import productHierarchy, { getSectionBySlug } from '../../data/productHierarchy.js';
+import productHierarchy, { getSectionBySlug, getSubsectionSlides } from '../../data/productHierarchy.js';
 import '../../styles/components/ProductHierarchyPages.css';
 
 const section = getSectionBySlug('tank-components');
 
 export default function TankComponentGFV3() {
+  const slides = getSubsectionSlides('tank-components', 'gfv-3');
   const breadcrumbs = [
     { label: 'Home', to: '/' },
     { label: 'Transformer Accessories', to: '/transformer-accessories' },
@@ -17,7 +18,7 @@ export default function TankComponentGFV3() {
   return (
     <ProductPageLayout
       activeCategory="Tank Components"
-      slides={section.slides || []}
+      slides={slides}
       breadcrumbs={breadcrumbs}
       hierarchy={productHierarchy}
       activeSectionSlug="tank-components"

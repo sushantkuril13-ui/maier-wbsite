@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProductPageLayout from '../../components/ProductPageLayout.jsx';
-import productHierarchy, { getSectionBySlug } from '../../data/productHierarchy.js';
+import productHierarchy, { getSectionBySlug, getSubsectionSlides } from '../../data/productHierarchy.js';
 import '../../styles/components/ProductHierarchyPages.css';
 
 const section = getSectionBySlug('nitrogen-gas-monitoring-system');
 
 export default function NitrogenGasTGR02() {
+  const slides = getSubsectionSlides('nitrogen-gas-monitoring-system', 'tgr-02');
   const breadcrumbs = [
     { label: 'Home', to: '/' },
     { label: 'Transformer Accessories', to: '/transformer-accessories' },
@@ -17,7 +18,7 @@ export default function NitrogenGasTGR02() {
   return (
     <ProductPageLayout
       activeCategory="Nitrogen Gas Monitoring System"
-      slides={section.slides || []}
+      slides={slides}
       breadcrumbs={breadcrumbs}
       hierarchy={productHierarchy}
       activeSectionSlug="nitrogen-gas-monitoring-system"

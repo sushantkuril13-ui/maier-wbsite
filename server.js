@@ -1,4 +1,5 @@
 import express from 'express';
+import compression from 'compression';
 import path from 'path';
 import bodyParser from 'body-parser';
 import nodemailer from 'nodemailer';
@@ -13,6 +14,9 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 8000;
 
+// enable gzip/brotli compression for responses
+app.use(compression());
+
 // Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -26,7 +30,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.static(path.join(__dirname, 'public')));
+// Serve static files with a cache TTL
+app.use(express.static(path.join(__dirname, 'public'), { maxAge: '1d' }));
 
 // Email transporter configuration
 // Using Gmail or environment variables for credentials
