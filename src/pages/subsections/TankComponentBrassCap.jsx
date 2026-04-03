@@ -28,31 +28,139 @@ export default function TankComponentBrassCap() {
         <h1>Brass Cap Options</h1>
 
         <section>
-          <h2>Overview</h2>
+          <h2>Product Overview</h2>
           <p>
-            All tank component models (GFV-1 through GFV-6) have the option of availability with or without Brass Cap.
-            The Brass Cap provides enhanced sealing, protection, and ease of operation.
+            The Brass Cap is an optional protective and functional component available for all GFV tank valve models (GFV-1 through GFV-6). 
+            This precision-engineered accessory provides multiple benefits: enhanced sealing force with minimal tightening effort, protection from dirt 
+            and contamination ingress, ergonomic hand-tightening operation, and professional appearance. The brass cap maintains hermetic integrity when 
+            the valve is not in active use, extending valve service life and ensuring consistent long-term performance.
           </p>
         </section>
 
         <section>
-          <h2>Features of Brass Cap</h2>
+          <h2>Purpose & Function</h2>
+          <p>
+            Located on the plunger end of all GFV models, the brass cap serves dual functions: (1) provides mechanical sealing force that maintains 
+            gas-tight integrity when the valve is not actively supplying/exhausting gas, and (2) acts as a protective barrier excluding dirt, dust, 
+            oil aerosol, and other contaminants that could accumulate in the valve mouth and degrade performance over time. The cap is hand-tightened 
+            without tools, requiring only moderate finger pressure to achieve full sealing.
+          </p>
+        </section>
+
+        <section>
+          <h2>Technical Specifications</h2>
+          <table className="specification-table">
+            <tbody>
+              <tr>
+                <td><strong>Body Material</strong></td>
+                <td>Brass (corrosion-resistant, high-quality alloy)</td>
+              </tr>
+              <tr>
+                <td><strong>Finish Options</strong></td>
+                <td>Natural Brass or Nickel-Plated</td>
+              </tr>
+              <tr>
+                <td><strong>Sealing Interface</strong></td>
+                <td>Precision O-ring (Nitrile standard, Viton available)</td>
+              </tr>
+              <tr>
+                <td><strong>Thread Type</strong></td>
+                <td>Hand-tightening design; no tools required</td>
+              </tr>
+              <tr>
+                <td><strong>Operating Temperature Range</strong></td>
+                <td>-40°C to +120°C</td>
+              </tr>
+              <tr>
+                <td><strong>Storage Temperature</strong></td>
+                <td>-50°C to +80°C (cap only)</td>
+              </tr>
+              <tr>
+                <td><strong>Torque Requirement</strong></td>
+                <td>5–10 N·m (hand-tightening; no wrench needed)</td>
+              </tr>
+              <tr>
+                <td><strong>Sealing Pressure Rating</strong></td>
+                <td>0–50 bar (maintains seal across all operating pressures)</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Key Features & Benefits</h2>
           <ul>
-            <li>
-              <strong>Maximum Sealing Force:</strong> Provides maximum sealing with minimum effort, ensuring reliable
-              operation.
-            </li>
-            <li>
-              <strong>Dirt Protection:</strong> Avoiding entry of any dirt particles to the valve mouth to impair the
-              operating efficiency of valve core.
-            </li>
-            <li>
-              <strong>Easy Operation:</strong> Ergonomic design allows comfortable hand operation without tools.</li>
-            <li>
-              <strong>Durability:</strong> Brass construction ensures long-term reliability and corrosion resistance.
-            </li>
-            <li>
-              <strong>Professional Appearance:</strong> Enhanced aesthetic with professional finish options.</li>
+            <li><strong>Maximum Sealing Force:</strong> Highly efficient O-ring design provides robust sealing with minimum tightening effort</li>
+            <li><strong>Dirt & Contamination Protection:</strong> Excludes particles, dust, oil aerosol that could impair valve core efficiency</li>
+            <li><strong>Easy Hand-Tightening Operation:</strong> Ergonomic design requires only finger-tightened operation; no wrench needed</li>
+            <li><strong>Durable Brass Construction:</strong> Corrosion-resistant alloy ensures multi-year service life</li>
+            <li><strong>Professional Appearance:</strong> Available in natural or nickel-plated finishes enhancing equipment aesthetics</li>
+            <li><strong>Universal Compatibility:</strong> Fits all GFV series models (GFV-1 through GFV-6)</li>
+            <li><strong>Replaceable O-Ring Seals:</strong> Field-serviceable design allows seal replacement without valve replacement</li>
+            <li><strong>Minimal Maintenance:</strong> Periodically clean with soft cloth; verify O-ring condition annually</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Available Finish Options</h2>
+          <table className="specification-table">
+            <thead>
+              <tr>
+                <th>Finish Type</th>
+                <th>Description</th>
+                <th>Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Natural Brass</strong></td>
+                <td>Classic brass golden color; standard option</td>
+                <td>Indoor installations, standard duty, cost-effective</td>
+              </tr>
+              <tr>
+                <td><strong>Nickel-Plated</strong></td>
+                <td>Silvery finish with enhanced corrosion protection</td>
+                <td>Outdoor installations, marine environments, elevated corrosion risk</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Usage Instructions</h2>
+          <ol>
+            <li>After completing inflation/deflation operation, allow any residual gas to escape</li>
+            <li>Inspect the brass cap for dirt or debris on external surfaces</li>
+            <li>Thread the cap onto the plunger end by hand</li>
+            <li>Tighten firmly with finger pressure only (typically 5–10 N·m equivalent)</li>
+            <li>Do not use tools (wrench, pliers) as over-tightening can damage O-ring</li>
+            <li>Verify visual seal: there should be no gas hissing when cap is properly tightened</li>
+            <li>Store the cap-sealed valve in dry location to prevent O-ring degradation</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Maintenance & Care</h2>
+          <ul>
+            <li>Periodically clean cap exterior with dry cloth to remove dust/residue</li>
+            <li>Inspect O-ring condition annually; replace if visible cracking or hardening observed</li>
+            <li>If cap becomes difficult to tighten/loosen, clean threads with soft brush</li>
+            <li>Store spare O-rings (field kits) for rapid replacement if needed</li>
+            <li>Do not apply lubricants to cap threads; use dry PTFE or silicone if needed</li>
+            <li>Replace entire cap if threads become stripped; return to Maier service center</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Ordering & Customization</h2>
+          <p>
+            Brass caps are available as original equipment on GFV orders or purchased separately as replacement/upgrade components.
+          </p>
+          <ul>
+            <li>Specify finish: Natural Brass (standard) or Nickel-Plated</li>
+            <li>Specify O-ring material: Nitrile (standard) or Viton for synthetic fluids</li>
+            <li>Available in bulk quantities with volume discounts</li>
+            <li>Field-service replacement kits available (cap + O-ring assembly)</li>
           </ul>
         </section>
 

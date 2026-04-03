@@ -13,17 +13,27 @@ const productHierarchy = [
       { 
         title: 'Pressure Relief Valves with Switches', 
         slug: 'with-switches',
-        slides: [{ img: '/images/Product Images/PRV_DP1EF.png', caption: 'PRV with Switches' }]
+        slides: [{ img: '/images/Product Images/PRV_DP1EF.png', caption: 'PRV with Switches' }],
+        subsections: [
+          { title: 'DP-1', slug: 'dp-1' },
+          { title: 'DP-3', slug: 'dp-3' },
+          { title: 'DP-6', slug: 'dp-6' }
+        ]
       },
       { 
         title: 'Threaded Pressure Relief Valves', 
         slug: 'threaded',
-        slides: [{ img: '/images/Product Images/PRV_AT-25.png', caption: 'Threaded PRV' }]
+        slides: [{ img: '/images/Product Images/PRV_AT-25.png', caption: 'Threaded PRV' }],
+        subsections: [
+          { title: 'Small Size', slug: 'small-size' },
+          { title: 'Medium Size', slug: 'medium-size' }
+        ]
       },
       { 
         title: 'Flange Pressure Relief Valves', 
         slug: 'flange',
-        slides: [{ img: '/images/Product Images/PRV_DP6EF.png', caption: 'Flange PRV' }]
+        slides: [{ img: '/images/Product Images/PRV_DP6EF.png', caption: 'Flange PRV' }],
+        subsections: []
       }
     ]
   },
@@ -41,22 +51,26 @@ const productHierarchy = [
       { 
         title: 'Vertical Oil Level Indicator', 
         slug: 'vertical',
-        slides: [{ img: '/images/Product Images/OLI_P.png', caption: 'Vertical OLI' }]
+        slides: [{ img: '/images/Product Images/OLI_P.png', caption: 'Vertical OLI' }],
+        subsections: []
       },
       { 
         title: 'Threaded Oil Level Indicator', 
         slug: 'threaded',
-        slides: [{ img: '/images/Product Images/OLI.png', caption: 'Threaded OLI' }]
+        slides: [{ img: '/images/Product Images/OLI.png', caption: 'Threaded OLI' }],
+        subsections: []
       },
       { 
         title: 'Prismatic Oil Level Indicator', 
         slug: 'prismatic',
-        slides: [{ img: '/images/Product Images/OLI_PRISMATIC.png', caption: 'Prismatic OLI' }]
+        slides: [{ img: '/images/Product Images/OLI_PRISMATIC.png', caption: 'Prismatic OLI' }],
+        subsections: []
       },
       { 
         title: 'Tubular Oil Level Indicator', 
         slug: 'tubular',
-        slides: [{ img: '/images/Product Images/TOLG_BT.png', caption: 'Tubular OLI' }]
+        slides: [{ img: '/images/Product Images/TOLG_BT.png', caption: 'Tubular OLI' }],
+        subsections: []
       },
       // { title: 'Other Models', slug: 'other-models' }
     ]
@@ -73,27 +87,32 @@ const productHierarchy = [
       { 
         title: 'SDGR-02', 
         slug: 'sdgr-02',
-        slides: [{ img: '/images/Product Images/GMS_SDGR02.png', caption: 'SDGR-02' }]
+        slides: [{ img: '/images/Product Images/GMS_SDGR02.png', caption: 'SDGR-02' }],
+        subsections: []
       },
       { 
         title: 'SDGR-02D', 
         slug: 'sdgr-02d',
-        slides: [{ img: '/images/Product Images/GMS_SDGR02D.png', caption: 'SDGR-02D' }]
+        slides: [{ img: '/images/Product Images/GMS_SDGR02D.png', caption: 'SDGR-02D' }],
+        subsections: []
       },
       { 
         title: 'DGR-02', 
         slug: 'dgr-02',
-        slides: [{ img: '/images/Product Images/GMS_DGR02.png', caption: 'DGR-02' }]
+        slides: [{ img: '/images/Product Images/GMS_DGR02.png', caption: 'DGR-02' }],
+        subsections: []
       },
       { 
         title: 'DGR-05', 
         slug: 'dgr-05',
-        slides: [{ img: '/images/Product Images/GMS_DGR05.png', caption: 'DGR-05' }]
+        slides: [{ img: '/images/Product Images/GMS_DGR05.png', caption: 'DGR-05' }],
+        subsections: []
       },
       { 
         title: 'TGR-02', 
         slug: 'tgr-02',
-        slides: [{ img: '/images/Product Images/GMS_SDGR02.png', caption: 'TGR-02' }] // Reusing SDGR02 as placeholder for TGR if not found
+        slides: [{ img: '/images/Product Images/GMS_SDGR02.png', caption: 'TGR-02' }],
+        subsections: []
       }
     ]
   },
@@ -129,37 +148,44 @@ const productHierarchy = [
       { 
         title: 'GFV-1', 
         slug: 'gfv-1',
-        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-1' }]
+        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-1' }],
+        subsections: []
       },
       { 
         title: 'GFV-2', 
         slug: 'gfv-2',
-        slides: [{ img: '/images/Product Images/TANK VALVE.png', caption: 'Tank Valve GFV-2' }]
+        slides: [{ img: '/images/Product Images/TANK VALVE.png', caption: 'Tank Valve GFV-2' }],
+        subsections: []
       },
       { 
         title: 'GFV-3', 
         slug: 'gfv-3',
-        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-3' }]
+        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-3' }],
+        subsections: []
       },
       { 
         title: 'GFV-4', 
         slug: 'gfv-4',
-        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-4' }]
+        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-4' }],
+        subsections: []
       },
       { 
         title: 'GFV-5', 
         slug: 'gfv-5',
-        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-5' }]
+        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-5' }],
+        subsections: []
       },
       { 
         title: 'GFV-6', 
         slug: 'gfv-6',
-        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-6' }]
+        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-6' }],
+        subsections: []
       },
       { 
         title: 'Special Options & Variants', 
         slug: 'special-options-and-variants',
-        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Special Options' }]
+        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Special Options' }],
+        subsections: []
       },
       // { title: 'GFV-1B Model', slug: 'gfv-1b-model' },
       // { title: 'GFV-2B Model', slug: 'gfv-2b-model' },

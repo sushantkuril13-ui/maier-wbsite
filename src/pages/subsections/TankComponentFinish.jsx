@@ -52,11 +52,208 @@ export default function TankComponentFinish() {
         <h1>Finish Options</h1>
 
         <section>
-          <h2>Overview</h2>
+          <h2>Product Overview</h2>
           <p>
-            All tank component models (GFV-1 through GFV-6) are available with two finish options: Natural Finish or
-            Nickel Plated. The choice of finish affects both the appearance and durability of the component.
+            All GFV tank component models (GFV-1 through GFV-6) are available with two carefully engineered finish options: 
+            Natural Finish (cost-effective, standard) or Nickel-Plated (premium, corrosion-resistant). The finish selection directly impacts 
+            long-term durability, maintenance requirements, and environmental performance. Natural finish suits indoor controlled environments, 
+            while nickel plating provides superior protection for outdoor installations, marine environments, or applications with elevated 
+            corrosion risk or chemical exposure.
           </p>
+        </section>
+
+        <section>
+          <h2>Finish Options Comparison</h2>
+          <table className="specification-table">
+            <thead>
+              <tr>
+                <th>Specification</th>
+                <th>Natural Finish</th>
+                <th>Nickel-Plated</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Material Appearance</strong></td>
+                <td>Golden/reddish brass color or aluminum silver</td>
+                <td>Bright silvery metallic finish</td>
+              </tr>
+              <tr>
+                <td><strong>Cost</strong></td>
+                <td>Standard (baseline cost)</td>
+                <td>Premium (+15–25% cost)</td>
+              </tr>
+              <tr>
+                <td><strong>Corrosion Resistance</strong></td>
+                <td>Good for indoor use; limited outdoor resistance</td>
+                <td>Excellent; rated for extreme environments</td>
+              </tr>
+              <tr>
+                <td><strong>Indoor Lifespan</strong></td>
+                <td>10–20+ years typical</td>
+                <td>20–30+ years typical</td>
+              </tr>
+              <tr>
+                <td><strong>Outdoor Lifespan</strong></td>
+                <td>1–3 years (oxidation/tarnishing)</td>
+                <td>10–15+ years (heavy-duty protection)</td>
+              </tr>
+              <tr>
+                <td><strong>Maintenance Effort</strong></td>
+                <td>Occasional polishing needed outdoors</td>
+                <td>Minimal; periodic cleaning sufficient</td>
+              </tr>
+              <tr>
+                <td><strong>Chemical Resistance</strong></td>
+                <td>Moderate; susceptible to salt/moisture</td>
+                <td>Superior; resistant to salt/acid exposure</td>
+              </tr>\n              <tr>
+                <td><strong>Professional Appearance</strong></td>
+                <td>Authentic material look</td>
+                <td>Premium, polished industrial appearance</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Natural Finish – Details & Best Practices</h2>
+          <table className="specification-table">
+            <tbody>
+              <tr>
+                <td><strong>Description</strong></td>
+                <td>Untreated brass or aluminum; exposes natural material colors</td>
+              </tr>
+              <tr>
+                <td><strong>Appearance Over Time</strong></td>
+                <td>Develops patina (darkening) in outdoor environments; maintains stable appearance indoors</td>
+              </tr>
+              <tr>
+                <td><strong>Cost Advantage</strong></td>
+                <td>Most economical option; baseline manufacturing cost</td>
+              </tr>
+              <tr>
+                <td><strong>Best Applications</strong></td>
+                <td>Indoor substations, controlled environments, temporary installations</td>
+              </tr>
+              <tr>
+                <td><strong>Maintenance Regimen</strong></td>
+                <td>Minimal indoors (dry-cloth wipe); vigorous outdoors (regular polishing/coating required)</td>
+              </tr>
+              <tr>
+                <td><strong>Optional Protection</strong></td>
+                <td>Clear lacquer coating can extend outdoor life; apply if extended outdoor use anticipated</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Nickel-Plated Finish – Details & Benefits</h2>
+          <table className="specification-table">
+            <tbody>
+              <tr>
+                <td><strong>Description</strong></td>
+                <td>Electroplated nickel layer (20–50 µm) over brass base metal; bright silvery finish</td>
+              </tr>
+              <tr>
+                <td><strong>Corrosion Protection Mechanism</strong></td>
+                <td>Nickel layer acts as barrier against moisture, salt, and chemical attack</td>
+              </tr>
+              <tr>
+                <td><strong>Environmental Resistance</strong></td>
+                <td>Rated for marine, coastal, industrial, and chemical exposure environments</td>
+              </tr>
+              <tr>
+                <td><strong>Cost Premium</strong></td>
+                <td>+15–25% over natural finish; justified by extended lifespan</td>
+              </tr>
+              <tr>
+                <td><strong>Best Applications</strong></td>
+                <td>Outdoor transformer yards, coastal installations, industrial sites, high-vibration areas</td>
+              </tr>
+              <tr>
+                <td><strong>Maintenance Regimen</strong></td>
+                <td>Minimal; periodic dry-cloth wipe sufficient; optional annual light washing</td>
+              </tr>
+              <tr>
+                <td><strong>Field Durability</strong></td>
+                <td>Maintains appearance and functionality 15–20+ years in moderate outdoor service</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Selection Guide – Which Finish to Choose?</h2>
+          <ul>
+            <li><strong>Choose Natural Finish if:</strong>
+              <ul>
+                <li>Installation is permanently indoors or sheltered from weather</li>
+                <li>Cost minimization is primary concern</li>
+                <li>Environmental conditions are non-corrosive (dry climate, neutral pH)</li>
+                <li>Valve life expectancy less than 5–10 years acceptable</li>
+              </ul>
+            </li>
+            <li><strong>Choose Nickel-Plated if:</strong>
+              <ul>
+                <li>Installation is outdoors or intermittently exposed to weather</li>
+                <li>Coastal, marine, or high-corrosion environment (salt spray, acid rain, industrial pollution)</li>
+                <li>Long-term durability (15+ years) required with minimal maintenance</li>
+                <li>Professional appearance and brand consistency important</li>
+                <li>Equipment is high-visibility or critical infrastructure</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Maintenance for Each Finish Type</h2>
+          <table className="specification-table">
+            <thead>
+              <tr>
+                <th>Maintenance Task</th>
+                <th>Natural Finish</th>
+                <th>Nickel-Plated</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Regular Cleaning</strong></td>
+                <td>Weekly: dry cloth indoors; bi-weekly outdoors with mild soap</td>
+                <td>Monthly: dry cloth sufficient; annual light washing if needed</td>
+              </tr>
+              <tr>
+                <td><strong>Corrosion Prevention</strong></td>
+                <td>After outdoor exposure: polish with brass cleaner; optional protective coating</td>
+                <td>No action needed; plating provides inherent protection</td>
+              </tr>
+              <tr>
+                <td><strong>Annual Inspection</strong></td>
+                <td>Check for tarnishing/patina buildup; clean if oxidation excessive</td>
+                <td>Visual inspection; ensure plating intact (no bare spots or blistering)</td>
+              </tr>
+              <tr>
+                <td><strong>Emergency Action (Corrosion Detected)</strong></td>
+                <td>Apply protective clear lacquer or replacement recommended</td>
+                <td>Contact Maier if plating damage detected; replacement plating available</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Ordering & Specification</h2>
+          <p>
+            When ordering GFV components, specify your preferred finish option:
+          </p>
+          <ul>
+            <li><strong>Natural Finish:</strong> Cost-optimized, standard delivery timeline</li>
+            <li><strong>Nickel-Plated:</strong> Premium finish, +3–5 work days additional processing</li>
+            <li>Bulk orders: volume discounts available on both finish options</li>
+            <li>Custom plating specifications available upon request</li>
+            <li>Mixed orders accepted (some units natural, some plated)</li>
+          </ul>
         </section>
 
         <section>

@@ -8,7 +8,8 @@ export default function LowHighPressureAlarmSystem() {
 
   return (
     <ProductPageLayout 
-      activeCategory="Low/High Pressure Alarm System"
+      activeCategory="Pressure Alarm System"
+      activeSectionSlug="pressure-alarm-system"
       slides={slides}
     >
       <article>

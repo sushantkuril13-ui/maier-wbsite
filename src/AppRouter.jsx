@@ -20,6 +20,13 @@ import PressureReliefWithSwitches from './pages/subsections/PressureReliefWithSw
 import PressureReliefThreaded from './pages/subsections/PressureReliefThreaded.jsx';
 import PressureReliefFlange from './pages/subsections/PressureReliefFlange.jsx';
 
+// Pressure Relief Valves sub-subsections
+import PressureReliefDP1 from './pages/subsections/PressureReliefDP1.jsx';
+import PressureReliefDP3 from './pages/subsections/PressureReliefDP3.jsx';
+import PressureReliefDP6 from './pages/subsections/PressureReliefDP6.jsx';
+import PressureReliefSmallSize from './pages/subsections/PressureReliefSmallSize.jsx';
+import PressureReliefMediumSize from './pages/subsections/PressureReliefMediumSize.jsx';
+
 // Oil Level Indicator subsections
 import OilLevelVertical from './pages/subsections/OilLevelVertical.jsx';
 import OilLevelThreaded from './pages/subsections/OilLevelThreaded.jsx';
@@ -50,7 +57,16 @@ const subsectionRouteMap = {
   'pressure-relief-valves': {
     'with-switches': PressureReliefWithSwitches,
     'threaded': PressureReliefThreaded,
-    'flange': PressureReliefFlange
+    'flange': PressureReliefFlange,
+    'with-switches-subs': {
+      'dp-1': PressureReliefDP1,
+      'dp-3': PressureReliefDP3,
+      'dp-6': PressureReliefDP6
+    },
+    'threaded-subs': {
+      'small-size': PressureReliefSmallSize,
+      'medium-size': PressureReliefMediumSize
+    }
   },
   'oil-level-indicator': {
     'vertical': OilLevelVertical,
@@ -80,7 +96,7 @@ const subsectionRouteMap = {
 
 // Dynamic component loader for subsections
 function DynamicSubsectionRoute() {
-  let { sectionSlug, subsectionSlug } = useParams();
+  let { sectionSlug, subsectionSlug, subSubsectionSlug } = useParams();
   
   // Extract section slug from URL path if not in params (for specific routes)
   if (!sectionSlug) {
@@ -98,6 +114,25 @@ function DynamicSubsectionRoute() {
     return <div><p>Section not found</p></div>;
   }
 
+  // Handle 3rd level (sub-subsection) routing for PRV
+  if (subSubsectionSlug) {
+    let SubComponent;
+    
+    // Check if this is a PRV with-switches or threaded sub-subsection
+    if (subsectionSlug === 'with-switches' && section['with-switches-subs']) {
+      SubComponent = section['with-switches-subs'][subSubsectionSlug];
+    } else if (subsectionSlug === 'threaded' && section['threaded-subs']) {
+      SubComponent = section['threaded-subs'][subSubsectionSlug];
+    }
+    
+    if (SubComponent) {
+      return <SubComponent />;
+    }
+    
+    return <div><p>Sub-subsection not found</p></div>;
+  }
+
+  // Handle 2nd level (subsection) routing
   const Component = section[subsectionSlug];
   if (!Component) {
     return <div><p>Subsection not found</p></div>;
@@ -117,11 +152,13 @@ export default function AppRouter() {
         
         {/* Special Direct Routes */}
         <Route path="/products/pressure-alarm-system" element={<LowHighPressureAlarmSystem />} />
+        <Route path="/products/pressure-relief-valves-with-oil-level-indicator" element={<PRVWithLiquidLevelIndicator />} />
         <Route path="/products/solenoid-interlock-device" element={<SolenoidInterlockDevice />} />
         
         {/* Generic Products Routes */}
         <Route path="/products/:sectionSlug" element={<ProductSection />} />
         <Route path="/products/:sectionSlug/:subsectionSlug" element={<DynamicSubsectionRoute />} />
+        <Route path="/products/:sectionSlug/:subsectionSlug/:subSubsectionSlug" element={<DynamicSubsectionRoute />} />
         
         {/* Legacy Routes - kept for backward compatibility */}
         <Route path="/gas-monitoring-system" element={<GasMonitoringSystem />} />
