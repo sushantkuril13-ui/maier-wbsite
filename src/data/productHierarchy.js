@@ -45,7 +45,8 @@ const productHierarchy = [
     slides: [
       { img: '/images/Product Images/OLI.png', caption: 'Oil Level Indicator' },
       { img: '/images/Product Images/OLI_P.png', caption: 'Vertical OLI' },
-      { img: '/images/Product Images/OLI_PRISMATIC.png', caption: 'Prismatic OLI' }
+      { img: '/images/Product Images/OLI_PRISMATIC.png', caption: 'Prismatic OLI' },
+      { img: '/images/Product Images/TOLG_BT.png', caption: 'Tubular OLI' }
     ],
     subsections: [
       { 
@@ -81,7 +82,11 @@ const productHierarchy = [
     icon: '/images/icon-gas-monitoring-system.png',
     catalogueLink: '/downloads',
     slides: [
-      { img: '/images/Product Images/Gas Monitoring.png', caption: 'Nitrogen Gas Monitoring' }
+      { img: '/images/Product Images/GMS_SDGR02.png', caption: 'SDGR-02' },
+      { img: '/images/Product Images/GMS_SDGR02D.png', caption: 'SDGR-02D' },
+      { img: '/images/Product Images/GMS_DGR02.png', caption: 'DGR-02' },
+      { img: '/images/Product Images/GMS_DGR05.png', caption: 'DGR-05' },
+      { img: '/images/Product Images/GMS_SDGR02.png', caption: 'TGR-02' }
     ],
     subsections: [
       { 
