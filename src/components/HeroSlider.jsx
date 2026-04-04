@@ -63,13 +63,13 @@ export default function HeroSlider() {
       image: '/images/Product Images/TOG_AT.png',
       link: '/tubular-oil-level-gauge'
     },
-    {
-      id: 9,
-      title: 'Threaded Pressure Relief Valve',
-      description: 'Threaded pressure relief valves providing a compact solution with easy installation and secure connections for various transformer applications.',
-      image: '/images/Product Images/PRV_PIP-32.png',
-      link: '/threaded-pressure-relief-valve'
-    }
+    // {
+    //   id: 9,
+    //   title: 'Threaded Pressure Relief Valve',
+    //   description: 'Threaded pressure relief valves providing a compact solution with easy installation and secure connections for various transformer applications.',
+    //   image: '/images/Product Images/PRV_PIP-32.png',
+    //   link: '/threaded-pressure-relief-valve'
+    // }
   ];
 
   useEffect(() => {

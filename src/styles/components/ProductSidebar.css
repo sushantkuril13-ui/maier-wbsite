@@ -1,12 +1,13 @@
 .product-sidebar {
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(180deg, #ffffff, #fbfbfb);
+  border-radius: 6px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
   height: fit-content;
+  border: 1px solid rgba(0,0,0,0.04);
 }
 
 .sidebar-panel {
-  padding: 0;
+  padding: 0.25rem;
 }
 
 .sidebar-nav {
@@ -26,7 +27,7 @@
 .sidebar-nav-link {
   display: flex;
   align-items: center;
-  padding: 15px 20px;
+  padding: 14px 18px;
   text-decoration: none;
   color: #333;
   transition: background-color 0.3s, color 0.3s;
@@ -34,21 +35,43 @@
 }
 
 .sidebar-nav-link:hover {
-  background-color: #f5f5f5;
+  background-color: #fff6f6;
   color: #b20e10;
 }
 
 .sidebar-nav-item.active > .sidebar-nav-link {
   background-color: #b20e10;
   color: #fff;
+  box-shadow: inset 4px 0 0 rgba(0,0,0,0.06);
+  position: relative;
+}
+
+.sidebar-nav-item.active > .sidebar-nav-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg,#ff4b4b,#b20e10);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.sidebar-nav-link:focus-visible {
+  outline: 3px solid rgba(178,14,16,0.12);
+  outline-offset: 2px;
 }
 
 .sidebar-icon {
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
   margin-right: 12px;
   object-fit: contain;
-  background-color: white;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 
 .sidebar-title {
@@ -87,6 +110,53 @@
 }
 
 .sidebar-subnav-link.active {
+  color: #b20e10;
+  font-weight: 600;
+  background: transparent;
+}
+
+.sidebar-subnav-link.active::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #b20e10;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.sidebar-subsubnav {
+  list-style: none;
+  margin: 0;
+  padding: 2px 0 6px;
+  background: #f7f7f7;
+  border-top: 1px dashed #e8e8e8;
+}
+
+.sidebar-subsubnav-item {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sidebar-subsubnav-item:last-child {
+  border-bottom: none;
+}
+
+.sidebar-subsubnav-link {
+  display: block;
+  color: #555;
+  text-decoration: none;
+  padding: 8px 14px 8px 44px;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.sidebar-subsubnav-link:hover {
+  background: #f2f2f2;
+  color: #b20e10;
+}
+
+.sidebar-subsubnav-link.active {
   color: #b20e10;
   font-weight: 600;
 }

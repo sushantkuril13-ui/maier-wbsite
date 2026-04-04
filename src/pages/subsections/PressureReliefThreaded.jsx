@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProductPageLayout from '../../components/ProductPageLayout.jsx';
-import productHierarchy, { getSectionBySlug } from '../../data/productHierarchy.js';
+import productHierarchy, { getSectionBySlug, getSubsectionSlides } from '../../data/productHierarchy.js';
 import '../../styles/components/ProductHierarchyPages.css';
 
 const section = getSectionBySlug('pressure-relief-valves');
@@ -235,6 +235,7 @@ const mediumSizeModelTable = [
 ];
 
 export default function PressureReliefThreaded() {
+  const slides = getSubsectionSlides('pressure-relief-valves', 'threaded');
   const breadcrumbs = [
     { label: 'Home', to: '/' },
     { label: 'Transformer Accessories', to: '/transformer-accessories' },
@@ -245,7 +246,7 @@ export default function PressureReliefThreaded() {
   return (
     <ProductPageLayout
       activeCategory="Pressure Relief Valves"
-      slides={section.slides || []}
+      slides={slides}
       breadcrumbs={breadcrumbs}
       hierarchy={productHierarchy}
       activeSectionSlug="pressure-relief-valves"

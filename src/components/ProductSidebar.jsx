@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import '../styles/components/ProductSidebar.css';
 import productHierarchy from '../data/productHierarchy.js';
 
@@ -14,9 +14,20 @@ export default function ProductSidebar({
   activeCategory,
   hierarchy,
   activeSectionSlug,
-  activeSubsectionSlug
+  activeSubsectionSlug,
+  activeSubSubsectionSlug
 }) {
   const sidebarHierarchy = hierarchy || productHierarchy;
+  const location = useLocation();
+
+  const pathParts = location.pathname.split('/').filter(Boolean);
+  const sectionFromUrl = pathParts[0] === 'products' ? pathParts[1] : undefined;
+  const subsectionFromUrl = pathParts[0] === 'products' ? pathParts[2] : undefined;
+  const subSubsectionFromUrl = pathParts[0] === 'products' ? pathParts[3] : undefined;
+
+  const resolvedSectionSlug = activeSectionSlug || sectionFromUrl;
+  const resolvedSubsectionSlug = activeSubsectionSlug || subsectionFromUrl;
+  const resolvedSubSubsectionSlug = activeSubSubsectionSlug || subSubsectionFromUrl;
 
   return (
     <aside className="product-sidebar">
@@ -25,7 +36,7 @@ export default function ProductSidebar({
           {sidebarHierarchy.map((section) => {
             const sectionLink = `/products/${section.slug}`;
             const isActiveSection =
-              activeSectionSlug === section.slug || activeCategory === section.title;
+              resolvedSectionSlug === section.slug || activeCategory === section.title;
 
             return (
               <li
@@ -41,14 +52,34 @@ export default function ProductSidebar({
                   <ul className="sidebar-subnav">
                     {section.subsections.map((subsection) => {
                       const subsectionLink = `/products/${section.slug}/${subsection.slug}`;
+                      const isActiveSubsection = resolvedSubsectionSlug === subsection.slug;
+
                       return (
                         <li key={subsection.slug} className="sidebar-subnav-item">
                           <Link
                             to={subsectionLink}
-                            className={`sidebar-subnav-link ${activeSubsectionSlug === subsection.slug ? 'active' : ''}`}
+                            className={`sidebar-subnav-link ${isActiveSubsection ? 'active' : ''}`}
                           >
                             {subsection.title}
                           </Link>
+
+                          {isActiveSubsection && subsection.subsections && subsection.subsections.length > 0 && (
+                            <ul className="sidebar-subsubnav">
+                              {subsection.subsections.map((subSubsection) => {
+                                const subSubsectionLink = `/products/${section.slug}/${subsection.slug}/${subSubsection.slug}`;
+                                return (
+                                  <li key={subSubsection.slug} className="sidebar-subsubnav-item">
+                                    <Link
+                                      to={subSubsectionLink}
+                                      className={`sidebar-subsubnav-link ${resolvedSubSubsectionSlug === subSubsection.slug ? 'active' : ''}`}
+                                    >
+                                      {subSubsection.title}
+                                    </Link>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          )}
                         </li>
                       );
                     })}

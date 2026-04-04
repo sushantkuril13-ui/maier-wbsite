@@ -12,8 +12,8 @@ const orderedCategories = [
   'PRV with Liquid Level Indicator',
   'Solenoid Interlock Device',
   'Tank Valve',
-  'Tubular Oil Level Gauge',
-  'Threaded Pressure Relief Valve',
+  // 'Tubular Oil Level Gauge',
+  // 'Threaded Pressure Relief Valve',
 ];
 
 const categoryImageMap = {
@@ -24,17 +24,37 @@ const categoryImageMap = {
   'PRV with Liquid Level Indicator': '/images/Product Images/PRV_LIQUID INDICATOR 2.png',
   'Solenoid Interlock Device': '/images/Product Images/Solenoid Interlock.png',
   'Tank Valve': '/images/Product Images/Tank Valve.png',
-  'Tubular Oil Level Gauge': '/images/Product Images/TOLG_BT.png',
-  'Threaded Pressure Relief Valve': '/images/Product Images/PRV_BB2P.png',
+  // 'Tubular Oil Level Gauge': '/images/Product Images/TOLG_BT.png',
+  // 'Threaded Pressure Relief Valve': '/images/Product Images/PRV_BB2P.png',
 };
 
 const categories = orderedCategories.map(name => {
-  const first = products.find(p => p.filter === name) || {};
+  let link = '#';
+  if (name === 'Gas Monitoring System (Automat)') {
+    link = '/products/nitrogen-gas-monitoring-system';
+  } else if (name === 'Low/High Pressure Alarm System') {
+    link = '/products/pressure-alarm-system';
+  } else if (name === 'Oil Level Indicator') {
+    link = '/products/oil-level-indicators';
+  } else if (name === 'Pressure Relief Valve') {
+    link = '/products/pressure-relief-valves';
+  } else if (name === 'PRV with Liquid Level Indicator') {
+    link = '/products/pressure-relief-valves-with-oil-level-indicator';
+  } else if (name === 'Solenoid Interlock Device') {
+    link = '/products/solenoid-interlock-device';
+  } else if (name === 'Tank Valve') {
+    link = '/products/tank-components';
+  // } else if (name === 'Tubular Oil Level Gauge') {
+  //   link = '/products/oil-level-indicator/tubular';
+  // } else if (name === 'Threaded Pressure Relief Valve') {
+  //   link = '/products/pressure-relief-valves/threaded';
+  }
+
   return {
     title: name,
-    img: categoryImageMap[name] || first.img || '/images/Product Images/OLI.png',
+    img: categoryImageMap[name] || '/images/Product Images/OLI.png',
     desc: `${name} — explore our selection of products and components.`,
-    link: first.link || '#',
+    link: link,
   };
 });
 
@@ -43,7 +63,7 @@ export default function ProductCategoryTabs() {
   return (
     <section className="product-category-tabs-section">
       <div className="container">
-        <h2 className="section-title">Product Solutions</h2>
+        <h2 className="section-title">Our Solutions</h2>
         <div className="product-category-tabs">
           <ul className="tab-list">
             {categories.map((cat, i) => (

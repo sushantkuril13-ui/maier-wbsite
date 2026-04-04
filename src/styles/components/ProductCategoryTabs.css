@@ -1,99 +1,148 @@
+.product-category-tabs-section {
+  padding: 4rem 1rem;
+  background-color: #f8f9fa;
+}
+
 .product-category-tabs {
-  margin: 2rem 0;
+  margin: 0;
   display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
+  flex-direction: row-reverse;
+  gap: 3rem;
+  align-items: flex-start;
 }
 
 .tab-list {
-  flex: 0 0 40%;
+  flex: 0 0 350px;
   list-style: none;
   padding: 0;
   margin: 0;
-  border-left: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  overflow: hidden;
 }
 
 .tab-list li {
-  padding: 12px 18px;
+  padding: 16px 20px;
   cursor: pointer;
-  border-bottom: 1px solid #eee;
-  transition: all 0.2s ease;
-  font-size: 0.95rem;
-  color: #555;
-  text-align: right;
-  position: relative;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  color: #444;
+  text-align: left;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .tab-list li::after {
-  content: '';
-  position: absolute;
-  right: -1px;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: transparent;
+  content: '→';
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  color: #b20e10;
+}
+
+.tab-list li:last-child {
+  border-bottom: none;
 }
 
 .tab-list li.active {
-  background: #fcfcfc;
+  background: #fff;
   color: #b20e10;
-  font-weight: 600;
+  box-shadow: inset 4px 0 0 #b20e10;
 }
 
 .tab-list li.active::after {
-  background: #b20e10;
+  opacity: 1;
+  transform: translateX(0);
 }
 
-.tab-list li:hover {
-  background: #f9f9f9;
+.tab-list li:hover:not(.active) {
+  background: #fffafa;
+  color: #b20e10;
 }
 
 .tab-content {
   flex: 1;
-  padding: 0 1rem;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tab-content .img-wrapper {
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .tab-content img {
   width: 100%;
-  max-width: 450px;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+  padding: 2rem;
+  margin: 0;
+  max-width: none;
+  box-shadow: none;
+}
+
+.tab-content .text-wrapper {
+  padding: 0 1rem;
 }
 
 .tab-content h3 {
   color: #333;
-  margin-bottom: 0.75rem;
-  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .tab-content p {
   line-height: 1.8;
   color: #666;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  max-width: 600px;
 }
 
 .tab-content .btn {
   background: #b20e10;
   color: #fff;
-  padding: 10px 24px;
+  padding: 14px 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .product-category-tabs {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    gap: 2rem;
   }
+  
   .tab-list {
-    flex: auto;
-    border-left: none;
-    border-top: 1px solid #ddd;
+    flex: none;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .tab-list li {
-    text-align: center;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .tab-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .tab-content .img-wrapper {
+    height: 250px;
   }
 }
