@@ -11,7 +11,7 @@ export default function HeroSlider() {
       id: 1,
       title: 'Gas Monitoring System (Automat)',
       description: 'Used in transformers or other sealed tanks, our gas monitoring systems maintain a constant nitrogen or inert gas pressure to prevent atmospheric air and moisture ingress, with dual-stage regulation and safety valves for reliable operation.',
-      image: '/images/Product Images/GMS_SDGR02D.png',
+      image: '/images/Product Images/regulator.jpeg',
       link: '/gas-monitoring-system'
     },
     {

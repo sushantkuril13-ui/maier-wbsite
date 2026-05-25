@@ -220,7 +220,9 @@ export default function ReferencesSlider() {
   return (
     <section id="references" className="references-section">
       <div className="container">
-        <h2 className="section-title">Our Customers</h2>
+        <h2 className="section-title" style={{ color: '#fff' }}>
+          Our Customers
+        </h2>
         <div className="slider-wrapper">
           <button className="references-nav-btn prev-btn" onClick={prevSlide} aria-label="Previous reference">
             ‹
