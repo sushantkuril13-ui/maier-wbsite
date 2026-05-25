@@ -437,19 +437,19 @@ export default function ProductSubsection() {
       if (subsection.slug === 'alxf') return <PrvWithOliContent modelType="Flange" modelCode="ALXF" />;
     }
 
-    if (section.slug === 'tank-components') {
-      if (subsection.slug === 'gfv-1') return <TankComponentModelContent code="GFV-1" note="Longer valve (33 mm), used for special gases such as SF6 and switchgear applications." />;
-      if (subsection.slug === 'gfv-2') return <TankComponentModelContent code="GFV-2" note="Most commonly used compact model, typically mounted from inside of tank." />;
-      if (subsection.slug === 'gfv-3') return <TankComponentModelContent code="GFV-3" note="Model listed in catalogue; visual reference provided in source document." />;
-      if (subsection.slug === 'gfv-4') return <TankComponentModelContent code="GFV-4" note="1/4 in brass valve available in NPT and BSP thread options." />;
-      if (subsection.slug === 'gfv-5') return <TankComponentModelContent code="GFV-5" note="Economical alternative to GFV-2, available in brass/aluminium and without thread." />;
-      if (subsection.slug === 'gfv-6') return <TankComponentModelContent code="GFV-6" note="Economical alternative to GFV-1, available in brass/aluminium and without thread." />;
-      if (subsection.slug === 'special-options-and-variants') return <TankComponentSpecialOptions />;
-      // if (subsection.slug === 'gfv-1b-model') return <TankComponentModelContent code="GFV-1B" note="1/8 in BSP mounting thread with rubber O-ring or aluminium washer fitment." />;
-      // if (subsection.slug === 'gfv-2b-model') return <TankComponentModelContent code="GFV-2B" note="1/8 in BSP mounting thread with rubber O-ring or aluminium washer fitment." />;
-      // if (subsection.slug === 'brass-cap-options') return <TankComponentModelContent code="Brass Cap Options" note="All models available with or without brass cap." />;
-      // if (subsection.slug === 'finish-options') return <TankComponentModelContent code="Finish Options" note="All models available in natural finish or nickel plated finish." />;
-    }
+    // if (section.slug === 'tank-components') {
+    //   if (subsection.slug === 'gfv-1') return <TankComponentModelContent code="GFV-1" note="Longer valve (33 mm), used for special gases such as SF6 and switchgear applications." />;
+    //   if (subsection.slug === 'gfv-2') return <TankComponentModelContent code="GFV-2" note="Most commonly used compact model, typically mounted from inside of tank." />;
+    //   if (subsection.slug === 'gfv-3') return <TankComponentModelContent code="GFV-3" note="Model listed in catalogue; visual reference provided in source document." />;
+    //   if (subsection.slug === 'gfv-4') return <TankComponentModelContent code="GFV-4" note="1/4 in brass valve available in NPT and BSP thread options." />;
+    //   if (subsection.slug === 'gfv-5') return <TankComponentModelContent code="GFV-5" note="Economical alternative to GFV-2, available in brass/aluminium and without thread." />;
+    //   if (subsection.slug === 'gfv-6') return <TankComponentModelContent code="GFV-6" note="Economical alternative to GFV-1, available in brass/aluminium and without thread." />;
+    //   if (subsection.slug === 'special-options-and-variants') return <TankComponentSpecialOptions />;
+    //   // if (subsection.slug === 'gfv-1b-model') return <TankComponentModelContent code="GFV-1B" note="1/8 in BSP mounting thread with rubber O-ring or aluminium washer fitment." />;
+    //   // if (subsection.slug === 'gfv-2b-model') return <TankComponentModelContent code="GFV-2B" note="1/8 in BSP mounting thread with rubber O-ring or aluminium washer fitment." />;
+    //   // if (subsection.slug === 'brass-cap-options') return <TankComponentModelContent code="Brass Cap Options" note="All models available with or without brass cap." />;
+    //   // if (subsection.slug === 'finish-options') return <TankComponentModelContent code="Finish Options" note="All models available in natural finish or nickel plated finish." />;
+    // }
 
     return null;
   };

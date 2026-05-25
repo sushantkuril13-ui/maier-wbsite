@@ -8,6 +8,20 @@ export default function HeroSlider() {
   // product entries derived from pages directory; update images and descriptions as needed
   const slides = [
     {
+      id: 4,
+      title: 'Pressure Relief Valve',
+      description: 'Pressure relief valves manufactured in various sizes and models to vent excess pressure safely and protect transformer equipment from overpressure incidents.',
+      image: '/images/Product Images/PRV_DP3EF.png',
+      link: '/pressure-relief-valve'
+    },
+    {
+      id: 5,
+      title: 'PRV with Liquid Level Indicator',
+      description: 'A dual-purpose unit combining a pressure relief valve with a liquid level indicator, offering convenient monitoring and safety in one compact assembly.',
+      image: '/images/Product Images/PRV_LIQUID INDICATOR.png',
+      link: '/prv-with-liquid-level-indicator'
+    },
+    {
       id: 1,
       title: 'Gas Monitoring System (Automat)',
       description: 'Used in transformers or other sealed tanks, our gas monitoring systems maintain a constant nitrogen or inert gas pressure to prevent atmospheric air and moisture ingress, with dual-stage regulation and safety valves for reliable operation.',
@@ -29,20 +43,6 @@ export default function HeroSlider() {
       link: '/oil-level-indicators'
     },
     {
-      id: 4,
-      title: 'Pressure Relief Valve',
-      description: 'Pressure relief valves manufactured in various sizes and models to vent excess pressure safely and protect transformer equipment from overpressure incidents.',
-      image: '/images/Product Images/PRV_DP3EF.png',
-      link: '/pressure-relief-valve'
-    },
-    {
-      id: 5,
-      title: 'PRV with Liquid Level Indicator',
-      description: 'A dual-purpose unit combining a pressure relief valve with a liquid level indicator, offering convenient monitoring and safety in one compact assembly.',
-      image: '/images/Product Images/PRV_LIQUID INDICATOR.png',
-      link: '/prv-with-liquid-level-indicator'
-    },
-    {
       id: 6,
       title: 'Solenoid Interlock Device',
       description: 'Solenoid interlock devices providing reliable electrical isolation to ensure safe servicing and prevent unauthorized operation of transformer equipment.',
@@ -53,7 +53,7 @@ export default function HeroSlider() {
       id: 7,
       title: 'Tank Valve',
       description: 'Tank valves built for durability, allowing component replacement without draining the insulating liquid and ensuring smooth maintenance operations.',
-      image: '/images/Product Images/TANK VALVE.png',
+      image: '/images/Product Images/Tank Valve.jpeg',
       link: '/tank-valve'
     },
     {
