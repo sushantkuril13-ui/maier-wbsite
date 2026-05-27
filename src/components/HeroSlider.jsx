@@ -15,25 +15,11 @@ export default function HeroSlider() {
       link: '/pressure-relief-valve'
     },
     {
-      id: 5,
-      title: 'PRV with Liquid Level Indicator',
-      description: 'A dual-purpose unit combining a pressure relief valve with a liquid level indicator, offering convenient monitoring and safety in one compact assembly.',
-      image: '/images/Product Images/PRV_LIQUID INDICATOR.png',
-      link: '/prv-with-liquid-level-indicator'
-    },
-    {
       id: 1,
       title: 'Gas Monitoring System (Automat)',
       description: 'Used in transformers or other sealed tanks, our gas monitoring systems maintain a constant nitrogen or inert gas pressure to prevent atmospheric air and moisture ingress, with dual-stage regulation and safety valves for reliable operation.',
       image: '/images/Product Images/regulator.jpeg',
       link: '/gas-monitoring-system'
-    },
-    {
-      id: 2,
-      title: 'Low/High Pressure Alarm System',
-      description: 'An alarm system that detects both low and high pressure conditions in transformer tanks, providing early warning to protect equipment and prevent failures.',
-      image: '/images/Product Images/LHPAS.png',
-      link: '/low-high-pressure-alarm-system'
     },
     {
       id: 3,
@@ -43,13 +29,6 @@ export default function HeroSlider() {
       link: '/oil-level-indicators'
     },
     {
-      id: 6,
-      title: 'Solenoid Interlock Device',
-      description: 'Solenoid interlock devices providing reliable electrical isolation to ensure safe servicing and prevent unauthorized operation of transformer equipment.',
-      image: '/images/Product Images/SOLENOID INTERLOCK DEVICE.png',
-      link: '/solenoid-interlock-device'
-    },
-    {
       id: 7,
       title: 'Tank Valve',
       description: 'Tank valves built for durability, allowing component replacement without draining the insulating liquid and ensuring smooth maintenance operations.',
@@ -57,12 +36,33 @@ export default function HeroSlider() {
       link: '/tank-valve'
     },
     {
-      id: 8,
-      title: 'Tubular Oil Level Gauge',
-      description: 'Tubular oil level gauges offering clear, accurate indication of fluid level, facilitating easy visual inspection and maintenance.',
-      image: '/images/Product Images/TOG_AT.png',
-      link: '/tubular-oil-level-gauge'
+      id: 5,
+      title: 'PRV with Liquid Level Indicator',
+      description: 'A dual-purpose unit combining a pressure relief valve with a liquid level indicator, offering convenient monitoring and safety in one compact assembly.',
+      image: '/images/Product Images/PRV_LIQUID INDICATOR.png',
+      link: '/prv-with-liquid-level-indicator'
     },
+    {
+      id: 6,
+      title: 'Solenoid Interlock Device',
+      description: 'Solenoid interlock devices providing reliable electrical isolation to ensure safe servicing and prevent unauthorized operation of transformer equipment.',
+      image: '/images/Product Images/SOLENOID INTERLOCK DEVICE.png',
+      link: '/solenoid-interlock-device'
+    },
+    {
+      id: 2,
+      title: 'Low/High Pressure Alarm System',
+      description: 'An alarm system that detects both low and high pressure conditions in transformer tanks, providing early warning to protect equipment and prevent failures.',
+      image: '/images/Product Images/LHPAS.png',
+      link: '/low-high-pressure-alarm-system'
+    }
+    // {
+    //   id: 8,
+    //   title: 'Tubular Oil Level Gauge',
+    //   description: 'Tubular oil level gauges offering clear, accurate indication of fluid level, facilitating easy visual inspection and maintenance.',
+    //   image: '/images/Product Images/TOG_AT.png',
+    //   link: '/tubular-oil-level-gauge'
+    // },
     // {
     //   id: 9,
     //   title: 'Threaded Pressure Relief Valve',

@@ -32,15 +32,15 @@ export default function Footer() {
     {
       title: 'Products',
       links: [
-        { label: 'Gas Monitoring System (Automat)', href: '/gas-monitoring-system#article' },
-        { label: 'Low/High Pressure Alarm System', href: '/low-high-pressure-alarm-system#article' },
-        { label: 'Oil Level Indicator', href: '/oil-level-indicators#article' },
         { label: 'Pressure Relief Valve', href: '/pressure-relief-valve#article' },
+        { label: 'Oil Level Indicator', href: '/oil-level-indicators#article' },
+        { label: 'Gas Monitoring System (Automat)', href: '/gas-monitoring-system#article' },
+        { label: 'Tank Valve', href: '/tank-valve#article' },
         { label: 'PRV with Liquid Level Indicator', href: '/prv-with-liquid-level-indicator#article' },
         { label: 'Solenoid Interlock Device', href: '/solenoid-interlock-device#article' },
-        { label: 'Tank Valve', href: '/tank-valve#article' },
-        { label: 'Tubular Oil Level Gauge', href: '/tubular-oil-level-gauge#article' },
-        { label: 'Threaded Pressure Relief Valve', href: '/threaded-pressure-relief-valve#article' }
+        // { label: 'Tubular Oil Level Gauge', href: '/tubular-oil-level-gauge#article' },
+        // { label: 'Threaded Pressure Relief Valve', href: '/threaded-pressure-relief-valve#article' }
+        { label: 'Low/High Pressure Alarm System', href: '/low-high-pressure-alarm-system#article' },
       ]
     },
     {

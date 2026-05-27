@@ -37,7 +37,53 @@ const productHierarchy = [
       }
     ]
   },
+
   {
+    title: 'Nitrogen Gas Monitoring System',
+    slug: 'nitrogen-gas-monitoring-system',
+    icon: '/images/icon-gas-monitoring-system.png',
+    catalogueLink: '/downloads',
+    slides: [
+      { img: '/images/Product Images/GMS_SDGR02.png', caption: 'SDGR-02' },
+      { img: '/images/Product Images/GMS_SDGR02D.png', caption: 'SDGR-02D' },
+      { img: '/images/Product Images/GMS_DGR02.png', caption: 'DGR-02' },
+      { img: '/images/Product Images/GMS_DGR05.png', caption: 'DGR-05' },
+      { img: '/images/Product Images/GMS_SDGR02.png', caption: 'TGR-02' }
+    ],
+    subsections: [
+
+      // { 
+      //   title: 'SDGR-02D', 
+      //   slug: 'sdgr-02d',
+      //   slides: [{ img: '/images/Product Images/GMS_SDGR02D.png', caption: 'SDGR-02D' }],
+      //   subsections: []
+      // },
+      { 
+        title: 'DGR-02', 
+        slug: 'dgr-02',
+        slides: [{ img: '/images/Product Images/GMS_DGR02.png', caption: 'DGR-02' }],
+        subsections: []
+      },
+      { 
+        title: 'DGR-05', 
+        slug: 'dgr-05',
+        slides: [{ img: '/images/Product Images/GMS_DGR05.png', caption: 'DGR-05' }],
+        subsections: []
+      },      { 
+        title: 'SDGR-02', 
+        slug: 'sdgr-02',
+        slides: [{ img: '/images/Product Images/GMS_SDGR02.png', caption: 'SDGR-02' }],
+        subsections: []
+      },
+      { 
+        title: 'TGR-02', 
+        slug: 'tgr-02',
+        slides: [{ img: '/images/Product Images/GMS_SDGR02.png', caption: 'TGR-02' }],
+        subsections: []
+      }
+    ]
+  },
+    {
     title: 'Oil Level Indicator',
     slug: 'oil-level-indicator',
     icon: '/images/Icons-oelstandsanzeiger.png',
@@ -76,72 +122,7 @@ const productHierarchy = [
       // { title: 'Other Models', slug: 'other-models' }
     ]
   },
-  {
-    title: 'Nitrogen Gas Monitoring System',
-    slug: 'nitrogen-gas-monitoring-system',
-    icon: '/images/icon-gas-monitoring-system.png',
-    catalogueLink: '/downloads',
-    slides: [
-      { img: '/images/Product Images/GMS_SDGR02.png', caption: 'SDGR-02' },
-      { img: '/images/Product Images/GMS_SDGR02D.png', caption: 'SDGR-02D' },
-      { img: '/images/Product Images/GMS_DGR02.png', caption: 'DGR-02' },
-      { img: '/images/Product Images/GMS_DGR05.png', caption: 'DGR-05' },
-      { img: '/images/Product Images/GMS_SDGR02.png', caption: 'TGR-02' }
-    ],
-    subsections: [
-      { 
-        title: 'SDGR-02', 
-        slug: 'sdgr-02',
-        slides: [{ img: '/images/Product Images/GMS_SDGR02.png', caption: 'SDGR-02' }],
-        subsections: []
-      },
-      { 
-        title: 'SDGR-02D', 
-        slug: 'sdgr-02d',
-        slides: [{ img: '/images/Product Images/GMS_SDGR02D.png', caption: 'SDGR-02D' }],
-        subsections: []
-      },
-      { 
-        title: 'DGR-02', 
-        slug: 'dgr-02',
-        slides: [{ img: '/images/Product Images/GMS_DGR02.png', caption: 'DGR-02' }],
-        subsections: []
-      },
-      { 
-        title: 'DGR-05', 
-        slug: 'dgr-05',
-        slides: [{ img: '/images/Product Images/GMS_DGR05.png', caption: 'DGR-05' }],
-        subsections: []
-      },
-      { 
-        title: 'TGR-02', 
-        slug: 'tgr-02',
-        slides: [{ img: '/images/Product Images/GMS_SDGR02.png', caption: 'TGR-02' }],
-        subsections: []
-      }
-    ]
-  },
-  {
-    title: 'Pressure Relief Valves with Oil Level Indicator',
-    slug: 'pressure-relief-valves-with-oil-level-indicator',
-    icon: '/images/icon-prv-eith-level-indicator.png',
-    catalogueLink: '/downloads',
-    slides: [
-      { img: '/images/Product Images/PRV-LLI.png', caption: 'PRV with OLI' }
-    ],
-    subsections: []
-  },
-  {
-    title: 'Pressure Alarm System',
-    slug: 'pressure-alarm-system',
-    icon: '/images/icon-low-high-pressure.png',
-    catalogueLink: '/downloads',
-    slides: [
-      { img: '/images/Product Images/Pressure Alarm.png', caption: 'Pressure Alarm System' }
-    ],
-    subsections: []
-  },
-  {
+    {
     title: 'Tank Components',
     slug: 'tank-components',
     icon: '/images/Icon-armaturen-kesselbau.png',
@@ -199,12 +180,33 @@ const productHierarchy = [
     // ]
   },
   {
+    title: 'Pressure Relief Valves with Oil Level Indicator',
+    slug: 'pressure-relief-valves-with-oil-level-indicator',
+    icon: '/images/icon-prv-eith-level-indicator.png',
+    catalogueLink: '/downloads',
+    slides: [
+      { img: '/images/Product Images/PRV-LLI.png', caption: 'PRV with OLI' }
+    ],
+    subsections: []
+  },
+  
+  {
     title: 'Solenoid Interlock Device',
     slug: 'solenoid-interlock-device',
     icon: '/images/icon-solenooid-interlock-device.png',
     catalogueLink: '/downloads',
     slides: [
       { img: '/images/Product Images/Solenoid Interlock.png', caption: 'Solenoid Interlock Device' }
+    ],
+    subsections: []
+  },
+  {
+    title: 'Pressure Alarm System',
+    slug: 'pressure-alarm-system',
+    icon: '/images/icon-low-high-pressure.png',
+    catalogueLink: '/downloads',
+    slides: [
+      { img: '/images/Product Images/Pressure Alarm.png', caption: 'Pressure Alarm System' }
     ],
     subsections: []
   }
