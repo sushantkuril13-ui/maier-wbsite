@@ -50,23 +50,10 @@ export default function ReferencesSlider() {
   const instantScrollRef = useRef(false);
   const suppressScrollRef = useRef(false);
   const navClickRef = useRef(false);
+  const scrollEndTimerRef = useRef(null);
 
-  // helper: smooth animated horizontal scroll with easing
-  const animateScroll = (container, targetLeft, duration = 500) => {
-    if (!container) return;
-    const start = container.scrollLeft;
-    const change = targetLeft - start;
-    if (change === 0) return;
-    const startTime = performance.now();
-    const easeInOutQuad = (t) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t);
-    const step = (now) => {
-      const elapsed = now - startTime;
-      const t = Math.min(1, elapsed / duration);
-      container.scrollLeft = Math.round(start + change * easeInOutQuad(t));
-      if (t < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  };
+  // use native smooth scrolling via element.scrollTo({ behavior: 'smooth' })
+  // this provides a fluent, GPU-friendly scroll animation handled by the browser
 
   // autoplay
   useEffect(() => {
@@ -74,6 +61,77 @@ export default function ReferencesSlider() {
     const id = setInterval(() => setActiveIndex((prev) => prev + 1), 3000);
     return () => clearInterval(id);
   }, [autoPlay]);
+
+  // on mount: jump to the middle copy instantly to make looping seamless
+  useEffect(() => {
+    const container = sliderRef.current;
+    if (!container) return;
+    const children = container.children;
+    if (!children || children.length === 0) return;
+    const middle = len;
+    const child = children[middle];
+    if (child) {
+      const left = Math.round(child.offsetLeft + child.offsetWidth / 2 - container.offsetWidth / 2);
+      // set instantly without triggering the main effect
+      suppressScrollRef.current = true;
+      container.scrollLeft = left;
+      setActiveIndex(middle);
+    }
+  }, [len]);
+
+  // detect scroll end (debounced) and normalize into the middle copy for seamless looping
+  useEffect(() => {
+    const container = sliderRef.current;
+    if (!container) return;
+    const onScroll = () => {
+      if (scrollEndTimerRef.current) clearTimeout(scrollEndTimerRef.current);
+      scrollEndTimerRef.current = setTimeout(() => {
+        const children = container.children;
+        if (!children || children.length === 0) return;
+        const center = container.scrollLeft + container.offsetWidth / 2;
+        let nearest = 0;
+        let minDiff = Infinity;
+        for (let i = 0; i < children.length; i++) {
+          const kid = children[i];
+          const kidCenter = kid.offsetLeft + kid.offsetWidth / 2;
+          const diff = Math.abs(kidCenter - center);
+          if (diff < minDiff) {
+            minDiff = diff;
+            nearest = i;
+          }
+        }
+        // center on nearest without animation by skipping the effect
+        suppressScrollRef.current = true;
+        const target = children[nearest];
+        if (target) {
+          const targetLeft = Math.round(target.offsetLeft + target.offsetWidth / 2 - container.offsetWidth / 2);
+          container.scrollLeft = targetLeft;
+        }
+        setActiveIndex(nearest);
+
+        // if nearest is outside the middle copy, map it into the middle copy instantly
+        const middleStart = len;
+        const middleEnd = 2 * len - 1;
+        if (nearest < middleStart || nearest > middleEnd) {
+          const mapped = ((nearest % len) + len) % len + len;
+          const mappedChild = children[mapped];
+          if (mappedChild) {
+            const mappedLeft = Math.round(mappedChild.offsetLeft + mappedChild.offsetWidth / 2 - container.offsetWidth / 2);
+            suppressScrollRef.current = true;
+            container.scrollLeft = mappedLeft;
+            setActiveIndex(mapped);
+          } else {
+            setActiveIndex(mapped);
+          }
+        }
+      }, 140);
+    };
+    container.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      container.removeEventListener('scroll', onScroll);
+      if (scrollEndTimerRef.current) clearTimeout(scrollEndTimerRef.current);
+    };
+  }, [len]);
 
   const nextSlide = () => {
     const container = sliderRef.current;
@@ -84,9 +142,9 @@ export default function ReferencesSlider() {
       if (idx < 0) idx = ((idx % total) + total) % total;
       if (idx >= total) idx = idx % total;
       const target = container.children[idx];
-      if (target) {
+        if (target) {
         const targetLeft = Math.round(target.offsetLeft + target.offsetWidth / 2 - container.offsetWidth / 2);
-        animateScroll(container, targetLeft, 500);
+        container.scrollTo({ left: targetLeft, behavior: 'smooth' });
       }
     }
     navClickRef.current = true; // mark nav click to skip effect animation
@@ -104,9 +162,9 @@ export default function ReferencesSlider() {
       if (idx < 0) idx = ((idx % total) + total) % total;
       if (idx >= total) idx = idx % total;
       const target = container.children[idx];
-      if (target) {
+        if (target) {
         const targetLeft = Math.round(target.offsetLeft + target.offsetWidth / 2 - container.offsetWidth / 2);
-        animateScroll(container, targetLeft, 500);
+        container.scrollTo({ left: targetLeft, behavior: 'smooth' });
       }
     }
     navClickRef.current = true; // mark nav click to skip effect animation
@@ -193,8 +251,8 @@ export default function ReferencesSlider() {
       return () => clearTimeout(t);
     }
 
-    // autoplay: animate smoothly
-    animateScroll(container, targetLeft, 500);
+    // autoplay: use native smooth scroll
+    container.scrollTo({ left: targetLeft, behavior: 'smooth' });
 
     // after animation, normalize index if it moved into cloned area
     const adjustAfter = () => {
@@ -220,7 +278,9 @@ export default function ReferencesSlider() {
   return (
     <section id="references" className="references-section">
       <div className="container">
-        <h2 className="section-title">Our Customers</h2>
+        <h2 className="section-title" style={{ color: '#fff' }}>
+          Our Customers
+        </h2>
         <div className="slider-wrapper">
           <button className="references-nav-btn prev-btn" onClick={prevSlide} aria-label="Previous reference">
             ‹
@@ -230,9 +290,15 @@ export default function ReferencesSlider() {
               <div
                 key={`${ref.id}-${i}`}
                 className="reference-item"
-                style={{ backgroundImage: `url('${ref.logo}')` }}
                 title={ref.name}
-              />
+              >
+                <img
+                  src={ref.logo}
+                  alt={ref.name}
+                  loading="lazy"
+                  onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                />
+              </div>
             ))}
           </div>
           <button className="references-nav-btn next-btn" onClick={nextSlide} aria-label="Next reference">
@@ -243,3 +309,4 @@ export default function ReferencesSlider() {
     </section>
   );
 }
+ 

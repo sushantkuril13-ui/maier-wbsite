@@ -25,92 +25,53 @@ export default function NitrogenGasTGR02() {
       activeSubsectionSlug="tgr-02"
     >
       <article>
-        <h1>TGR-02 - Tank-Top Dual Gas Regulator (2 Cylinders)</h1>
+        <h1>TGR</h1>
 
         <section>
-          <h2>Overview</h2>
+          <h2>Product Overview</h2>
+          <p>
+            The TGR is specially designed for precise nitrogen pressure regulation in transformers and sealed tanks. Featuring Single or Double cylinders, a 3-stage regulation system, and 2 gauges, it ensures accurate monitoring and stable low-pressure control. Its robust cabinet-mounted design offers safe installation and easy maintenance. The system provides precise control even at very low pressures, enhancing transformer insulation and operational reliability. Additionally, the integrated 3-way valve enables efficient gas purging at higher pressure for conservators without air cells. This helps prevent moisture contamination, oxidation, and pressure fluctuations, ensuring extended transformer life and improved performance.
+          </p>
+        </section>
+
+        <section>
+          <h2>Technical Specifications</h2>
           <table className="specification-table">
             <tbody>
               <tr>
-                <td><strong>Model</strong></td>
-                <td>TGR-02</td>
+                <td><strong>Model Designation</strong></td>
+                <td>TGR</td>
               </tr>
               <tr>
-                <td><strong>No. of Cylinders</strong></td>
-                <td>2</td>
+                <td><strong>Cylinder Capacity</strong></td>
+                <td>Single Cylinder or Double Cylinder</td>
               </tr>
               <tr>
-                <td><strong>No. of Stages</strong></td>
-                <td>2</td>
+                <td><strong>Regulation Stages</strong></td>
+                <td>3-stage regulation</td>
               </tr>
               <tr>
-                <td><strong>No. of Gauges</strong></td>
-                <td>3</td>
+                <td><strong>Pressure Gauge Count</strong></td>
+                <td>2 gauges</td>
               </tr>
               <tr>
-                <td><strong>Mounting Type</strong></td>
-                <td>Tank Top</td>
+                <td><strong>Mounting Configuration</strong></td>
+                <td>Cabinet Mounting</td>
               </tr>
             </tbody>
           </table>
         </section>
 
         <section>
-          <h2>Application</h2>
-          <p>
-            Tank-top mounted dual gas regulator specifically designed for systems with 2 high-pressure cylinders.
-            Features 3 pressure gauges for monitoring at key points. Ideal for installations where space is constrained
-            and top-mounting of regulators directly on the storage tank is preferred. Provides reliable positive pressure
-            maintenance with dual-sphere configuration for redundancy and safety.
-          </p>
-        </section>
-
-        <section>
-          <h2>Working</h2>
-          <p>
-            Gas regulator maintains positive pressure in the connected tank and automatically allows additional gas
-            flow from high-pressure cylinders when pressure drops below set point. The dual-stage regulation system
-            improves flow stability and efficiency. Tank-top mounting configuration reduces installation space requirements
-            while maintaining ease of access and maintenance. The regulator connects directly to high-pressure cylinders
-            and distributes gas to the tank at controlled, safe pressure levels.
-          </p>
-        </section>
-
-        <section>
           <h2>Key Features</h2>
           <ul>
-            <li>Tank-Top mounting for space-efficient installations</li>
-            <li>Dual high-pressure cylinder support (2 cylinders)</li>
-            <li>2-stage regulation for improved efficiency</li>
-            <li>3 pressure gauges for essential pressure monitoring</li>
-            <li>Automatic pressure maintenance from 0.05 to 0.50 kg/cm²</li>
-            <li>Redundant safety features via dual-sphere configuration</li>
-            <li>Safety valves at high-pressure (H.P.) and low-pressure (L.P.) stages</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Technical Specifications</h2>
-          <ul>
-            <li><strong>Pressure Range:</strong> 0.05 to 0.50 kg/cm² (adjustable)</li>
-            <li><strong>Regulation Type:</strong> Double-stage</li>
-            <li><strong>Number of Gauges:</strong> 3 pressure gauges</li>
-            <li><strong>Gauge Locations:</strong> High-pressure and low-pressure monitoring points</li>
-            <li><strong>Inlet Pressure:</strong> From high-pressure gas cylinders</li>
-            <li><strong>Mounting Style:</strong> Direct tank-top installation</li>
-            <li><strong>Safety Protection:</strong> High-pressure and low-pressure safety valves</li>
-            <li><strong>Cylinder Configuration:</strong> Dual-sphere setup with 2 cylinders</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Advantages</h2>
-          <ul>
-            <li><strong>Space Efficiency:</strong> Top-mounted design minimizes floor space usage</li>
-            <li><strong>Easy Access:</strong> Convenient positioning for monitoring and maintenance</li>
-            <li><strong>Redundancy:</strong> Dual cylinder configuration provides backup supply</li>
-            <li><strong>Reliability:</strong> Proven design for industrial nitrogen gas systems</li>
-            <li><strong>Safety:</strong> Dual safety valves protect system integrity</li>
+            <li>Integrated 3-way valve for gas purging applications.</li>
+            <li>Model supports Single cylinder or Double cylinders.</li>
+            <li>Designed for industrial and power distribution applications.</li>
+            <li>Enhances transformer safety, reliability, and service life.</li>
+            <li>This Model comes with 2 pressure Gauges for detailed Input and Output.</li>
+            <li>Safety valves protect against overpressure.</li>
+            <li>Ensures moisture-free transformer operation.</li>
           </ul>
         </section>
 

@@ -35,7 +35,7 @@
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
   padding: 10px 0;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
   /* hide native scrollbar visually but keep functionality */
   scrollbar-width: none; /* Firefox */
 }
@@ -45,14 +45,31 @@
 .reference-item {
   flex: 0 0 220px; /* fixed item width - adjust as needed */
   height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.06);
   scroll-snap-align: center;
-  /* filter: grayscale(100%); */
-  transition: filter 220ms ease;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+/* image inside each item for smooth fades/transforms */
+.reference-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  opacity: 0;
+  transition: transform 320ms cubic-bezier(.2,.8,.2,1), opacity 320ms ease;
+  will-change: transform, opacity;
+}
+.reference-item img.loaded {
+  opacity: 1;
+}
+.reference-item:hover img {
+  transform: scale(1.035);
 }
 
 .reference-item:hover,

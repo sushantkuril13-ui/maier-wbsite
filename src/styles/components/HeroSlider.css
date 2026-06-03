@@ -11,8 +11,8 @@
   max-width: none;
   margin: 0 28px;
   display: grid;
-  grid-template-columns: 2.2fr 1fr; /* larger image area */
-  gap: 1.6rem;
+  grid-template-columns: 1.7fr 1fr; /* larger image area */
+  /* gap: 1.6rem; */
   /* stretch children to equal height so image and content match */
   align-items: stretch;
   padding: 0; /* internal padding handled on children */

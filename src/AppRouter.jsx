@@ -154,6 +154,7 @@ export default function AppRouter() {
         <Route path="/products/pressure-alarm-system" element={<LowHighPressureAlarmSystem />} />
         <Route path="/products/pressure-relief-valves-with-oil-level-indicator" element={<PRVWithLiquidLevelIndicator />} />
         <Route path="/products/solenoid-interlock-device" element={<SolenoidInterlockDevice />} />
+        <Route path="/products/tank-components" element={<TankValve />} />
         
         {/* Generic Products Routes */}
         <Route path="/products/:sectionSlug" element={<ProductSection />} />
@@ -167,7 +168,6 @@ export default function AppRouter() {
         <Route path="/pressure-relief-valve" element={<PressureReliefValve />} />
         <Route path="/prv-with-liquid-level-indicator" element={<PRVWithLiquidLevelIndicator />} />
         <Route path="/solenoid-interlock-device" element={<SolenoidInterlockDevice />} />
-        <Route path="/tank-valve" element={<TankValve />} />
         <Route path="/threaded-pressure-relief-valve" element={<ThreadedPressureReliefValve />} />
         <Route path="/tubular-oil-level-gauge" element={<TubularOilLevelGauge />} />
       </Routes>

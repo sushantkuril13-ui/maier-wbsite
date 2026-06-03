@@ -25,79 +25,63 @@ export default function NitrogenGasDGR05() {
       activeSubsectionSlug="dgr-05"
     >
       <article>
-        <h1>DGR-05 - Advanced Dual Gas Regulator with 5 Gauges</h1>
+        <h1>DGR-05 - 2 Stage Double Body with 5 Gauges</h1>
 
         <section>
-          <h2>Overview</h2>
+          <h2>Product Overview</h2>
+          <p>
+            The Nitrogen Gas Monitoring System Model DGR-05 is designed for efficient pressure regulation and monitoring in hermetically sealed transformers. Equipped with 1 or 2 cylinders, a 2-stage regulation system, and 5 precision gauges, it ensures accurate nitrogen pressure control for enhanced transformer safety and performance. The Cabinet-mounted design offers compact installation, durability, and easy maintenance. This system helps prevent moisture ingress, oxidation, and pressure fluctuations inside the transformer tank, thereby improving insulation efficiency, extending transformer life, and ensuring reliable operation under varying environmental and load conditions. Ideal for industrial and power distribution transformer applications.
+          </p>
+        </section>
+
+        <section>
+          <h2>Technical Specifications</h2>
           <table className="specification-table">
             <tbody>
               <tr>
-                <td><strong>Model</strong></td>
-                <td>DGR-05</td>
+                <td><strong>Model Designation</strong></td>
+                <td>DGR-05 (2 Stage Double Body)</td>
               </tr>
               <tr>
-                <td><strong>No. of Cylinders</strong></td>
-                <td>1 or 2</td>
+                <td><strong>Cylinder Capacity</strong></td>
+                <td>Single Cylinder or Double Cylinder</td>
               </tr>
               <tr>
-                <td><strong>No. of Stages</strong></td>
-                <td>2</td>
+                <td><strong>Regulation Stages</strong></td>
+                <td>2-stage regulation</td>
               </tr>
               <tr>
-                <td><strong>No. of Gauges</strong></td>
-                <td>5</td>
+                <td><strong>Pressure Gauge Count</strong></td>
+                <td>5 gauges</td>
               </tr>
               <tr>
-                <td><strong>Mounting Type</strong></td>
-                <td>Box Mounting</td>
+                <td><strong>Mounting Configuration</strong></td>
+                <td>Cabinet Mounting (dual-unit system)</td>
               </tr>
             </tbody>
           </table>
         </section>
 
         <section>
-          <h2>Application</h2>
-          <p>
-            Advanced Dual Gas Regulator featuring 5 pressure gauges. Allows individual cylinder pressure visualization
-            and more granular system monitoring. Ideal for complex installations or laboratory environments where
-            detailed pressure data is required. Box mounting configuration suitable for both single and dual cylinder
-            setups.
-          </p>
-        </section>
-
-        <section>
-          <h2>Working</h2>
-          <p>
-            Gas regulator maintains positive pressure in the connected tank and automatically allows additional gas
-            flow from high-pressure cylinder when pressure drops below set point. Double-stage regulation improves
-            flow stability and efficiency. The system includes safety valves at high-pressure (H.P.) and low-pressure
-            (L.P.) stages to prevent unwanted pressure buildup. Five gauges provide comprehensive pressure monitoring
-            at multiple points in the system.
-          </p>
-        </section>
-
-        <section>
           <h2>Key Features</h2>
           <ul>
-            <li>Box Mounting configuration for flexible installation</li>
-            <li>Supports 1 or 2 high-pressure cylinders</li>
-            <li>2-stage regulation for improved efficiency</li>
-            <li>5 pressure gauges for detailed system monitoring</li>
-            <li>Individual cylinder pressure visualization capability</li>
-            <li>Automatic pressure maintenance from 0.05 to 0.50 kg/cm²</li>
-            <li>Safety valves protect against overpressure</li>
+            <li>Model supports Single cylinder or Double cylinders.</li>
+            <li>This Model comes with 5 pressure Gauges for detailed Input and Output.</li>
+            <li>Improved stability via dual-stage design.</li>
+            <li>Flexible installation on equipment frame or vehicle.</li>
+            <li>Each channel outlet pressure adjustable separately.</li>
+            <li>Integrated Safety System, High Pressure and Low Pressure Safety Valves are provided to prevent backflow of the regulated gas.</li>
+            <li>A middle valve is provided so that whenever needed a isolation of transformer tank and main tank.</li>
+            <li>Safety valves protect against overpressure.</li>
           </ul>
         </section>
 
         <section>
-          <h2>Technical Specifications</h2>
+          <h2>Available Model</h2>
           <ul>
-            <li><strong>Pressure Range:</strong> 0.05 to 0.50 kg/cm² (adjustable)</li>
-            <li><strong>Regulation Type:</strong> Double-stage</li>
-            <li><strong>Gauge Type:</strong> 5 pressure gauges for comprehensive monitoring</li>
-            <li><strong>Monitoring capability:</strong> Individual cylinder pressure visualization</li>
-            <li><strong>Inlet Pressure:</strong> From standard high-pressure gas cylinders</li>
-            <li><strong>Safety Protection:</strong> High-pressure and low-pressure safety valves</li>
+            <li>With Only Active Part</li>
+            <li>Cabinet Mounting with Active part and single cylinder housing</li>
+            <li>Cabinet Mounting with Active part and double cylinder housing</li>
           </ul>
         </section>
 

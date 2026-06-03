@@ -8,18 +8,18 @@ export default function HeroSlider() {
   // product entries derived from pages directory; update images and descriptions as needed
   const slides = [
     {
+      id: 4,
+      title: 'Pressure Relief Valve',
+      description: 'Pressure relief valves manufactured in various sizes and models to vent excess pressure safely and protect transformer equipment from overpressure incidents.',
+      image: '/images/Product Images/PRV_DP3EF.png',
+      link: '/pressure-relief-valve'
+    },
+    {
       id: 1,
       title: 'Gas Monitoring System (Automat)',
       description: 'Used in transformers or other sealed tanks, our gas monitoring systems maintain a constant nitrogen or inert gas pressure to prevent atmospheric air and moisture ingress, with dual-stage regulation and safety valves for reliable operation.',
-      image: '/images/Product Images/GMS_SDGR02D.png',
+      image: '/images/Product Images/regulator.jpeg',
       link: '/gas-monitoring-system'
-    },
-    {
-      id: 2,
-      title: 'Low/High Pressure Alarm System',
-      description: 'An alarm system that detects both low and high pressure conditions in transformer tanks, providing early warning to protect equipment and prevent failures.',
-      image: '/images/Product Images/LHPAS.png',
-      link: '/low-high-pressure-alarm-system'
     },
     {
       id: 3,
@@ -29,11 +29,11 @@ export default function HeroSlider() {
       link: '/oil-level-indicators'
     },
     {
-      id: 4,
-      title: 'Pressure Relief Valve',
-      description: 'Pressure relief valves manufactured in various sizes and models to vent excess pressure safely and protect transformer equipment from overpressure incidents.',
-      image: '/images/Product Images/PRV_DP3EF.png',
-      link: '/pressure-relief-valve'
+      id: 7,
+      title: 'Tank Valve',
+      description: 'Tank valves built for durability, allowing component replacement without draining the insulating liquid and ensuring smooth maintenance operations.',
+      image: '/images/Product Images/Tank Valve.jpeg',
+      link: '/tank-valve'
     },
     {
       id: 5,
@@ -50,19 +50,19 @@ export default function HeroSlider() {
       link: '/solenoid-interlock-device'
     },
     {
-      id: 7,
-      title: 'Tank Valve',
-      description: 'Tank valves built for durability, allowing component replacement without draining the insulating liquid and ensuring smooth maintenance operations.',
-      image: '/images/Product Images/TANK VALVE.png',
-      link: '/tank-valve'
-    },
-    {
-      id: 8,
-      title: 'Tubular Oil Level Gauge',
-      description: 'Tubular oil level gauges offering clear, accurate indication of fluid level, facilitating easy visual inspection and maintenance.',
-      image: '/images/Product Images/TOG_AT.png',
-      link: '/tubular-oil-level-gauge'
-    },
+      id: 2,
+      title: 'Low/High Pressure Alarm System',
+      description: 'An alarm system that detects both low and high pressure conditions in transformer tanks, providing early warning to protect equipment and prevent failures.',
+      image: '/images/Product Images/LHPAS.png',
+      link: '/low-high-pressure-alarm-system'
+    }
+    // {
+    //   id: 8,
+    //   title: 'Tubular Oil Level Gauge',
+    //   description: 'Tubular oil level gauges offering clear, accurate indication of fluid level, facilitating easy visual inspection and maintenance.',
+    //   image: '/images/Product Images/TOG_AT.png',
+    //   link: '/tubular-oil-level-gauge'
+    // },
     // {
     //   id: 9,
     //   title: 'Threaded Pressure Relief Valve',

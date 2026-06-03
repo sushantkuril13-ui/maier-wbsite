@@ -5,13 +5,13 @@ import products from '../data/products.json';
 // Use the exact ordered category list provided by the user and map
 // representative images/links (fall back to first product found).
 const orderedCategories = [
-  'Gas Monitoring System (Automat)',
-  'Low/High Pressure Alarm System',
-  'Oil Level Indicator',
   'Pressure Relief Valve',
+  'Gas Monitoring System (Automat)',
+  'Oil Level Indicator',
+  'Tank Valve',
   'PRV with Liquid Level Indicator',
   'Solenoid Interlock Device',
-  'Tank Valve',
+  'Low/High Pressure Alarm System',
   // 'Tubular Oil Level Gauge',
   // 'Threaded Pressure Relief Valve',
 ];

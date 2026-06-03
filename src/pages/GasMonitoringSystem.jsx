@@ -21,26 +21,14 @@ export default function GasMonitoringSystem() {
         <section>
           <h2>Application</h2>
           <p>
-            Used in Transformer or other sealed tank while Storing / Transportation to provide constant Nitrogen (N<sub>2</sub>) / Inert Gas / Dry Air
-            pressure so as not to allow atmospheric air & moisture to enter Tank.
+            A Nitrogen Gas Monitoring System in transformers helps maintain proper internal pressure and prevents moisture or air contamination. It ensures safe transformer operation, enhances insulation life, minimizes oxidation, and improves overall performance and reliability by continuously regulating and monitoring nitrogen gas pressure within sealed transformer tanks.
           </p>
         </section>
 
         <section>
           <h2>Working</h2>
           <p>
-            Gas regulator is used to automatically maintain a positive pressure of 0.05 to 0.50 kg / cm² or as desired (pre information
-            necessary) inside the connected tank by help of attached High Pressure gas cylinder. In case pressure falls below set pressure (or
-            as set) due to leakage or temperature variation, regulator automatically allows required additional gas to flow from the attached
-            High-Pressure gas cylinder. This builds up the required pressure.
-          </p>
-          <p>
-            Double Stage regulation beside minimizes the risk also increases
-            the flow rate thus the efficiency of system. To know the inlet & outlet pressure, gauges are attached. Safety valve at High-
-            Pressure (H.P) & Low-Pressure (L.P.) is attached so that if any unwanted pressure builds up in regulator chamber is released.
-          </p>
-          <p>
-            <strong>Note:</strong> High Pressure cylinder is not a standard part of our item / supply.
+            The Nitrogen Gas Monitoring System in transformers works by regulating and monitoring nitrogen pressure inside the sealed tank. It maintains a moisture-free environment, prevents oxidation of transformer oil, and compensates for pressure variations caused by temperature changes. This system ensures efficient insulation, enhances transformer safety, and improves overall operational reliability and lifespan.
           </p>
         </section>
 

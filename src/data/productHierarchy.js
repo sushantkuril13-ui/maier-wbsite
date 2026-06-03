@@ -37,7 +37,53 @@ const productHierarchy = [
       }
     ]
   },
+
   {
+    title: 'Nitrogen Gas Monitoring System',
+    slug: 'nitrogen-gas-monitoring-system',
+    icon: '/images/icon-gas-monitoring-system.png',
+    catalogueLink: '/downloads',
+    slides: [
+      { img: '/images/Product Images/GMS_SDGR02.png', caption: 'SDGR-02' },
+      { img: '/images/Product Images/GMS_SDGR02D.png', caption: 'SDGR-02D' },
+      { img: '/images/Product Images/GMS_DGR02.png', caption: 'DGR-02' },
+      { img: '/images/Product Images/GMS_DGR05.png', caption: 'DGR-05' },
+      { img: '/images/Product Images/GMS_SDGR02.png', caption: 'TGR-02' }
+    ],
+    subsections: [
+
+      // { 
+      //   title: 'SDGR-02D', 
+      //   slug: 'sdgr-02d',
+      //   slides: [{ img: '/images/Product Images/GMS_SDGR02D.png', caption: 'SDGR-02D' }],
+      //   subsections: []
+      // },
+      { 
+        title: 'DGR-02', 
+        slug: 'dgr-02',
+        slides: [{ img: '/images/Product Images/GMS_DGR02.png', caption: 'DGR-02' }],
+        subsections: []
+      },
+      { 
+        title: 'DGR-05', 
+        slug: 'dgr-05',
+        slides: [{ img: '/images/Product Images/GMS_DGR05.png', caption: 'DGR-05' }],
+        subsections: []
+      },      { 
+        title: 'SDGR-02', 
+        slug: 'sdgr-02',
+        slides: [{ img: '/images/Product Images/GMS_SDGR02.png', caption: 'SDGR-02' }],
+        subsections: []
+      },
+      { 
+        title: 'TGR-02', 
+        slug: 'tgr-02',
+        slides: [{ img: '/images/Product Images/GMS_SDGR02.png', caption: 'TGR-02' }],
+        subsections: []
+      }
+    ]
+  },
+    {
     title: 'Oil Level Indicator',
     slug: 'oil-level-indicator',
     icon: '/images/Icons-oelstandsanzeiger.png',
@@ -76,50 +122,62 @@ const productHierarchy = [
       // { title: 'Other Models', slug: 'other-models' }
     ]
   },
-  {
-    title: 'Nitrogen Gas Monitoring System',
-    slug: 'nitrogen-gas-monitoring-system',
-    icon: '/images/icon-gas-monitoring-system.png',
+    {
+    title: 'Tank Components',
+    slug: 'tank-components',
+    icon: '/images/Icon-armaturen-kesselbau.png',
     catalogueLink: '/downloads',
     slides: [
-      { img: '/images/Product Images/GMS_SDGR02.png', caption: 'SDGR-02' },
-      { img: '/images/Product Images/GMS_SDGR02D.png', caption: 'SDGR-02D' },
-      { img: '/images/Product Images/GMS_DGR02.png', caption: 'DGR-02' },
-      { img: '/images/Product Images/GMS_DGR05.png', caption: 'DGR-05' },
-      { img: '/images/Product Images/GMS_SDGR02.png', caption: 'TGR-02' }
+      { img: '/images/Product Images/Tank Valve.jpeg', caption: 'Tank Components' }
     ],
-    subsections: [
-      { 
-        title: 'SDGR-02', 
-        slug: 'sdgr-02',
-        slides: [{ img: '/images/Product Images/GMS_SDGR02.png', caption: 'SDGR-02' }],
-        subsections: []
-      },
-      { 
-        title: 'SDGR-02D', 
-        slug: 'sdgr-02d',
-        slides: [{ img: '/images/Product Images/GMS_SDGR02D.png', caption: 'SDGR-02D' }],
-        subsections: []
-      },
-      { 
-        title: 'DGR-02', 
-        slug: 'dgr-02',
-        slides: [{ img: '/images/Product Images/GMS_DGR02.png', caption: 'DGR-02' }],
-        subsections: []
-      },
-      { 
-        title: 'DGR-05', 
-        slug: 'dgr-05',
-        slides: [{ img: '/images/Product Images/GMS_DGR05.png', caption: 'DGR-05' }],
-        subsections: []
-      },
-      { 
-        title: 'TGR-02', 
-        slug: 'tgr-02',
-        slides: [{ img: '/images/Product Images/GMS_SDGR02.png', caption: 'TGR-02' }],
-        subsections: []
-      }
-    ]
+    // subsections: [
+    //   { 
+    //     title: 'GFV-1', 
+    //     slug: 'gfv-1',
+    //     slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-1' }],
+    //     subsections: []
+    //   },
+    //   { 
+    //     title: 'GFV-2', 
+    //     slug: 'gfv-2',
+    //     slides: [{ img: '/images/Product Images/TANK VALVE.png', caption: 'Tank Valve GFV-2' }],
+    //     subsections: []
+    //   },
+    //   { 
+    //     title: 'GFV-3', 
+    //     slug: 'gfv-3',
+    //     slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-3' }],
+    //     subsections: []
+    //   },
+    //   { 
+    //     title: 'GFV-4', 
+    //     slug: 'gfv-4',
+    //     slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-4' }],
+    //     subsections: []
+    //   },
+    //   { 
+    //     title: 'GFV-5', 
+    //     slug: 'gfv-5',
+    //     slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-5' }],
+    //     subsections: []
+    //   },
+    //   { 
+    //     title: 'GFV-6', 
+    //     slug: 'gfv-6',
+    //     slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-6' }],
+    //     subsections: []
+    //   },
+    //   { 
+    //     title: 'Special Options & Variants', 
+    //     slug: 'special-options-and-variants',
+    //     slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Special Options' }],
+    //     subsections: []
+    //   },
+    //   // { title: 'GFV-1B Model', slug: 'gfv-1b-model' },
+    //   // { title: 'GFV-2B Model', slug: 'gfv-2b-model' },
+    //   // { title: 'Brass Cap Options', slug: 'brass-cap-options' },
+    //   // { title: 'Finish Options', slug: 'finish-options' }
+    // ]
   },
   {
     title: 'Pressure Relief Valves with Oil Level Indicator',
@@ -131,73 +189,7 @@ const productHierarchy = [
     ],
     subsections: []
   },
-  {
-    title: 'Pressure Alarm System',
-    slug: 'pressure-alarm-system',
-    icon: '/images/icon-low-high-pressure.png',
-    catalogueLink: '/downloads',
-    slides: [
-      { img: '/images/Product Images/Pressure Alarm.png', caption: 'Pressure Alarm System' }
-    ],
-    subsections: []
-  },
-  {
-    title: 'Tank Components',
-    slug: 'tank-components',
-    icon: '/images/Icon-armaturen-kesselbau.png',
-    catalogueLink: '/downloads',
-    slides: [
-      { img: '/images/Product Images/Tank Valve.png', caption: 'Tank Components' }
-    ],
-    subsections: [
-      { 
-        title: 'GFV-1', 
-        slug: 'gfv-1',
-        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-1' }],
-        subsections: []
-      },
-      { 
-        title: 'GFV-2', 
-        slug: 'gfv-2',
-        slides: [{ img: '/images/Product Images/TANK VALVE.png', caption: 'Tank Valve GFV-2' }],
-        subsections: []
-      },
-      { 
-        title: 'GFV-3', 
-        slug: 'gfv-3',
-        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-3' }],
-        subsections: []
-      },
-      { 
-        title: 'GFV-4', 
-        slug: 'gfv-4',
-        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-4' }],
-        subsections: []
-      },
-      { 
-        title: 'GFV-5', 
-        slug: 'gfv-5',
-        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-5' }],
-        subsections: []
-      },
-      { 
-        title: 'GFV-6', 
-        slug: 'gfv-6',
-        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve GFV-6' }],
-        subsections: []
-      },
-      { 
-        title: 'Special Options & Variants', 
-        slug: 'special-options-and-variants',
-        slides: [{ img: '/images/Product Images/Tank Valve.png', caption: 'Special Options' }],
-        subsections: []
-      },
-      // { title: 'GFV-1B Model', slug: 'gfv-1b-model' },
-      // { title: 'GFV-2B Model', slug: 'gfv-2b-model' },
-      // { title: 'Brass Cap Options', slug: 'brass-cap-options' },
-      // { title: 'Finish Options', slug: 'finish-options' }
-    ]
-  },
+  
   {
     title: 'Solenoid Interlock Device',
     slug: 'solenoid-interlock-device',
@@ -205,6 +197,16 @@ const productHierarchy = [
     catalogueLink: '/downloads',
     slides: [
       { img: '/images/Product Images/Solenoid Interlock.png', caption: 'Solenoid Interlock Device' }
+    ],
+    subsections: []
+  },
+  {
+    title: 'Pressure Alarm System',
+    slug: 'pressure-alarm-system',
+    icon: '/images/icon-low-high-pressure.png',
+    catalogueLink: '/downloads',
+    slides: [
+      { img: '/images/Product Images/Pressure Alarm.png', caption: 'Pressure Alarm System' }
     ],
     subsections: []
   }
