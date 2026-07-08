@@ -41,20 +41,23 @@ export default function ProductSection() {
             <section>
               <h2>Application</h2>
               <p>
-                Pressure Relief Valve (P.R.V.) is a mechanical safety device used for relief of excessive pressure
-                build-up in transformer, top changer, pressure tanks and pressure lines for indoor and outdoor
-                applications. It is suitable for repeated operation compared to conventional explosion vent solutions
-                that are typically single use.
+                The Pressure Relief Valve (PRV) is a protective mechanical device designed to safely release excess
+                pressure from transformers, tap changers, pressure vessels, and pressurized systems. Suitable for
+                both indoor and outdoor installations, it provides reliable overpressure protection and can operate
+                repeatedly, offering a significant advantage over conventional explosion vents that generally require
+                replacement after a single operation.
               </p>
             </section>
             <section>
               <h2>Working</h2>
               <p>
-                The release port is sealed by a stainless-steel diaphragm resting on an O-ring. A heavy-duty spring
-                set keeps the port closed in normal condition. When pressure exceeds the safe limit due to
-                temperature change, vapor formation, or related conditions, the diaphragm lifts and releases pressure.
-                The valve then resets automatically once pressure returns below set value. The lift also actuates the
-                limit switch and visual indicator mechanism.
+                The valve outlet is sealed by a stainless-steel diaphragm positioned against an O-ring, while a
+                robust spring mechanism maintains the valve in the closed position during normal operating conditions.
+                If internal pressure rises beyond the preset safe limit due to factors such as temperature
+                fluctuations, gas generation, or vapor formation, the diaphragm lifts, allowing the excess pressure
+                to escape. Once the pressure drops back below the set threshold, the valve automatically reseals and
+                returns to its normal state. During operation, the diaphragm movement also activates the visual
+                indicator and limit switch to provide a clear indication of pressure relief.
               </p>
             </section>
             <section>
@@ -72,15 +75,21 @@ export default function ProductSection() {
             <section>
               <h2>Application</h2>
               <p>
-                Oil level gauges are designed for general industrial use for level monitoring of tanks and similar
-                vessels.
+                Oil Level Indicators (OLIs) are essential monitoring devices used in hermetically sealed transformers
+                and distribution transformers equipped with expansion tanks. Designed for both indoor and outdoor
+                installations, these indicators provide continuous visual monitoring of transformer oil levels,
+                ensuring safe and efficient transformer operation. They help detect abnormal conditions such as oil
+                leakage, trapped air bubbles, gas generation due to internal faults, or changes in oil volume caused
+                by temperature variations.
               </p>
             </section>
             <section>
               <h2>Working</h2>
               <ul>
-                <li>Easy to fit construction gives clear visibility from distance due to refractive property.</li>
-                <li>Depending on liquid type, compatible seals ensure leak-proof assembly.</li>
+                <li>The oil level indicator operates on the principle of float movement corresponding to changes in oil level.</li>
+                <li>A specially designed float moves up or down as the oil level varies within the transformer tank or conservator.</li>
+                <li>This movement is mechanically transmitted to a pointer, which displays the oil level on a calibrated dial.</li>
+                <li>Any abnormal drop in oil level may indicate leakage, while unusual fluctuations can signal trapped air, gas formation, or other operating issues.</li>
               </ul>
             </section>
           </>
@@ -109,19 +118,23 @@ export default function ProductSection() {
         {section.slug === 'pressure-relief-valves-with-oil-level-indicator' && (
           <>
             <section>
-              <h2>Application</h2>
+              <h2>Product Overview</h2>
               <p>
-                XD series tubular oil level gauge is specialized for hermetically sealed transformers. It combines
-                pressure relief valve at top and level indication (blue for sufficient oil and red for refill).
+                XD series of Tubular Oil Level gauge is specialized product for hermetically sealed transformers.
+                It is combo of a pressure relief valve at the top with an oil level indicator where blue indicates
+                that the oil is sufficient and red indicates oil is to be refilled.
               </p>
             </section>
             <section>
               <h2>Features</h2>
               <ul>
-                <li>Reliable operating pressure from 20 to 70 KPa (0.20 to 0.70 kg/cm sq.).</li>
-                <li>Compact rugged design with automatic valve reset and positive resealing.</li>
-                <li>Operating temperature: -40 C to 105 C (tank liquid).</li>
-                <li>Available as threaded model ALXD and flange model ALXF.</li>
+                <li>Reliable Operating Pressure from 20 to 100 KPa. (0.20 to 1.00 kg/cm sq.)</li>
+                <li>Spring Safety Valve is compact, highly reliable and particularly useful for use in transformer and tanks containing non corrosive liquid even in extreme outdoor condition.</li>
+                <li>Compact and Rugged Design.</li>
+                <li>Positive Resealing Pressure.</li>
+                <li>Valve Resetting Automatic. Suitable for repeated use.</li>
+                <li>Float compatible with Transformer Oil.</li>
+                <li>UV Protected Polycarbonate Clear window.</li>
               </ul>
             </section>
           </>

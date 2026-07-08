@@ -17,7 +17,8 @@ const orderedCategories = [
 ];
 
 const categoryImageMap = {
-  'Gas Monitoring System (Automat)': '/images/Product Images/GMS_DGR02.png',
+  // 'Gas Monitoring System (Automat)': '/images/Product Images/GMS_DGR02.png',
+  'Gas Monitoring System (Automat)': '/images/Product Images/DGR-02-Regulator.png',
   'Low/High Pressure Alarm System': '/images/Product Images/LHPAS.png',
   'Oil Level Indicator': '/images/Product Images/OLI.png',
   'Pressure Relief Valve': '/images/Product Images/PRV.png',

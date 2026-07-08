@@ -10,56 +10,57 @@ export default function HeroSlider() {
     {
       id: 4,
       title: 'Pressure Relief Valve',
-      description: 'Pressure relief valves manufactured in various sizes and models to vent excess pressure safely and protect transformer equipment from overpressure incidents.',
-      image: '/images/Product Images/PRV_DP3EF.png',
+      description: 'Pressure Relief Valves (PRVs) provide reliable overpressure protection for transformers, tap changers, pressure vessels, and other pressurized systems. Designed for repeated operation, they safely release excess internal pressure and automatically reseal once normal conditions are restored. Their robust construction, visual indication, and optional limit switch ensure dependable performance in both indoor and outdoor applications.',
+      // image: '/images/Product Images/PRV_DP3EF.png',
+      image: '/images/background-images/bg try .png',
       link: '/pressure-relief-valve'
     },
     {
       id: 1,
       title: 'Gas Monitoring System (Automat)',
-      description: 'Used in transformers or other sealed tanks, our gas monitoring systems maintain a constant nitrogen or inert gas pressure to prevent atmospheric air and moisture ingress, with dual-stage regulation and safety valves for reliable operation.',
-      image: '/images/Product Images/regulator.jpeg',
+      description: 'The Nitrogen Gas Monitoring System maintains and monitors nitrogen pressure within sealed transformers to ensure a moisture-free, contamination-resistant environment. By preventing oxidation, compensating for pressure variations, and protecting transformer insulation, it enhances operational safety, improves reliability, and extends the service life of transformers under varying operating conditions.',
+      image: '/images/Product Images/GAS-MONITORING-SYSTEM-(AUTOMAT)-hero-slider.jpeg',
       link: '/gas-monitoring-system'
     },
     {
       id: 3,
       title: 'Oil Level Indicator',
-      description: 'Transparent tubular indicators designed for precise oil level readings, suitable for a wide range of transformer sizes and models.',
-      image: '/images/Product Images/OLI.png',
+      description: 'Oil Level Indicators (OLIs) provide accurate, continuous monitoring of transformer oil levels in hermetically sealed and conservator-type transformers. Using a reliable float-operated mechanism, they deliver clear visual indication of oil level changes, enabling early detection of leaks, gas formation, and abnormal conditions while supporting safe operation, preventive maintenance, and extended transformer service life.',
+      image: '/images/Product Images/oli-hero-slider.png',
       link: '/oil-level-indicators'
     },
     {
       id: 7,
       title: 'Tank Valve',
-      description: 'Tank valves built for durability, allowing component replacement without draining the insulating liquid and ensuring smooth maintenance operations.',
-      image: '/images/Product Images/Tank Valve.jpeg',
+      description: 'Tank Valves are compact, precision-engineered components designed for hermetically sealed transformers to enable quick inflation, deflation, and pressure measurement. Featuring a standardized valve core, they ensure reliable sealing, efficient pressure control, minimal internal protrusion, and dependable performance where installation space is limited.',
+      image: '/images/Product Images/tank-valve-hero-slider-test.png',
       link: '/tank-valve'
     },
     {
       id: 5,
       title: 'PRV with Liquid Level Indicator',
-      description: 'A dual-purpose unit combining a pressure relief valve with a liquid level indicator, offering convenient monitoring and safety in one compact assembly.',
-      image: '/images/Product Images/PRV_LIQUID INDICATOR.png',
+      description: 'The Pressure Relief Valve with Liquid Level Indicator combines reliable overpressure protection and continuous oil level monitoring in a single compact assembly for hermetically sealed transformers. Designed for repeated operation, it enhances transformer safety, simplifies maintenance, and ensures dependable performance with clear visual indication and automatic pressure relief.',
+      image: '/images/Product Images/TUBULAR-OIL-LEVEL-GAUGE-hero-slider.jpeg',
       link: '/prv-with-liquid-level-indicator'
     },
     {
       id: 6,
       title: 'Solenoid Interlock Device',
-      description: 'Solenoid interlock devices providing reliable electrical isolation to ensure safe servicing and prevent unauthorized operation of transformer equipment.',
-      image: '/images/Product Images/SOLENOID INTERLOCK DEVICE.png',
+      description: 'The Solenoid Interlock Device is a precision-engineered lock-and-key system that enforces a predefined sequence of operations for industrial and substation equipment. By combining mechanical interlocking with electrical control, it enhances operational safety, prevents unauthorized access, and minimizes the risk of incorrect switching or maintenance procedures.',
+      image: '/images/Product Images/SOLENOID-INTERLOCK-DEVICE-hero-slider.jpeg',
       link: '/solenoid-interlock-device'
     },
     {
       id: 2,
       title: 'Low/High Pressure Alarm System',
-      description: 'An alarm system that detects both low and high pressure conditions in transformer tanks, providing early warning to protect equipment and prevent failures.',
-      image: '/images/Product Images/LHPAS.png',
+      description: 'The Pressure Alarm System continuously monitors transformer or tank pressure during transit and storage. Using a calibrated pressure sensing switch, it provides immediate audio and visual alerts when pressure reaches preset alarm limits. Designed for reliable operation, it helps detect pressure loss early, preventing damage and ensuring equipment safety.',
+      image: '/images/Product Images/LOWHIGH-PRESSURE-ALARM-SYSTEM-hero-slider.jpeg',
       link: '/low-high-pressure-alarm-system'
-    }
+    },
     // {
     //   id: 8,
     //   title: 'Tubular Oil Level Gauge',
-    //   description: 'Tubular oil level gauges offering clear, accurate indication of fluid level, facilitating easy visual inspection and maintenance.',
+    //   description: 'The XD Series Tubular Oil Level Gauge combines a Pressure Relief Valve and Oil Level Indicator in a compact unit for hermetically sealed transformers. It provides reliable overpressure protection, continuous oil level monitoring, and conservator functionality, ensuring safe operation, reduced maintenance, and dependable performance in demanding indoor and outdoor environments.',
     //   image: '/images/Product Images/TOG_AT.png',
     //   link: '/tubular-oil-level-gauge'
     // },
