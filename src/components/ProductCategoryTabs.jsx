@@ -18,13 +18,13 @@ const orderedCategories = [
 
 const categoryImageMap = {
   // 'Gas Monitoring System (Automat)': '/images/Product Images/GMS_DGR02.png',
-  'Gas Monitoring System (Automat)': '/images/Product Images/DGR-02-Regulator.png',
-  'Low/High Pressure Alarm System': '/images/Product Images/LHPAS.png',
-  'Oil Level Indicator': '/images/Product Images/OLI.png',
-  'Pressure Relief Valve': '/images/Product Images/PRV.png',
-  'PRV with Liquid Level Indicator': '/images/Product Images/PRV_LIQUID INDICATOR 2.png',
-  'Solenoid Interlock Device': '/images/Product Images/Solenoid Interlock.png',
-  'Tank Valve': '/images/Product Images/Tank Valve.png',
+  'Pressure Relief Valve': '/images/Product Images/PRV/DP-1EF-PRV.png',
+  'Gas Monitoring System (Automat)': '/images/Product Images/Regulator/DGR-02.jpg',
+  'Oil Level Indicator': '/images/Product Images/OLI/OIL LEVEL INDICATOR VERTICAL MOUNTING.jpg',
+  'Tank Valve': '/images/Product Images/Tank/Tank Valve.jpg',
+  'PRV with Liquid Level Indicator': '/images/Product Images/OLI/OLI.jpg',
+  'Solenoid Interlock Device': '/images/Product Images/Solenoid-interlocking-device/SOLENOID INTERLOCK DEVICE.jpg',
+  'Low/High Pressure Alarm System': '/images/Product Images/Pressure-alarm/LOW_HIGH PRESSURE ALARM SYSTEM.jpg',
   // 'Tubular Oil Level Gauge': '/images/Product Images/TOLG_BT.png',
   // 'Threaded Pressure Relief Valve': '/images/Product Images/PRV_BB2P.png',
 };

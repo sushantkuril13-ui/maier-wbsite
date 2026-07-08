@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductPageLayout from '../components/ProductPageLayout.jsx';
+import { getSectionBySlug } from '../data/productHierarchy.js';
 
 export default function PRVWithLiquidLevelIndicator() {
   const slides = [
@@ -72,7 +73,13 @@ export default function PRVWithLiquidLevelIndicator() {
           <p><strong>Note - Length can be modified as per customer specification</strong></p>
         </section>
 
-
+        <section>
+          <h2>Catalogue</h2>
+          <p>Download catalogue and datasheet documents for this product.</p>
+          <a href="/downloads/PRV WITH LIQUID LEVEL INDICATOR  Catalogue.pdf" className="btn btn-download">
+            Download Catalogue
+          </a>
+        </section>
         
       </article>
     </ProductPageLayout>
