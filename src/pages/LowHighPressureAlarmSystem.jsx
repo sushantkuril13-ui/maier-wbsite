@@ -1,7 +1,9 @@
 import React from 'react';
 import ProductPageLayout from '../components/ProductPageLayout.jsx';
+import productHierarchy, { getSectionBySlug } from '../data/productHierarchy.js';
 
 export default function LowHighPressureAlarmSystem() {
+  const section = getSectionBySlug('pressure-alarm-system');
   const slides = [
     { img: '/images/Product Images/Pressure-alarm/LOW_HIGH PRESSURE ALARM SYSTEM.jpg', caption: 'Low/High Pressure Alarm System' },
   ];
@@ -56,6 +58,14 @@ export default function LowHighPressureAlarmSystem() {
             <li>In case Dry Cell / Battery discharge replace by right substitute.</li>
             <li>Any assistance /rectification or modification of equipment at site is not recommended. Same if required to be contacted to manufacturer immediately.</li>
           </ul>
+        </section>
+
+        <section>
+          <h2>Catalogue</h2>
+          <p>Download catalogue and datasheet documents for this product.</p>
+          <a href={section.catalogueLink || '/downloads'} className="btn btn-download">
+            Download Catalogue
+          </a>
         </section>
       </article>
     </ProductPageLayout>

@@ -135,6 +135,30 @@ export default function PressureReliefFlange() {
           <h2>Available Variants</h2>
           <p>Plain / With Stainless Steel Pull Ring / With Rain Guard Cap / With Rain Guard Cap & Stainless Steel Pull Ring</p>
         </section>
+
+        <section>
+          <h2>More Pressure Relief Valve Models</h2>
+          <div className="subsection-inline-list">
+            {section.subsections.map((item) => (
+              <Link
+                key={item.slug}
+                to={`/products/pressure-relief-valves/${item.slug}`}
+                className={`subsection-chip ${item.slug === 'flange' ? 'active' : ''}`}
+              >
+                {item.title}
+              </Link>
+            ))}
+          </div>
+        </section>
+
+          <section>
+          <h2>Catalogue</h2>
+          <p>Download catalogue and datasheet documents for this product.</p>
+          <a href={section.catalogueLink || '/downloads'} className="btn btn-download">
+            Download Catalogue
+          </a>
+        </section>
+
       </article>
     </ProductPageLayout>
   );

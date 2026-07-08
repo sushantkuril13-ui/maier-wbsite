@@ -1,15 +1,17 @@
 import React from 'react';
 import ProductPageLayout from '../components/ProductPageLayout.jsx';
+import productHierarchy, { getSectionBySlug } from '../data/productHierarchy.js';
 
 export default function SolenoidInterlockDevice() {
+  const section = getSectionBySlug('solenoid-interlock-device');
   const slides = [
     { img: '/images/Product Images/Solenoid-interlocking-device/SOLENOID INTERLOCK DEVICE.jpg', caption: 'Solenoid Interlock Device' },
-    // { img: '/images/Product Images/Solenoid Interlock.png', caption: 'Castle Lock & Key System' },
   ];
 
   return (
     <ProductPageLayout
       activeCategory="Solenoid Interlock Device"
+      activeSectionSlug="solenoid-interlock-device"
       slides={slides}
     >
       <article>
@@ -60,6 +62,14 @@ export default function SolenoidInterlockDevice() {
             <li>For any of the models the equipment cannot be utilized even if any one of the keys is missing.</li>
             <li>We provide master key if asked by the supplier along with the supply in spare</li>
           </ul>
+        </section>
+
+        <section>
+          <h2>Catalogue</h2>
+          <p>Download catalogue and datasheet documents for this product.</p>
+          <a href={section.catalogueLink || '/downloads'} className="btn btn-download">
+            Download Catalogue
+          </a>
         </section>
       </article>
     </ProductPageLayout>

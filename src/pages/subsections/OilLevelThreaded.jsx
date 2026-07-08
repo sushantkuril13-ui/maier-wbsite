@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProductPageLayout from '../../components/ProductPageLayout.jsx';
 import productHierarchy, { getSectionBySlug, getSubsectionSlides } from '../../data/productHierarchy.js';
 import '../../styles/components/ProductHierarchyPages.css';
@@ -47,6 +48,30 @@ export default function OilLevelThreaded() {
             <li>No Calibration: Once installed, requires no adjustment or zeroing</li>
           </ul>
         </section>
+
+        <section>
+          <h2>More Oil Level Indicator Models</h2>
+          <div className="subsection-inline-list">
+            {section.subsections.map((item) => (
+              <Link
+                key={item.slug}
+                to={`/products/oil-level-indicator/${item.slug}`}
+                className={`subsection-chip ${item.slug === 'threaded' ? 'active' : ''}`}
+              >
+                {item.title}
+              </Link>
+            ))}
+          </div>
+        </section>
+
+                <section>
+          <h2>Catalogue</h2>
+          <p>Download catalogue and datasheet documents for this product.</p>
+          <a href={section.catalogueLink || '/downloads'} className="btn btn-download">
+            Download Catalogue
+          </a>
+        </section>
+        
       </article>
     </ProductPageLayout>
   );

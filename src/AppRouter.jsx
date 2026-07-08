@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop.jsx';
 import App from './App.jsx';
 import Company from './pages/Company.jsx';
 import Support from './pages/Support.jsx';
@@ -110,6 +111,7 @@ function DynamicSubsectionRoute() {
 export default function AppRouter() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/company" element={<Company />} />
