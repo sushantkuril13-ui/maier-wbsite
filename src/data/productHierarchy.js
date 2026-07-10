@@ -19,17 +19,47 @@ const productHierarchy = [
         ],
         subsections: []
       },
+      // { 
+      //   title: 'Threaded Pressure Relief Valves', 
+      //   slug: 'threaded',
+      //   slides: [{ img: '/images/Product Images/PRV/THREADED MEDIUM SIZE PRV.jpg', caption: 'Threaded PRV' },
+      //           { img: '/images/Product Images/PRV/THREADED SMALL SIZE PRV.jpg', caption: 'Threaded PRV' }],
+      //   subsections: []
+      // },
       { 
         title: 'Threaded Pressure Relief Valves', 
         slug: 'threaded',
-        slides: [{ img: '/images/Product Images/PRV/THREADED MEDIUM SIZE PRV.jpg', caption: 'Threaded PRV' },
-                { img: '/images/Product Images/PRV/THREADED SMALL SIZE PRV.jpg', caption: 'Threaded PRV' }],
+        slides: [
+  // { img: '/images/Product Images/PRV/THREADED MEDIUM SIZE PRV.jpg', caption: 'Threaded PRV' },
+  // { img: '/images/Product Images/PRV/THREADED SMALL SIZE PRV.jpg', caption: 'Threaded PRV' },
+
+  { img: '/images/Product Images/PRV/threaded-medium-BB6O.jpeg', caption: 'BB6O' },
+  { img: '/images/Product Images/PRV/threaded-medium-BB8P(G-1B).jpeg', caption: 'BB8P (G-1B)' },
+  { img: '/images/Product Images/PRV/threaded-medium-SB4SS (T-05).jpeg', caption: 'SB4SS (T-05)' },
+  { img: '/images/Product Images/PRV/threaded-medium-SB8 (G-1S).jpeg', caption: 'SB8 (G-1S)' },
+  { img: '/images/Product Images/PRV/threaded-mediumAB8P(G-1A).jpeg', caption: 'AB8P (G-1A)' },
+
+  { img: '/images/Product Images/PRV/threaded-small-bb2.jpeg', caption: 'BB2' },
+  { img: '/images/Product Images/PRV/threaded-small-BB2SS.jpeg', caption: 'BB2SS' },
+  { img: '/images/Product Images/PRV/threaded-small-BB3F.jpeg', caption: 'BB3F' },
+  { img: '/images/Product Images/PRV/threaded-small-BB3SR.jpeg', caption: 'BB3SR' },
+  { img: '/images/Product Images/PRV/threaded-small-bn2r.jpeg', caption: 'BN2R' }
+],
         subsections: []
       },
       { 
         title: 'Flange Pressure Relief Valves', 
         slug: 'flange',
-        slides: [{ img: '/images/Product Images/PRV/FLANGE PRV.jpg', caption: 'Flange PRV' }],
+        slides: [
+          // { img: '/images/Product Images/PRV/FLANGE PRV.jpg', caption: 'Flange PRV' },
+          { img: '/images/Product Images/PRV/flang-prv-CP-50-CNP-2.jpeg', caption: 'CP-50 CNP-2' },
+{ img: '/images/Product Images/PRV/flang-prv-CUSTOM MADE.jpeg', caption: 'Custom Made' },
+{ img: '/images/Product Images/PRV/flang-prv-NAP-25S.jpeg', caption: 'NAP-25S' },
+{ img: '/images/Product Images/PRV/flang-prv-PAP-25P.jpeg', caption: 'PAP-25P' },
+{ img: '/images/Product Images/PRV/flang-prv-PIP-25S.jpeg', caption: 'PIP-25S' },
+{ img: '/images/Product Images/PRV/flang-prv-PIP-32.jpeg', caption: 'PIP-32' },
+{ img: '/images/Product Images/PRV/flang-prv-PIP-38.jpeg', caption: 'PIP-38' },
+        ],
         subsections: []
       }
     ]
@@ -142,7 +172,7 @@ const productHierarchy = [
     icon: '/images/Icon-armaturen-kesselbau.png',
     catalogueLink: '/downloads',
     slides: [
-      { img: '/images/Product Images/Tank/Tank Valve.jpg', caption: 'Tank Components' }
+      { img: '/images/Product Images/Tank/Tank-Valve.jpg', caption: 'Tank Components' }
     ],
     // subsections: [
     //   { 

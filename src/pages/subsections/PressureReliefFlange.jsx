@@ -133,7 +133,12 @@ export default function PressureReliefFlange() {
 
         <section>
           <h2>Available Variants</h2>
-          <p>Plain / With Stainless Steel Pull Ring / With Rain Guard Cap / With Rain Guard Cap & Stainless Steel Pull Ring</p>
+          <ul>
+            <li>Plain</li>
+            <li>With Stainless Steel Pull Ring</li>
+            <li>With Rain Guard Cap</li>
+            <li>With Rain Guard Cap & Stainless Steel Pull Ring</li>
+          </ul>
         </section>
 
         <section>
