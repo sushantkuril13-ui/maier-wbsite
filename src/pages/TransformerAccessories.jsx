@@ -15,7 +15,7 @@ function TransformerAccessories() {
             <div className="content-below-hero">
               <TransformerAccessoriesHero />
               <ProductCategoryTabs />
-              {/* <ProductGallery /> */}
+              <ProductGallery />
             </div>
           </main>
         </div>

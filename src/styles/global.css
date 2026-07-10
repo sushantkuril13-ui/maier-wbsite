@@ -19,6 +19,7 @@ body {
   color: #333;
   /* page background: use header-background-image.jpg with a subtle dark overlay for readability */
   background-color: #65656550;
+  /* background-image: linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.28)), url('/images/background-images/bg try .png'); */
   background-image: linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.28)), url('/images/Bg for Web (1).jpg.jpeg');
   /* background-image: url('images/BG.jpg.jpeg'); */
   /* background-size: cover; */

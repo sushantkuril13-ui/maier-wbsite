@@ -4,10 +4,10 @@ import products from '../data/products.json';
 
 // Keep filters in the specific order provided by the user.
 const orderedFilters = [
-  'Pressure Relief Valve',
+  'Pressure Relief Valves',
   'Oil Level Indicator',
-  'Nitrogen Gas Monitoring System (Automat)',
-  'PRV with Liquid Level Indicator',
+  'Nitrogen Gas Monitoring System',
+  'Pressure Relief Valves with Oil Level Indicator',
   'Low/High Pressure Alarm System',
   'Tank Components',
   'Solenoid Interlock Device',

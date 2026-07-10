@@ -101,106 +101,48 @@ export default function PressureReliefFlange() {
         <h1>{subsectionTitle}</h1>
 
         <section>
-          <h2>Application</h2>
+          <h2>Product Overview</h2>
           <p>
-            Flange Pressure Relief Valves are mounted directly on holes provided on tank flanges. These PRV are
-            designed for reliable pressure relief in hermetically sealed transformers and similar industrial tanks
-            with non-corrosive liquids.
+            Flange Pressure Relief Valves are mounted directly on holes provided on tank flanges. These PRV are designed for reliable pressure relief in hermetically sealed transformers and similar industrial tanks with non-corrosive liquids.
           </p>
         </section>
 
         <section>
-          <h2>Features</h2>
-          <p>
-            Spring Safety Valve specially designed for flange mounting, compact, highly reliable and particularly
-            useful for use in transformer & tanks containing non-corrosive liquid even in extreme outdoor condition.
-            Reliable Operating Pressure from 20 to 100 KPa (0.20 to 1.00 kg/cm sq.) Positive Resealing Pressure.
-            Operating Temperature: 0 to 100°C (of tank liquid). Sealing is with Nitrile Rubber Gasket. Valve Resetting
-            Automatic. Suitable for repeated use. Protective Rain Guard Cap directs the Oil Spillage downwards.
-            Depending upon nature of Tank Fluid we can supply with Viton Gaskets and "O" Ring. PRV at different Cracking
-            Pressure (higher/lower) can be supplied as per your request.
-          </p>
-        </section>
-
-        <section>
-          <h2>Technical Specifications</h2>
+          <h2>Models</h2>
           <table className="specification-table">
             <thead>
               <tr>
                 <th>Parameter</th>
-                <th>1"</th>
-                <th>1.25"</th>
-                <th>1.5"</th>
-                <th>1.75"</th>
-                <th>2"</th>
+                <th>P-25</th>
+                <th>P-32</th>
+                <th>P-38</th>
+                <th>P-40</th>
+                <th>P-50 / P-2</th>
               </tr>
             </thead>
             <tbody>
-              {flangeSpecData.map((row, idx) => (
-                <tr key={idx}>
-                  <td><strong>{row.parameter}</strong></td>
-                  <td>{row[1]}</td>
-                  <td>{row[125]}</td>
-                  <td>{row[15]}</td>
-                  <td>{row[175]}</td>
-                  <td>{row[2]}</td>
-                </tr>
-              ))}
+              <tr><td>Port Diameter (Ø)</td><td>1"</td><td>1.25"</td><td>1.5"</td><td>1.75"</td><td>2"</td></tr>
+              <tr><td>Model (P Ø)</td><td>P-25</td><td>P-32</td><td>P-38</td><td>P-40</td><td>P-50 / P-2</td></tr>
+              <tr><td>Passage Area (Approx.) (mm²)</td><td>500</td><td>800</td><td>1000</td><td>1500</td><td>2000</td></tr>
+              <tr><td>Number of Mounting Holes</td><td>2</td><td>2</td><td>2</td><td>3</td><td>4</td></tr>
+              <tr><td>Mounting Hole Diameter (mm)</td><td>8</td><td>8</td><td>10</td><td>10</td><td>12</td></tr>
+              <tr><td>Overall Length (±20%) (mm)</td><td>55</td><td>65</td><td>80</td><td>90</td><td>100</td></tr>
             </tbody>
           </table>
         </section>
 
         <section>
-          <h2>Details Nomenclature</h2>
-          <table className="specification-table">
-            <thead>
-              <tr>
-                <th>Details Nomenclature</th>
-                <th>Model</th>
-              </tr>
-            </thead>
-            <tbody>
-              {nomenclatureTable.map((row, idx) => (
-                <tr key={idx}>
-                  <td>{row.nomenclature}</td>
-                  <td><strong>{row.model}</strong></td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </section>
-
-        <section>
-          <h2>Model Code Legend</h2>
+          <h2>Available Variants</h2>
           <ul>
-            <li><strong>F</strong> - Finish (N - Natural, C – Cr Plated, P - Painted)</li>
-            <li><strong>M</strong> - Material of the body (A - Aluminium, B - Brass, I - Mild Steel / Cast Iron, S - Stainless Steel)</li>
-            <li><strong>P</strong> - Port designation (flange version)</li>
-            <li><strong>Ø</strong> - Port Diameter (mm)</li>
-            <li><strong>C</strong> - Cap (Rain Guard) (P - Plastic, S - Stainless Steel)</li>
-            <li><strong>R</strong> - Stainless Steel Pull Ring</li>
+            <li>Plain</li>
+            <li>With Stainless Steel Pull Ring</li>
+            <li>With Rain Guard Cap</li>
+            <li>With Rain Guard Cap & Stainless Steel Pull Ring</li>
           </ul>
         </section>
 
         <section>
-          <h2>Available Models</h2>
-          <ul>
-            {modelExamples.map((model, idx) => (
-              <li key={idx}>{model}</li>
-            ))}
-          </ul>
-        </section>
-
-        <section>
-          <h2>Note</h2>
-          <p>
-            All models have option of availability in Natural Finish / Nickel Plated. Custom made variants are also
-            available upon request.
-          </p>
-        </section>
-
-        <section>
-          <h2>More in this Section</h2>
+          <h2>More Pressure Relief Valve Models</h2>
           <div className="subsection-inline-list">
             {section.subsections.map((item) => (
               <Link
@@ -214,13 +156,14 @@ export default function PressureReliefFlange() {
           </div>
         </section>
 
-        <section>
+          <section>
           <h2>Catalogue</h2>
-          <p>Download catalogue and datasheet documents for this subsection.</p>
+          <p>Download catalogue and datasheet documents for this product.</p>
           <a href={section.catalogueLink || '/downloads'} className="btn btn-download">
             Download Catalogue
           </a>
         </section>
+
       </article>
     </ProductPageLayout>
   );

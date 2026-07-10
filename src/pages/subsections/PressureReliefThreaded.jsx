@@ -256,172 +256,54 @@ export default function PressureReliefThreaded() {
         <h1>{subsectionTitle}</h1>
 
         <section>
-          <h2>Application</h2>
+          <h2>Product Overview</h2>
           <p>
-            Pressure Relief Valve (P.R.V.) is a safety device to be used in Transformer, Pressure Tanks &
-            Pressure Lines for indoor & outdoor application. Suitable for repeated operation as compared to
-            Conventional Explosion Vent which is for single use. It is compact, highly reliable and particularly
-            designed to be used on O.L.T.C., Transformers, & similar equipment / tank with non-corrosive liquid.
+            The Pressure Relief Valve (PRV) is a protective safety device designed for use in transformers,
+            pressure tanks, and pressurized pipelines in both indoor and outdoor environments. Unlike conventional
+            explosion vents, which are intended for one-time operation, the PRV is engineered for repeated use,
+            ensuring continuous and reliable protection against excessive pressure build-up. Its compact design,
+            high reliability, and robust construction make it especially suitable for On-Load Tap Changers (OLTCs),
+            transformers, and other equipment or tanks containing non-corrosive liquids.
           </p>
         </section>
 
         <section>
           <h2>Features</h2>
-          <p>
-            Spring Safety Valve completely made of Brass / Aluminium, compact, highly reliable and particularly useful
-            for use in transformer & tanks containing non-corrosive liquid even in extreme outdoor condition. Reliable
-            Operating Pressure from 20 to 100 KPa (0.20 to 1.00 kg/cm sq.) Positive Resealing Pressure. Operating
-            Temperature: 0 to 100°C (of tank liquid). Sealing is with Nitrile Rubber Gasket. Valve Resetting Automatic.
-            Suitable for repeated use. Protective Rain Guard Cap directs the Oil Spillage downwards. Flat Mounting
-            Gasket can be provided if required. Depending upon nature of Tank Fluid we can supply with Viton Gaskets
-            and "O" Ring. PRV at different Cracking Pressure (higher/lower) can be supplied as per your request.
-            Normally we supply in Natural Finish. However, if required by customer we can supply with Ni-Cr plated or
-            suitably painted.
-          </p>
-        </section>
-
-        <section>
-          <h2>Note</h2>
           <ul>
-            <li>These can be used as an Oil Filling Cap.</li>
-            <li>
-              Mounting position preferably at the tank cover or topside is to be provided with leak proof welded
-              suitably threaded boss having matching threads and tightened by help of Teflon Tape / Sealing Liquid.
-            </li>
+            <li>Spring Safety Valve completely made of Brass /Aluminium, compact, highly reliable and particularly useful for use in transformer & tanks containing non corrosive liquid even in extreme outdoor condition</li>
+            <li>Reliable Operating Pressure from 20 to 100 KPa. (0.20 to 1.00 kg/cm sq.)</li>
+            <li>Positive Resealing Pressure.</li>
+            <li>Operating Temperature: 0 to 100° C (of tank liquid).</li>
+            <li>Sealing is with Nitrile/Viton Rubber Gasket.</li>
+            <li>Valve Resetting Automatic. Suitable for repeated use.</li>
+            <li>Protective Rain Guard Cap directs the Oil Spillage downwards.</li>
+            <li>Flat Mounting Gasket can be provided if required.</li>
+            <li>Depending upon nature of Tank Fluid we can supply with Viton Gaskets and “O” Ring.</li>
+            <li>PRV at different Cracking Pressure (higher/lower) can be supplied as per your request.</li>
           </ul>
         </section>
 
         <section>
-          <h2>Other Details</h2>
-          <p>These are available in two different sizes:</p>
-          <ol>
-            <li>Small Size PRV</li>
-            <li>Medium Size PRV</li>
-          </ol>
+          <h2>Option 1</h2>
+          <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Options / Variants</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Material</td><td>Aluminium, Brass, Stainless Steel</td></tr>
+              <tr><td>Finish</td><td>Natural, Painted, Nickel Plated</td></tr>
+              <tr><td>Thread Type</td><td>BSP, NPT, Metric</td></tr>
+              <tr><td>Thread Size</td><td>1/4", 3/8", 1/2", 3/4", 1", 1.5", 2"</td></tr>
+              <tr><td>Model</td><td>1. Plain<br />2. With Pull Ring<br />3. With SS Cap and Screw<br />4. With SS Cap and Rivet<br />5. With Pull Ring and Plastic Cap<br />6. With Pull Ring and SS Cap<br />7. With Flag Indicator</td></tr>
+            </tbody>
+          </table>
         </section>
 
         <section>
-          <h2>Threaded Small Size PRV</h2>
-          <p>These are available only in brass.</p>
-
-          <h3>Technical Specifications</h3>
-          <table className="specification-table">
-            <thead>
-              <tr>
-                <th>Parameter</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-              </tr>
-            </thead>
-            <tbody>
-              {smallSizeTableData.map((row, idx) => (
-                <tr key={idx}>
-                  <td><strong>{row.parameter}</strong></td>
-                  <td>{row.col2}</td>
-                  <td>{row.col3}</td>
-                  <td>{row.col4}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-
-          <h3>Model Nomenclature</h3>
-          <table className="specification-table">
-            <thead>
-              <tr>
-                <th>Model Nomenclature</th>
-                <th>Model</th>
-                <th>1/4" BSP</th>
-                <th>3/8" BSP</th>
-              </tr>
-            </thead>
-            <tbody>
-              {smallSizeModelTable.map((row, idx) => (
-                <tr key={idx}>
-                  <td>{row.nomenclature}</td>
-                  <td><strong>{row.model}</strong></td>
-                  <td>{row.col14bsp}</td>
-                  <td>{row.col38bsp}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-
-          <h3>Model Code Legend</h3>
-          <ul>
-            <li><strong>T</strong> - Type of thread (B - BSP, N – NPT, M - Metric)</li>
-            <li><strong>Ø</strong> - Thread Nomenclature: For B.S.P. & N.P.T. Thread (2-1/4", 3-3/8", 4-1/2"), For Metric Thread – Thread Size e.g. M12</li>
-            <li><strong>C</strong> - Cap (Rain Guard) (P - Plastic, S - Stainless Steel, B - Brass)</li>
-          </ul>
-
-          <p><strong>Note:</strong> All models have option of availability in Natural Finish / Nickel Plated.</p>
-        </section>
-
-        <section>
-          <h2>Threaded Medium Size PRV</h2>
-
-          <h3>Technical Specifications</h3>
-          <table className="specification-table">
-            <thead>
-              <tr>
-                <th>Parameter</th>
-                <th>4</th>
-                <th>6</th>
-                <th>8</th>
-                <th>10</th>
-              </tr>
-            </thead>
-            <tbody>
-              {mediumSizeTableData.map((row, idx) => (
-                <tr key={idx}>
-                  <td><strong>{row.parameter}</strong></td>
-                  <td>{row.col4}</td>
-                  <td>{row.col6}</td>
-                  <td>{row.col8}</td>
-                  <td>{row.col10}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-
-          <h3>Model Nomenclature</h3>
-          <table className="specification-table">
-            <thead>
-              <tr>
-                <th>Model Nomenclature</th>
-                <th>Model</th>
-                <th>1/2"</th>
-                <th>3/4"</th>
-                <th>1"</th>
-              </tr>
-            </thead>
-            <tbody>
-              {mediumSizeModelTable.map((row, idx) => (
-                <tr key={idx}>
-                  <td>{row.nomenclature}</td>
-                  <td><strong>{row.model}</strong></td>
-                  <td>{row.col12}</td>
-                  <td>{row.col34}</td>
-                  <td>{row.col1}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-
-          <h3>Model Code Legend</h3>
-          <ul>
-            <li><strong>Material</strong> - A (Aluminium), B (Brass), S (Stainless Steel)</li>
-            <li><strong>T</strong> - Type of Thread (B - BSP, N – NPT, M - Metric)</li>
-            <li><strong>Ø</strong> - Thread Nomenclature: For B.S.P. & N.P.T. Thread (Ø 3/4", 8 - 1", 10 - 1.25"), For Metric Thread – Thread Size e.g. M26</li>
-            <li><strong>C</strong> - Cap (Rain Guard) (P - Plastic, S - Stainless Steel)</li>
-          </ul>
-
-          <p><strong>Note:</strong> All models have option of availability in Natural Finish / Nickel Plated.</p>
-        </section>
-
-        <section>
-          <h2>More in this Section</h2>
+          <h2>More Pressure Relief Valve Models</h2>
           <div className="subsection-inline-list">
             {section.subsections.map((item) => (
               <Link
@@ -437,7 +319,7 @@ export default function PressureReliefThreaded() {
 
         <section>
           <h2>Catalogue</h2>
-          <p>Download catalogue and datasheet documents for this subsection.</p>
+          <p>Download catalogue and datasheet documents for this product.</p>
           <a href={section.catalogueLink || '/downloads'} className="btn btn-download">
             Download Catalogue
           </a>

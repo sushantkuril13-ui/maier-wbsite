@@ -366,6 +366,14 @@ export default function PrvWithOilLevel() {
             and comprehensive warranty support. For urgent technical issues or field failures, contact our 24/7 emergency support line.
           </p>
         </section>
+
+        <section>
+          <h2>Catalogue</h2>
+          <p>Download catalogue and datasheet documents for this product.</p>
+          <a href={section.catalogueLink || '/downloads'} className="btn btn-download">
+            Download Catalogue
+          </a>
+        </section>
       </article>
     </ProductPageLayout>
   );
