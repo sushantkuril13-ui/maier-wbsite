@@ -121,8 +121,8 @@
   font-size: 78px;
   transition: background-color 160ms ease, color 160ms ease, transform 120ms ease, border-color 160ms ease;
 }
-.references-nav-btn.prev-btn { left: 20px; }
-.references-nav-btn.next-btn { right: 20px; }
+.references-nav-btn.prev-btn { left: -20px; }
+.references-nav-btn.next-btn { right: -20px; }
 
 /* stronger hover/active/focus rules to avoid being overridden */
 .slider-wrapper .references-nav-btn:hover,
