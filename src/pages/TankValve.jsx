@@ -3,7 +3,7 @@ import ProductPageLayout from '../components/ProductPageLayout.jsx';
 
 export default function TankValve() {
   const slides = [
-    { img: '/images/Product Images/Tank/Tank-Valve.jpg', caption: 'Tank Valve' },
+    { img: '/images/web images/Tank Valve/Tank Valve.png', caption: 'Tank Valve' },
     // { img: '/images/Product Images/Tank Valve.png', caption: 'Tank Valve Assembly' },
   ];
 

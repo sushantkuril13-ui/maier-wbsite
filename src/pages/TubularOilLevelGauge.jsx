@@ -3,8 +3,8 @@ import ProductPageLayout from '../components/ProductPageLayout.jsx';
 
 export default function TubularOilLevelGauge() {
   const slides = [
-    { img: '/images/Product Images/TOG_AT.png', caption: 'Anti-Theft Model (ATOLG)' },
-    { img: '/images/Product Images/TOLG_BT.png', caption: 'Standard Model (BTOLG)' },
+    { img: '/images/web images/Oil Level Indicator/Tubular OLI.png', caption: 'Anti-Theft Model (ATOLG)' },
+    { img: '/images/web images/Oil Level Indicator/Tubular OLI2.png', caption: 'Standard Model (BTOLG)' },
   ];
 
   return (

@@ -5,7 +5,7 @@ import productHierarchy, { getSectionBySlug } from '../data/productHierarchy.js'
 export default function LowHighPressureAlarmSystem() {
   const section = getSectionBySlug('pressure-alarm-system');
   const slides = [
-    { img: '/images/Product Images/Pressure-alarm/LOW_HIGH PRESSURE ALARM SYSTEM.jpg', caption: 'Low/High Pressure Alarm System' },
+    { img: '/images/web images/PRESSURE ALARM SYSTEM/LOW_HIGH PRESSURE ALARM SYSTEM.png', caption: 'Low/High Pressure Alarm System' },
   ];
 
   return (

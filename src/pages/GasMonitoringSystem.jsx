@@ -3,10 +3,10 @@ import ProductPageLayout from '../components/ProductPageLayout.jsx';
 
 export default function GasMonitoringSystem() {
   const slides = [
-    { img: '/images/Product Images/GMS_SDGR02D.png', caption: 'SDGR-02D' },
-    { img: '/images/Product Images/GMS_SDGR02.png', caption: 'SDGR-02' },
-    { img: '/images/Product Images/GMS_DGR02.png', caption: 'DGR-02' },
-    { img: '/images/Product Images/GMS_DGR05.png', caption: 'DGR-05' },
+    { img: '/images/web images/Nitrogen Gas Monitoring System/SDGR-02.png', caption: 'SDGR-02D' },
+    { img: '/images/web images/Nitrogen Gas Monitoring System/SDGR-02.png', caption: 'SDGR-02' },
+    { img: '/images/web images/Nitrogen Gas Monitoring System/DGR02.png', caption: 'DGR-02' },
+    { img: '/images/web images/Nitrogen Gas Monitoring System/DGR05.png', caption: 'DGR-05' },
     // additional images can be added here
   ];
 

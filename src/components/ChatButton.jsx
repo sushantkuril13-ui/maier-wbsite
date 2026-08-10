@@ -3,14 +3,32 @@ import '../styles/components/ChatButton.css';
 
 export default function ChatButton() {
   const [isOpen, setIsOpen] = useState(false);
-  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
+  const [formData, setFormData] = useState({ 
+    fullName: '', 
+    email: '', 
+    phoneNumber: '', 
+    companyName: '',
+    city: '',
+    country: '',
+    subject: '',
+    message: '' 
+  });
   const [status, setStatus] = useState('idle'); // idle, sending, success, error
 
   function handleToggle() {
     setIsOpen(!isOpen);
     if (!isOpen) {
       setStatus('idle');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      setFormData({ 
+        fullName: '', 
+        email: '', 
+        phoneNumber: '', 
+        companyName: '',
+        city: '',
+        country: '',
+        subject: '',
+        message: '' 
+      });
     }
   }
 
@@ -23,14 +41,38 @@ export default function ChatButton() {
     e.preventDefault();
     setStatus('sending');
     try {
+      // Combine subject with message for the server
+      const messageWithSubject = formData.subject 
+        ? `[${formData.subject}]\n\n${formData.message}`
+        : formData.message;
+
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          fullName: formData.fullName,
+          email: formData.email,
+          phoneNumber: formData.phoneNumber,
+          companyName: formData.companyName,
+          city: formData.city,
+          country: formData.country,
+          message: messageWithSubject,
+        }),
       });
-      if (res.ok) {
+      
+      const data = await res.json();
+      if (res.ok && data.success) {
         setStatus('success');
-        setFormData({ name: '', email: '', subject: '', message: '' });
+        setFormData({ 
+          fullName: '', 
+          email: '', 
+          phoneNumber: '', 
+          companyName: '',
+          city: '',
+          country: '',
+          subject: '',
+          message: '' 
+        });
       } else {
         setStatus('error');
       }
@@ -71,12 +113,12 @@ export default function ChatButton() {
           ) : (
             <form className="chat-widget-form" onSubmit={handleSubmit}>
               <div className="chat-widget-field">
-                <label htmlFor="chat-name">Name</label>
+                <label htmlFor="chat-name">Name <span className="required">*</span></label>
                 <input
                   type="text"
                   id="chat-name"
-                  name="name"
-                  value={formData.name}
+                  name="fullName"
+                  value={formData.fullName}
                   onChange={handleChange}
                   required
                   disabled={status === 'sending'}
@@ -84,7 +126,7 @@ export default function ChatButton() {
                 />
               </div>
               <div className="chat-widget-field">
-                <label htmlFor="chat-email">Email</label>
+                <label htmlFor="chat-email">Email <span className="required">*</span></label>
                 <input
                   type="email"
                   id="chat-email"
@@ -97,24 +139,75 @@ export default function ChatButton() {
                 />
               </div>
               <div className="chat-widget-field">
+                <label htmlFor="chat-phone">Phone</label>
+                <input
+                  type="tel"
+                  id="chat-phone"
+                  name="phoneNumber"
+                  value={formData.phoneNumber}
+                  onChange={handleChange}
+                  disabled={status === 'sending'}
+                  placeholder="+49 7033 369 4100"
+                />
+              </div>
+              <div className="chat-widget-field">
+                <label htmlFor="chat-company">Company</label>
+                <input
+                  type="text"
+                  id="chat-company"
+                  name="companyName"
+                  value={formData.companyName}
+                  onChange={handleChange}
+                  disabled={status === 'sending'}
+                  placeholder="Company name (optional)"
+                />
+              </div>
+              <div className="chat-widget-field">
+                <label htmlFor="chat-city">City</label>
+                <input
+                  type="text"
+                  id="chat-city"
+                  name="city"
+                  value={formData.city}
+                  onChange={handleChange}
+                  disabled={status === 'sending'}
+                  placeholder="City (optional)"
+                />
+              </div>
+              <div className="chat-widget-field">
+                <label htmlFor="chat-country">Country</label>
+                <select
+                  id="chat-country"
+                  name="country"
+                  value={formData.country}
+                  onChange={handleChange}
+                  disabled={status === 'sending'}
+                >
+                  <option value="">Select country (optional)</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Austria">Austria</option>
+                  <option value="Switzerland">Switzerland</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div className="chat-widget-field">
                 <label htmlFor="chat-subject">Subject</label>
                 <select
                   id="chat-subject"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  required
                   disabled={status === 'sending'}
                 >
                   <option value="">Select a topic</option>
-                  <option value="general">General Inquiry</option>
-                  <option value="support">Technical Support</option>
-                  <option value="sales">Sales / Quotation</option>
-                  <option value="other">Other</option>
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Technical Support">Technical Support</option>
+                  <option value="Sales / Quotation">Sales / Quotation</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
               <div className="chat-widget-field">
-                <label htmlFor="chat-message">Message</label>
+                <label htmlFor="chat-message">Message <span className="required">*</span></label>
                 <textarea
                   id="chat-message"
                   name="message"

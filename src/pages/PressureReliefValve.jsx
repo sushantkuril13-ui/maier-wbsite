@@ -3,10 +3,10 @@ import ProductPageLayout from '../components/ProductPageLayout.jsx';
 
 export default function PressureReliefValve() {
   const slides = [
-    { img: '/images/Product Images/PRV_DP1EF.png', caption: 'DP-1EF#' },
-    { img: '/images/Product Images/PRV_DP3EF.png', caption: 'DP-3EF#' },
-    { img: '/images/Product Images/PRV_DP6EF.png', caption: 'DP-6EF#' },
-    { img: '/images/Product Images/PRV.png', caption: 'Pressure Relief Valve' },
+    { img: '/images/web images/Pressure Relief Valves with Switches/PRV with Switches {DP-1}.png', caption: 'DP-1EF#' },
+    { img: '/images/web images/Pressure Relief Valves with Switches/PRV with Switches {DP-3}.png', caption: 'DP-3EF#' },
+    { img: '/images/web images/Pressure Relief Valves with Switches/PRV with Switches {DP-6}.png', caption: 'DP-6EF#' },
+    { img: '/images/web images/Pressure Relief Valves with Switches/PRV with Switches {DP-1}.png', caption: 'Pressure Relief Valve' },
   ];
 
   return (

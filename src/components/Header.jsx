@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../styles/components/Header.css';
 import { productCategories } from './ProductSidebar.jsx';
@@ -10,8 +10,18 @@ export default function Header() {
   const [searchQuery, setSearchQuery] = useState('');
   const [suggestions, setSuggestions] = useState([]);
   const [activeIndex, setActiveIndex] = useState(-1);
+  const [isScrolled, setIsScrolled] = useState(false);
   const inputRef = useRef(null);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // const languages = ['DE', 'EN', 'TR'];
   const menuItems = [
