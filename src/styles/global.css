@@ -106,7 +106,9 @@ a:hover {
     background: transparent; /* transparent to show background image */
     border-radius: 6px;
     box-shadow: 0 18px 45px rgba(0,0,0,0.12);
-    overflow: hidden;
+    /* MUST be visible/clip for descendants using position: sticky to work
+       (overflow: hidden creates a scroll container, which breaks sticky). */
+    overflow: visible;
 }
 
 .site-topbar {
@@ -254,13 +256,9 @@ a:hover {
    NAVIGATION
    ======================================== */
 
-.navbar {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(240, 240, 240, 0.3);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+/* Note: .navbar (component) is defined in Header.css and is sticky.
+   The classes below are utility/structural only — do not set position
+   on the bare .navbar selector here, or it will conflict with Header.css. */
 
 .navbar-header {
   padding: 1rem 2rem;

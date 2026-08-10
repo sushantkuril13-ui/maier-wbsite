@@ -11,7 +11,9 @@ export default function Header() {
   const [suggestions, setSuggestions] = useState([]);
   const [activeIndex, setActiveIndex] = useState(-1);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [navbarHeight, setNavbarHeight] = useState(0);
   const inputRef = useRef(null);
+  const navbarRef = useRef(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -21,6 +23,17 @@ export default function Header() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (navbarRef.current) {
+      setNavbarHeight(navbarRef.current.offsetHeight);
+    }
+    const handleResize = () => {
+      if (navbarRef.current) setNavbarHeight(navbarRef.current.offsetHeight);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   // const languages = ['DE', 'EN', 'TR'];
@@ -133,7 +146,10 @@ export default function Header() {
         </div>
       </div>
 
-      <nav className="navbar">
+      <nav
+        ref={navbarRef}
+        className={`navbar ${isScrolled ? 'scrolled fixed-scrolled' : ''}`}
+      >
         <div className="container-header">
           <div className="nav-wrapper">
             <button 
@@ -175,6 +191,8 @@ export default function Header() {
           </div>
         </div>
       </nav>
+      {/* Spacer to prevent content jump when navbar becomes position:fixed */}
+      {isScrolled && <div style={{ height: navbarHeight }} aria-hidden="true" />}
     </header>
   );
 }
