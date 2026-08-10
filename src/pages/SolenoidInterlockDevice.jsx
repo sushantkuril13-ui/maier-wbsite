@@ -5,7 +5,7 @@ import productHierarchy, { getSectionBySlug } from '../data/productHierarchy.js'
 export default function SolenoidInterlockDevice() {
   const section = getSectionBySlug('solenoid-interlock-device');
   const slides = [
-    { img: '/images/Product Images/Solenoid-interlocking-device/SOLENOID INTERLOCK DEVICE.jpg', caption: 'Solenoid Interlock Device' },
+    { img: '/images/web images/Solenoid Interlock Device/Solenoid Interlock Device.png', caption: 'Solenoid Interlock Device' },
   ];
 
   return (

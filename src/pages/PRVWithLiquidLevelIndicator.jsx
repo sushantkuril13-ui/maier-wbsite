@@ -4,7 +4,7 @@ import { getSectionBySlug } from '../data/productHierarchy.js';
 
 export default function PRVWithLiquidLevelIndicator() {
   const slides = [
-    { img: '/images/Product Images/PRV_LIQUID INDICATOR.png', caption: 'PRV with Liquid Level Indicator' },
+    { img: '/images/web images/PRESSURE RELIEF VALVE WITH LIQUID LEVEL INDICATOR/PRV with Liquid Level Indicator.png', caption: 'PRV with Liquid Level Indicator' },
   ];
 
   return (

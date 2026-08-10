@@ -3,12 +3,12 @@ import ProductPageLayout from '../components/ProductPageLayout.jsx';
 
 export default function ThreadedPressureReliefValve() {
   const slides = [
-    { img: '/images/Product Images/PRV_BB2.png', caption: 'Small Size - Plain' },
-    { img: '/images/Product Images/PRV_BB2P.png', caption: 'Small Size - With Cap' },
-    { img: '/images/Product Images/PRV_BB3SR.png', caption: 'Small Size - With Pull Ring' },
-    { img: '/images/Product Images/PRV_SB4SS.png', caption: 'Medium Size - Stainless Steel' },
-    { img: '/images/Product Images/PRV_BB8P.png', caption: 'Medium Size - With Cap' },
-    { img: '/images/Product Images/NAP-25S.png', caption: 'Flange Type - NAP-25S' },
+    { img: '/images/web images/Threaded Pressure Relief Valves/BB2.png', caption: 'Small Size - Plain' },
+    { img: '/images/web images/Threaded Pressure Relief Valves/BB2.png', caption: 'Small Size - With Cap' },
+    { img: '/images/web images/Threaded Pressure Relief Valves/BB3SR.png', caption: 'Small Size - With Pull Ring' },
+    { img: '/images/web images/Threaded Pressure Relief Valves/SB4SS (T-05).png', caption: 'Medium Size - Stainless Steel' },
+    { img: '/images/web images/Threaded Pressure Relief Valves/BB8P (G-1B).png', caption: 'Medium Size - With Cap' },
+    { img: '/images/web images/Flange Pressure Relief Valves/NAP-25S.png', caption: 'Flange Type - NAP-25S' },
   ];
 
   return (
